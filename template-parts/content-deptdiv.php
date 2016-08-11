@@ -36,6 +36,7 @@
 	 $dept_thursday_hours = get_post_meta( $post_id, 'lc_dept_office_hours_thursday_field', true );
 	 $dept_friday_hours = get_post_meta( $post_id, 'lc_dept_office_hours_friday_field', true );
 	 $dept_saturday_hours = get_post_meta( $post_id, 'lc_dept_office_hours_saturday_field', true );
+  $dept_sunday_hours = get_post_meta( $post_id, 'lc_dept_office_hours_sunday_field', true );
 	 $dept_social_facebook = get_post_meta( $post_id, 'lc_social_media_facebook_field', true );
 	 $dept_social_twitter = get_post_meta( $post_id, 'lc_social_media_twitter_field', true );
  ?>
@@ -44,7 +45,10 @@
     <h2>Contact Information</h2>
     <div class="row">
      <div class="small-12 medium-6 large-6 columns callout-contact-info">
-      <p><?php echo $dept_building . ', Room ' . $dept_roomnumber; ?> <br />
+      <p><?php
+       if($dept_building != ''){
+       echo $dept_building . ', Room ' . $dept_roomnumber . '<br />';
+       }?> 
       <strong>Phone:</strong> (440) 366-<?php echo $dept_extension; ?><br />
       <?php if ($dept_faxnumber !== '') { ?>
       <strong>Fax Number:</strong> (440) 366-<?php echo $dept_faxnumber; ?><br />
@@ -52,7 +56,7 @@
       <strong>Email:</strong> <?php echo $dept_email; ?></p>
      </div>
      <div class="small-12 medium-6 large-6 columns callout-contact-info">
-      <p class="hours">Office Hours: <br />
+      <p class="hours"><b>Office Hours</b> <br />
 						<?php if ($dept_monday_hours !== '') { 
 									echo 'Monday: ' . $dept_monday_hours . '<br />';
 						}
@@ -70,17 +74,20 @@
 						}	
 						if ($dept_saturday_hours !== '') { 
 									echo 'Saturday: ' . $dept_saturday_hours . '<br />';
-						}							
+						}			
+						if ($dept_sunday_hours !== '') { 
+									echo 'Sunday: ' . $dept_sunday_hours . '<br />';
+						}	
 							?>							
 						</p>						
      </div>
     <div class="small-12 medium-12 large-12 columns callout-contact-info">
 	<?php 
 		if ($dept_social_facebook !== '') {
-			echo '<a href="' . $dept_social_facebook . '" target="_blank">Follow us on Facebook</a><br />';
+			echo '<a href="https://www.facebook.com/' . str_replace('/', '', $dept_social_facebook) . '" target="_blank" alt="Follow us on Facebook" title="Follow us on Facebook"><i class="fi-social-facebook" style="font-size:36pt; color:#0C3B78;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;';
 		} 
 		if ($dept_social_twitter !== '') {
-			echo '<a href="' . $dept_social_twitter . '" target="_blank">Follow us on Twitter</a>';
+			echo '&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.twitter.com/' . str_replace('/', '', $dept_social_twitter) . '" target="_blank" alt="Follow us on Twitter" title="Follow us on Twitter"><i class="fi-social-twitter" style="font-size:36pt; "></i></a>';
 		}
 	?> 
      </div>
