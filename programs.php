@@ -20,7 +20,7 @@ get_header(); ?>
 	 <div class="small-12 medium-12 large-12 columns sidebar-menu-header">
    <h3><?php echo bloginfo('the-title'); ?></h3>
   </div>
-  <div id="secondary" class="secondary">
+ <div id="secondary" class="medium-12 columns secondary nopadding">
 		<?php if ( has_nav_menu( 'left-nav' ) ) : ?>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<?php
@@ -33,13 +33,9 @@ get_header(); ?>
 			</nav><!-- .main-navigation -->
 				<?php endif; ?>
 		<?php endif; ?>
-	<div class="small-12 medium-12 large-12 columns">
-				<?php if ( is_active_sidebar( 'lccc-programpathways-sidebar' ) ) { ?>
-							<?php dynamic_sidebar( 'lccc-programpathways-sidebar' ); ?>
-				<?php } ?>
+		
 	</div>
- </div>
-</div>
+	</div>
 </div>
 	<div class="small-12 medium-8 large-8 columns">
 	<div id="primary" class="content-area">
