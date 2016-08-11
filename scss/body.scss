@@ -1,0 +1,35 @@
+/*!
+Section 3: Body
+*/
+
+body {
+    font-size: .8625rem;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #606060;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+h1,h2,h3,h4,h5,h6,h7 {
+    font-family: "Raleway",sans-serif
+}
+
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
+.columns.gateway-header img {
+   width: 100%;
+   max-width: 100%;
+   height: auto; 
+}
+img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+   width: 100%;
+   max-width: 100%;
+   height: auto; 
+}
