@@ -80,3 +80,8 @@ header.entry-header {
 ul {
     margin-top: 0px !important;
 }
+
+//Changes width of dropdown menu
+.is-dropdown-submenu{
+ min-width: 180px;
+}

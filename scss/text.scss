@@ -21,9 +21,16 @@ h2.cta-h2 {
     text-transform: uppercase
 }
 
+div.entry-content h3 {
+    line-height:110%;
+    margin-top:.25rem;
+    font-size:1.425rem; 
+    color:#6d6d6d;
+}
+
 p {
     font-weight: 500;
-    font-size: .8625rem
+    font-size: $body-font-size;
 }
 /* Base Typography */
 

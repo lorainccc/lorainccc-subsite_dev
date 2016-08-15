@@ -20,7 +20,7 @@ header .menu:not(#header-menu):not(.vertical) li:hover,header .dropdown.menu .su
 }
 
 header li.is-submenu-item {
-    padding: .5rem 0;
+    padding: .1rem 0;
     border-top: 1px solid #0055a5
 }
 
@@ -43,7 +43,7 @@ header .dropdown.menu .submenu li:hover a {
 
 header li.is-submenu-item:not(.is-drilldown-submenu-item) a {
     color: #fefefe;
-    font-size: .75rem
+    font-size: .85rem
 }
 
 header li.is-drilldown-submenu-item {

@@ -561,9 +561,8 @@ hr {
 }
 
 .gateway-links a {
-    font-size: .8625rem;
-    text-decoration: underline;
-    font-weight: 800
+    font-size: $body-font-size;
+    text-decoration: none;
 }
 
 .row .row.lccc-badge {
@@ -588,7 +587,7 @@ hr {
 .crumbs {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    font-size: .8625rem
+    font-size: $body-font-size
 }
 
 .callout-link {
