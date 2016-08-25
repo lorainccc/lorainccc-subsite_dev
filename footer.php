@@ -23,7 +23,9 @@
       <a href="#" target="_blank" class="clearfix mobile-app-link"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/smartphone_yellow.svg" heigth="33" width="20" alt=""/>
       <h2>LCCC'S<br />
         Mobile App</h2>
-      </a> </div>
+      </a>
+     <a href="/website-feedback?siteurl=<?php echo site_url(); ?>">Provide Website Feedback</a>
+     </div>
     <div class="large-3 medium-3 columns">
       <h2>Contact LCC</h2>
       <p>1005 N Abbe Rd<br />

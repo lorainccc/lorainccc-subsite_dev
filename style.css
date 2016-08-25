@@ -1,5 +1,4 @@
 /*!
-
  Theme Name: lorainccc-subsite_dev
  Theme URI:    http://www.lorainccc.edu 
  Description:  Lorain County Community College Theme 
@@ -21,6 +20,7 @@ Section 3: Body
 Section 4: Header
 Section 5: Navigation
 Section 6: Footer
+Section 7: Plugin Overrides
 *//*!
 Variables Section
 *//*!*********************
@@ -45,15 +45,17 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}.wp-caption{b
 Text Section
 */h1{font-size:2.1875rem;margin-top:.25rem}h1,h2{color:#0055a5;font-weight:700}
 h2{line-height:110%;margin-top:.25rem;font-size:1.625rem}h2.cta-h2{text-transform:uppercase}
+div.entry-content h3{line-height:110%;margin-top:.25rem;font-size:1.425rem;color:#6d6d6d}
 p{font-weight:500;font-size:.8625rem}/*!
 Section 1: Foundation
 *//*!
 Section 2: Content
-*/.alignnone{margin:5px 20px 20px 0}
-.aligncenter,div.aligncenter{display:block;margin:5px auto 5px auto}.alignright{float:right;margin:5px 0 20px 20px}
-.alignleft{float:left;margin:5px 20px 20px 0}a img.alignright{float:right;margin:5px 0 20px 20px}
-a img.alignnone{margin:5px 20px 20px 0}a img.alignleft{float:left;margin:5px 20px 20px 0}
-a img.aligncenter{display:block;margin-left:auto;margin-right:auto}.wp-caption{background:#fff;border:1px solid #f0f0f0;max-width:96%;padding:5px 3px 10px;text-align:center}
+*/a:hover{text-decoration:underline}
+.alignnone{margin:5px 20px 20px 0}.aligncenter,div.aligncenter{display:block;margin:5px auto 5px auto}
+.alignright{float:right;margin:5px 0 20px 20px}.alignleft{float:left;margin:5px 20px 20px 0}
+a img.alignright{float:right;margin:5px 0 20px 20px}a img.alignnone{margin:5px 20px 20px 0}
+a img.alignleft{float:left;margin:5px 20px 20px 0}a img.aligncenter{display:block;margin-left:auto;margin-right:auto}
+.wp-caption{background:#fff;border:1px solid #f0f0f0;max-width:96%;padding:5px 3px 10px;text-align:center}
 .wp-caption.alignnone{margin:5px 20px 20px 0}.wp-caption.alignleft{margin:5px 20px 20px 0}
 .wp-caption.alignright{margin:5px 0 20px 20px}.wp-caption img{border:0 none;height:auto;margin:0;max-width:98.5%;padding:0;width:auto}
 .wp-caption p.wp-caption-text{font-size:11px;line-height:17px;margin:0;padding:0 4px 5px}
@@ -77,7 +79,7 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}.wp-caption{b
 .service-box-header h2 span{display:block;font-size:1.5625rem;color:#ffc600;text-transform:capitalize}
 .service-box-container{box-shadow:inset 0 0 10px #dcdcdc}.service-box-copy{position:relative;padding:0}
 .service-box-body{font-size:.75rem;padding:2rem 1rem}.yellow-bottom-border{width:97%;height:5px;background:#ffc600;float:left;margin-left:.9375rem}
-hr{border:0;height:20px;width:90%;height:50px;padding:2rem 0;box-shadow:0 15px 15px -15px #dcdcdc;margin:-50px auto 10px}
+hr{border:0;width:95%;height:5px;padding:1rem 0 3rem 0;box-shadow:0 15px 15px -15px #dcdcdc;margin:-50px auto 30px}
 .link-box-row{margin-top:1.125rem}.link-box{margin-top:1.875rem;position:relative}
 .link-box img{opacity:1;z-index:-1}.link-box:hover img{filter:alpha(opacity=60);opacity:.6}
 .link-box-label{font-size:.875rem;color:#fefefe;font-weight:600;padding:.65rem 0}
@@ -103,8 +105,8 @@ hr{border:0;height:20px;width:90%;height:50px;padding:2rem 0;box-shadow:0 15px 1
 .fw-lead p{font-size:1rem}.lead p{font-size:1rem}.news-feed .featured-image img{width:100%;height:auto;margin-bottom:1rem}
 .gateway-links{padding-top:2rem;margin-bottom:2rem;box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8);-moz-box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8);-webkit-box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8)}
 .gateway-links h2{font-size:1.5rem;margin-bottom:0}.gateway-links .menu>li>a{font-size:.75rem;color:#5593db;text-decoration:underline;padding:.5rem 0}
-.gateway-links img{margin-top:.5rem;margin-bottom:.5rem;width:100%;height:auto}.gateway-links a{font-size:.8625rem;text-decoration:underline;font-weight:800}
-.row .row.lccc-badge{padding-top:1.25rem;padding-bottom:1.25rem;font-size:.75rem;color:#fefefe;margin:1rem 0 0 0}
+.gateway-links img{margin-top:.5rem;margin-bottom:.5rem;width:100%;height:auto}.gateway-links a{font-size:.8625rem;text-decoration:none}
+.gateway-links a:hover{text-decoration:underline}.row .row.lccc-badge{padding-top:1.25rem;padding-bottom:1.25rem;font-size:.75rem;color:#fefefe;margin:1rem 0 0 0}
 .row .row.lccc-badge h3{font-weight:600;font-size:1.25rem;color:#fefefe;margin-bottom:.25rem}
 .row .row.lccc-badge .icon{margin-top:.5rem}.crumbs{padding-top:2rem;padding-bottom:2rem;font-size:.8625rem}
 .callout-link{color:#0055a5;text-transform:uppercase;font-size:1.25rem;font-weight:800;margin-bottom:2rem;margin-top:2rem;line-height:100%}
@@ -184,7 +186,8 @@ footer h2{font-size:.75rem;color:#ffc600;text-transform:uppercase;font-weight:70
 footer .menu>li>a{padding:0 .25rem 0 0}footer a,footer p{color:#fefefe;font-size:.75rem}
 footer .footer-logo{margin-bottom:2.5rem}footer ul{list-style:none;margin-left:0}
 footer ul li{margin-bottom:.75rem}footer .underline>li>a{text-decoration:underline}
-.footer-sm-links{margin-bottom:2rem}.mobile-app-link img{margin-right:.75rem}/*! Ryan's Updated Menu Styling */.breadcrumb-container{padding:2rem .9375rem !important;font-size:.8125rem !important}
+.footer-sm-links{margin-bottom:2rem}.mobile-app-link img{margin-right:.75rem}.accordion-content,.accordions-head{font-family:"Open Sans",sans-serif}
+.accordion-content a{color:#2199e8}/*! Ryan's Updated Menu Styling */.breadcrumb-container{padding:2rem .9375rem !important;font-size:.8625rem !important}
 .sidebar-widget{padding-top:0 !important;margin:1rem 0 3rem 0 !important}header.entry-header{padding-top:0 !important}
 .main-navigation ul:not(.sub-menu)>li{border:1px solid #dcdcdc !important;box-shadow:inset 0 0 10px #dcdcdc !important;padding:.75rem 2rem .75rem 1rem !important}
 .main-navigation ul:not(.sub-menu)>li>a{font-size:1rem !important;color:#0055a5 !important;font-weight:700 !important}

@@ -1,0 +1,9 @@
+/*
+ * Section 7: Plugin Overrides
+ *  CSS that is needed to set global plugin styles.
+ *
+ */
+
+.accordion-content, .accordions-head{font-family: $body-font-family;}
+
+.accordion-content a{color:$primary-color;}
