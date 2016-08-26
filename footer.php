@@ -24,7 +24,9 @@
       <h2>LCCC'S<br />
         Mobile App</h2>
       </a>
-     <a href="/website-feedback?siteurl=<?php echo site_url(); ?>">Provide Website Feedback</a>
+     <p class="website-feedback">
+      <a href="/website-feedback?siteurl=<?php echo 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>" target="_blank">Feedback about this page</a>
+     </p>
      </div>
     <div class="large-3 medium-3 columns">
       <h2>Contact LCC</h2>
