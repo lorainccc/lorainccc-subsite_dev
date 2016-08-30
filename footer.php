@@ -23,17 +23,21 @@
       <a href="#" target="_blank" class="clearfix mobile-app-link"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/smartphone_yellow.svg" heigth="33" width="20" alt=""/>
       <h2>LCCC'S<br />
         Mobile App</h2>
-      </a> </div>
+      </a>
+     <p class="website-feedback">
+      <a href="/website-feedback?siteurl=<?php echo 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>" target="_blank">Feedback about this page</a>
+     </p>
+     </div>
     <div class="large-3 medium-3 columns">
-      <h2>Contact LCC</h2>
+      <h2>Contact LCCC</h2>
       <p>1005 N Abbe Rd<br />
         Elyria, OH 44035<br />
         1-800-995-LCCC (5222)<br />
 							 or (440) 365-5222<br />
         <a href="mailto:info@lorainccc.edu">info@lorainccc.edu</a> </p>
       <ul class="underline">
-        <li><a href="https://test.lorainccc.edu/about/map-and-directions-to-lccc/">Map and Directions</a></li>
-        <li><a href="https://test.lorainccc.edu/about/contact-lorain-county-community-college/">Contact LCCC</a></li>
+        <li><a href="/about/map-and-directions-to-lccc/">Map and Directions</a></li>
+        <li><a href="/about/contact-lorain-county-community-college/">Contact LCCC</a></li>
         <li><a href="#">Visit LCCC</a></li>
       </ul>
     </div>
