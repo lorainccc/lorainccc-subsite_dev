@@ -1,6 +1,12 @@
 /*!
 Section 2: Content
 */
+.tabs {
+    border: 0;
+}
+.tabs-panel {
+    padding: 0;
+}
 li.button.tabs-title ,li.button.tabs-title.is-active{
 	padding: 0;
 }
