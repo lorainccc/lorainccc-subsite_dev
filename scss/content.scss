@@ -1,6 +1,22 @@
 /*!
 Section 2: Content
 */
+li.button.tabs-title ,li.button.tabs-title.is-active{
+	padding: 0;
+}
+li.button.tabs-title.is-active{
+	background: #0055A5;
+}
+li.button.tabs-title ,li.button.tabs-title.is-active a{
+	color: #fff;
+}
+.academic-calender-content .tabs-title > a {color: #fff;}
+.academic-calender-content .tabs-title > a:hover {
+    background: #555;
+}
+.academic-calender-content .tabs-title > a:focus, .tabs-title > a[aria-selected='true']{
+	background: none;
+}
 .alignnone {
     margin: 5px 20px 20px 0
 }
