@@ -1,39 +1,48 @@
 <?php
 /**
- * Template Name: Campus Security Crime Log Template
+ * The template for displaying archive pages.
  *
- * @package WordPress
- * @subpackage lorainccc
- * @since Lorainccc 1.0
+ * Learn more: http://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package LCCC Framework
  */
 get_header(); ?>
 <div class="row page-content">
 <div class="small-12 medium-12 large-12 columns breadcrumb-container">
    <?php get_template_part( 'template-parts/content', 'breadcrumb' ); ?>
 </div>
-			
-	<div class="small-12 medium-12 large-12 columns">		
-		<div class="row">
-  <div class="small-2 large-4 columns">
-				<select onchange="location = this.options[this.selectedIndex].value;">
-								<option>Please select</option>
-								<option value="http://www.apple.com/">Apple</option>
-								<option value="http://www.bbc.com">BBC</option>
-								<option value="http://www.facebook.com">Facebook</option>
-				</select>	
+<div class="medium-4 large-4 columns hide-for-small-only">
+	<div class="small-12 medium-12 large-12 columns sidebar-widget">
+		<div class="small-12 medium-12 large-12 columns sidebar-menu-header">
+<h3><?php echo bloginfo('the-title'); ?></h3>
 		</div>
-  <div class="small-4 large-4 columns"><!-- ... --></div>
-  <div class="small-6 large-4 columns">
-						<select onchange="location = this.options[this.selectedIndex].value;">
-								<option>Please select</option>
-								<option value="http://www.apple.com/">Apple</option>
-								<option value="http://www.bbc.com">BBC</option>
-								<option value="http://www.facebook.com">Facebook</option>
-				</select>	
+	<?php	if ( has_nav_menu( 'left-nav' ) ) : ?>
+	<div id="secondary" class="secondary">
+		<?php if ( has_nav_menu( 'left-nav' ) ) : ?>
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<?php
+					// Primary navigation menu.
+					wp_nav_menu( array(
+						'menu_class'     => 'nav-menu',
+						'theme_location' => 'left-nav',
+					) );
+				?>
+			</nav><!-- .main-navigation -->
+				<?php endif; ?>
+		</div>
+		<?php endif; ?>
 	</div>
-</div>
-	<div id="primary" class="content-area">
+	</div>
+	<div class="small-12 medium-8 large-8 columns">		
+<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+
+					<header class="page-header">
+				<?php
+					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_description( '<div class="taxonomy-description">', '</div>' );
+				?>
+			</header><!-- .page-header -->
 					<table>
 						<thead>
     				<tr>
@@ -48,49 +57,46 @@ get_header(); ?>
     				</tr>
   				</thead>
 										<tbody>
-														<?php
-																		$args = array(
-																			'post_type' => 'crime_log',
-																			'posts_per_page' => -1,
-																		);
-																$i=1;
-																// The Query
-																$crime_query = new WP_Query( $args );
-																	// The Loop
-																	if ( $crime_query->have_posts() ) {
-																		while ( $crime_query->have_posts() ) {
-																			$crime_query->the_post();
-																			$reportyearterms = get_the_terms( $post->ID, 'report-year');
-																			$natureoffence = details_of_the_crime_get_meta('details_of_the_crime_nature_of_offense');
-																			$reported_date = details_of_the_crime_get_meta('details_of_the_crime_date_reported');
-																			$reported_time = details_of_the_crime_get_meta('details_of_the_crime_time_reported');
-																			$unkown_dates = details_of_the_crime_get_meta('details_of_the_crime_unknown_incident_date');
-																			$various_dates = details_of_the_crime_get_meta('details_of_the_crime_various_incident_dates');	
-																			$incident_date_start = details_of_the_crime_get_meta('details_of_the_crime_date_incident_occurred_start');
-																			$incident_date_end = details_of_the_crime_get_meta('details_of_the_crime_date_incident_occurred_end');	
-																			$incident_time_start = details_of_the_crime_get_meta('details_of_the_crime_time_incident_occurred_start');
-																			$incident_time_end = details_of_the_crime_get_meta('details_of_the_crime_time_incident_occurred_end');
-																			$secondary_incident_date_start = details_of_the_crime_get_meta('details_of_the_crime_secondary_date_incident_occurred_start');
-																			$secondary_incident_date_end = details_of_the_crime_get_meta('details_of_the_crime_secondary_date_incident_occurred_end');
-																			$secondary_incident_time_start = details_of_the_crime_get_meta('details_of_the_crime_secondary_time_incident_occurred_start');
-																			$secondary_incident_time_end = details_of_the_crime_get_meta('details_of_the_crime_secondary_time_incident_occurred_end_');
-																			$general_location = details_of_the_crime_get_meta('details_of_the_crime_general_location');
-																			$disposition = details_of_the_crime_get_meta('details_of_the_crime_disposition');	
-																			echo '<tr>';
-																				echo '<td>';
-																							//Returns Array of Term Names for "my_taxonomy"
-																							$monthterm_list = wp_get_post_terms($post->ID, 'report_month', array("fields" => "all"));
-																							echo '<a href="'.get_bloginfo('url').'/report-month/'.$monthterm_list[0]->slug.'">'.$monthterm_list[0]->name.'</a>';
-																			echo '</td>';
-																			echo '<td>';
-																							//Returns Array of Term Names for "my_taxonomy"
-																							$term_list = wp_get_post_terms($post->ID, 'report_year', array("fields" => "all"));
-																							echo '<a href="'.get_bloginfo('url').'/report-year/'.$term_list[0]->slug.'">'.$term_list[0]->slug.'</a>';
-																			echo '</td>';
-																			echo '<td>'.$natureoffence.'</td>';
-																			echo '<td>' . get_the_title() . '</td>';
-																			echo '<td>'.$reported_date.' '.$reported_time.'</td>';
-																			//if unknown date checkbox is checked
+										<?php 
+			// get the currently queried taxonomy term, for use later in the template file
+$term = get_queried_object();
+			$args = array(
+    'post_type' => 'crime_log',
+    'report_year' => $term->slug,
+    'post_status' => 'publish',
+    'posts_per_page' => -1,
+);
+				$query = new WP_Query( $args );
+				if ($query->have_posts()):
+							   // Start the Loop
+        while ( $query->have_posts() ) : $query->the_post(); 
+												$reportyearterms = get_the_terms( $post->ID, 'report-year');
+											$natureoffence = details_of_the_crime_get_meta('details_of_the_crime_nature_of_offense');
+											$reported_date = details_of_the_crime_get_meta('details_of_the_crime_date_reported');
+											$reported_time = details_of_the_crime_get_meta('details_of_the_crime_time_reported');
+											$unkown_dates = details_of_the_crime_get_meta('details_of_the_crime_unknown_incident_date');
+											$various_dates = details_of_the_crime_get_meta('details_of_the_crime_various_incident_dates');	
+											$incident_date_start = details_of_the_crime_get_meta('details_of_the_crime_date_incident_occurred_start');
+											$incident_date_end = details_of_the_crime_get_meta('details_of_the_crime_date_incident_occurred_end');	
+											$incident_time_start = details_of_the_crime_get_meta('details_of_the_crime_time_incident_occurred_start');
+											$incident_time_end = details_of_the_crime_get_meta('details_of_the_crime_time_incident_occurred_end');
+											$secondary_incident_date_start = details_of_the_crime_get_meta('details_of_the_crime_secondary_date_incident_occurred_start');
+											$secondary_incident_date_end = details_of_the_crime_get_meta('details_of_the_crime_secondary_date_incident_occurred_end');
+											$secondary_incident_time_start = details_of_the_crime_get_meta('details_of_the_crime_secondary_time_incident_occurred_start');
+											$secondary_incident_time_end = details_of_the_crime_get_meta('details_of_the_crime_secondary_time_incident_occurred_end_');
+											$general_location = details_of_the_crime_get_meta('details_of_the_crime_general_location');
+											$disposition = details_of_the_crime_get_meta('details_of_the_crime_disposition');	
+											echo '<tr>';
+														echo '<td>';
+																//Returns Array of Term Names for "my_taxonomy"
+																$monthterm_list = wp_get_post_terms($post->ID, 'report_month', array("fields" => "all"));
+																echo '<a href="'.get_bloginfo('url').'/report-month/'.$monthterm_list[0]->slug.'">'.$monthterm_list[0]->name.'</a>';
+														echo '</td>';
+														echo '<td>'.$term->slug.'</td>';
+														echo '<td>'.$natureoffence.'</td>';
+														echo '<td>'.get_the_title().'</td>';
+														echo '<td>'.$reported_date.' '.$reported_time.'</td>';
+																																	//if unknown date checkbox is checked
 																			if( $unkown_dates == 'true' ){
 																							echo '<td> Unknown </td>';
 																			//if various incident dates checkbox is checked	
@@ -210,22 +216,24 @@ get_header(); ?>
 																							}//closes the else if secondary date not set
 																				echo '</td>';
 																			}//closes else if neither checkbox is active	
-																			
-																			echo '<td>'.$general_location.'</td>';
+																														echo '<td>'.$general_location.'</td>';
 																			echo '<td>'.$disposition.'</td>';
-																			echo '</tr>';
-																		}
-																		/* Restore original Post Data */
-																		wp_reset_postdata();
-																	} else {
-																		// no posts found
-																	}
-															?>
+											echo'</tr>';
+								endwhile;					
+				endif;				
+						// use reset postdata to restore orginal query
+						wp_reset_postdata();		
+				?>
 										</tbody>
-					</table>																		
+			</table>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div>	
-	
+		<div class="small-12 columns show-for-small-only">
+				<?php if ( is_active_sidebar( 'lccc-announcements-sidebar' ) ) { ?>
+							<?php dynamic_sidebar( 'lccc-announcements-sidebar' ); ?>
+				<?php } ?>
+	</div>
 </div>
 <?php get_footer(); ?>
