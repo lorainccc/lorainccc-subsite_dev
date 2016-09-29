@@ -323,4 +323,21 @@ function custom_excerpt_length($length) {
     return 40;
 }
 add_filter('excerpt_length', 'custom_excerpt_length');
+
+function lccc_custom_taxonomy_dropdown( $taxonomy ) {
+	$currenttax = str_replace("%body%", "black", "<body text='%body%'>");
+	$args = array(
+				'orderby' => 'name',
+				'order' => 'ASC',
+	);
+	$terms = get_terms( $taxonomy , $args );
+	if ( $terms ) {
+		printf( '<select name="%s" class="postform" onchange="location = this.options[this.selectedIndex].value;">', esc_attr( $taxonomy ) );
+		foreach ( $terms as $term ) {
+			printf( '<option value="'.get_bloginfo('url').'/'.str_replace('_', '-', $taxonomy).'/%s">%s</option>', esc_attr( $term->slug ), esc_html( $term->name ) );
+		}
+		print( '</select>' );
+	}
+}
+
 ?>

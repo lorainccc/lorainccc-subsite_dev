@@ -14,22 +14,14 @@ get_header(); ?>
 			
 	<div class="small-12 medium-12 large-12 columns">		
 		<div class="row">
-  <div class="small-2 large-4 columns">
-				<select onchange="location = this.options[this.selectedIndex].value;">
-								<option>Please select</option>
-								<option value="http://www.apple.com/">Apple</option>
-								<option value="http://www.bbc.com">BBC</option>
-								<option value="http://www.facebook.com">Facebook</option>
-				</select>	
+  <div class="small-6 medium-4 large-4 columns">
+					<?php lccc_custom_taxonomy_dropdown( 'report_month' ); ?>		
 		</div>
-  <div class="small-4 large-4 columns"><!-- ... --></div>
-  <div class="small-6 large-4 columns">
-						<select onchange="location = this.options[this.selectedIndex].value;">
-								<option>Please select</option>
-								<option value="http://www.apple.com/">Apple</option>
-								<option value="http://www.bbc.com">BBC</option>
-								<option value="http://www.facebook.com">Facebook</option>
-				</select>	
+  <div class="medium-4 large-4 columns show-for-medium">
+						<!-- ... -->	
+		</div>
+  <div class="small-6 medium-4 large-4 columns">
+					<?php lccc_custom_taxonomy_dropdown( 'report_year' ); ?>	
 	</div>
 </div>
 	<div id="primary" class="content-area">
