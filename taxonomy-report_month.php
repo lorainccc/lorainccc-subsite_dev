@@ -23,7 +23,7 @@ get_header(); ?>
 			</header><!-- .page-header -->
 					<div class="row">
   <div class="small-6 medium-4 large-4 columns">
-			<h4>Report Year:</h4>
+			<h4>Select Report Year:</h4>
 					<?php lccc_custom_taxonomy_dropdown( 'report_year' ); ?>		
 		</div>
   <div class="medium-4 large-4 columns show-for-medium">

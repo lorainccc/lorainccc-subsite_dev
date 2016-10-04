@@ -12,15 +12,25 @@ get_header(); ?>
    <?php get_template_part( 'template-parts/content', 'breadcrumb' ); ?>
 </div>
 			
-	<div class="small-12 medium-12 large-12 columns">		
+	<div class="small-12 medium-12 large-12 columns">	
+		<div class="small-12 medium-12 large-12 columns">
+				<?php while ( have_posts() ) : the_post(); ?>
+
+				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+
+			<?php endwhile; // end of the loop. ?>
+		
+		</div>
 		<div class="row">
   <div class="small-6 medium-4 large-4 columns">
+			<h4>Select Report Month:</h4>
 					<?php lccc_custom_taxonomy_dropdown( 'report_month' ); ?>		
 		</div>
   <div class="medium-4 large-4 columns show-for-medium">
 						<!-- ... -->	
 		</div>
   <div class="small-6 medium-4 large-4 columns">
+			<h4>Select Report Year:</h4>
 					<?php lccc_custom_taxonomy_dropdown( 'report_year' ); ?>	
 	</div>
 </div>
