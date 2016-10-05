@@ -48,7 +48,7 @@ p{font-weight:500;font-size:.8625rem}/*!
 Section 1: Foundation
 *//*!
 Section 2: Content
-*/.site-main thead{background:#0055a5;color:#fff}
+*/.site-main table thead{background:#0055a5;color:#fff}
 .tabs{border:0}.tabs-panel{padding:0}.tabs-title{margin:.5rem .5rem .5rem 0}.tabs-content{border:0}
 table{border:2px solid #ddd}li.button.tabs-title,li.button.tabs-title.is-active{padding:0}
 li.button.tabs-title.is-active{background:#0055a5}li.button.tabs-title,li.button.tabs-title.is-active a{color:#fff}
@@ -146,7 +146,7 @@ Section 5: Navigation
 header ul#header-menu li a{font-size:.78125rem;color:#0055a5;font-weight:700}header .menu:not(#header-menu):not(.vertical) li:hover,header .dropdown.menu .submenu{background:#0c3b78;border:0}
 header li.is-submenu-item{padding:.5rem 0;border-top:1px solid #0055a5}header .submenu{margin-top:-1px}
 header .submenu li{text-align:left}header .dropdown.menu .submenu li:hover{background:#fefefe !important;border-top:1px solid #0055a5 !important}
-header .dropdown.menu .submenu li:hover a{color:#0c3b78}header li.is-submenu-item:not(.is-drilldown-submenu-item) a{color:#fefefe;font-size:.75rem}
+header .dropdown.menu .submenu li:hover a{color:#0c3b78}header li.is-submenu-item:not(.is-drilldown-submenu-item) a{color:#fefefe;font-size:.85rem}
 header li.is-drilldown-submenu-item{padding:0}header .dropdown.menu .submenu.first-sub{left:-1rem}
 header .dropdown.menu>li.is-dropdown-submenu-parent>a{padding-right:1rem}header .dropdown.menu>li.is-dropdown-submenu-parent>a::after{display:none}
 .medium-blue-bg{width:100%;background:#0055a5;margin-top:1.5rem}li.divider:after{content:"|";color:#5593db}
