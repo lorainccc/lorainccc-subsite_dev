@@ -13,7 +13,7 @@ get_header(); ?>
 </div>
 			
 	<div class="small-12 medium-12 large-12 columns">	
-		<div class="small-12 medium-12 large-12 columns">
+		<div class="small-12 medium-12 large-12 columns nopadding">
 				<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
