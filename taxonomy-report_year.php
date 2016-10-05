@@ -25,7 +25,20 @@ get_header(); ?>
 								<div class="row">
   <div class="small-6 medium-4 large-4 columns">
 			<h4>Select Report Month:</h4>
-					<?php lccc_custom_taxonomy_dropdown( 'report_month' ); ?>		
+			<select name="report_month" class="postform" onchange="location = this.options[this.selectedIndex].value;">
+								<option value="http://lccc.dev/security/report-month/january">January</option>				
+								<option value="http://lccc.dev/security/report-month/february">February</option>
+								<option value="http://lccc.dev/security/report-month/march">March</option>				
+								<option value="http://lccc.dev/security/report-month/april">April</option>
+								<option value="http://lccc.dev/security/report-month/may">May</option>
+								<option value="http://lccc.dev/security/report-month/june">June</option>
+								<option value="http://lccc.dev/security/report-month/july">July</option>				
+								<option value="http://lccc.dev/security/report-month/august">August</option>
+								<option value="http://lccc.dev/security/report-month/september">September</option>
+								<option value="http://lccc.dev/security/report-month/october">October</option>
+								<option value="http://lccc.dev/security/report-month/november">November</option>				
+								<option value="http://lccc.dev/security/report-month/december">December</option>
+			</select>
 		</div>
   <div class="medium-4 large-4 columns show-for-medium">
 						<!-- ... -->	
