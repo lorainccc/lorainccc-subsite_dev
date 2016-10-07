@@ -21,13 +21,13 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		  <div class="row show-for-medium">
-    <div class="large-6 medium-6 columns"><a href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/LCCC-Logo.png" height="70" width="325" alt="Lorain County Community College Logo" /></a>  </div>
+    <div class="large-6 medium-6 columns"><a href="https://test.lorainccc.edu/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/LCCC-Logo.png" height="70" width="325" alt="Lorain County Community College Logo" /></a>  </div>
     <div class="large-6 medium-6 columns">
       <ul id="header-menu" class="menu align-right">
         <li><a href="#" class="ql-icon ql-1">A-Z Index</a></li>
-        <li><a href="/faculty-and-staff/" class="ql-icon ql-2">Faculty/Staff</a></li>
-        <li><a href="https://canvas.lorainccc.edu" class="ql-icon ql-3" target="_blank">Canvas</a></li>
-        <li><a href="https://mycampus.lorainccc.edu" class="ql-icon ql-4" target="_blank">My Campus</a></li>
+        <li><a href="https://test.lorainccc.edu/faculty-and-staff/" class="ql-icon ql-2">Faculty/Staff</a></li>
+        <li><a href="#" class="ql-icon ql-3">Canvas</a></li>
+        <li><a href="#" class="ql-icon ql-4">My Campus</a></li>
       </ul>
       <!-- This should be similar to what is generated when using Wordpress searchform.php -->
       <form role="search" method="get" class="search-form" action="">
