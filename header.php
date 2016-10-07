@@ -35,7 +35,7 @@
 											'menu' => __( 'Header Shortcuts Menu', 'textdomain' ),
 											'menu_class' => 'menu align-right',
 											'theme_location' => 'header-shortcuts',
-											'items_wrap'      => '<ul id="%1$s header-menu" class="%2$s">%3$s</ul>',
+											'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 												));
 											?>
       <!-- This should be similar to what is generated when using Wordpress searchform.php -->
