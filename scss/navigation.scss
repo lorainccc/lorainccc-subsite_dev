@@ -14,7 +14,7 @@ header ul#header-menu li a {
     font-weight: 700
 }
 
-header .menu:not(#header-menu):not(.vertical) li:hover,header .dropdown.menu .submenu {
+header .menu:not(#menu-header-shortcuts):not(.vertical) li:hover,header .dropdown.menu .submenu {
     background: #0c3b78;
     border: 0
 }
