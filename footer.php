@@ -36,8 +36,8 @@
 							 or (440) 365-5222<br />
         <a href="mailto:info@lorainccc.edu">info@lorainccc.edu</a> </p>
       <ul class="underline">
-        <li><a href="https://test.lorainccc.edu/about/map-and-directions-to-lccc/">Map and Directions</a></li>
-        <li><a href="https://test.lorainccc.edu/about/contact-lorain-county-community-college/">Contact LCCC</a></li>
+        <li><a href="/about/map-and-directions-to-lccc/">Map and Directions</a></li>
+        <li><a href="/about/contact-lorain-county-community-college/">Contact LCCC</a></li>
         <li><a href="#">Visit LCCC</a></li>
       </ul>
     </div>

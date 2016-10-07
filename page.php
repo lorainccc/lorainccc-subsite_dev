@@ -34,7 +34,12 @@ get_header(); ?>
 			</nav><!-- .main-navigation -->
 				<?php endif; ?>
 		<?php endif; ?>
-		
+
+	</div>
+  <div class="small-12 medium-12 large-12 columns">
+				<?php if ( is_active_sidebar( 'lccc-badges-sidebar' ) ) { ?>
+							<?php dynamic_sidebar( 'lccc-badges-sidebar' ); ?>
+				<?php } ?>
 	</div>
 	</div>
 	<!--<div class="small-12 medium-12 large-12 columns">
@@ -42,8 +47,8 @@ get_header(); ?>
 							<?php //dynamic_sidebar( 'lccc-events-sidebar' ); ?>
 				<?php //} ?>
 	</div>-->
-	</div>			
-	<div class="small-12 medium-8 large-8 columns">		
+	</div>
+	<div class="small-12 medium-8 large-8 columns">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -54,8 +59,8 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-</div>	
-	
+</div>
+
 </div>
 <?php get_footer(); ?>
 
