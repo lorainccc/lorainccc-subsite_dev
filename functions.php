@@ -333,6 +333,7 @@ function lccc_custom_taxonomy_dropdown( $taxonomy ) {
 	$terms = get_terms( $taxonomy , $args );
 	if ( $terms ) {
 		printf( '<select name="%s" class="postform" onchange="location = this.options[this.selectedIndex].value;">', esc_attr( $taxonomy ) );
+		printf('<option value="/security/daily-crime-log/">Select</option>');
 		foreach ( $terms as $term ) {
 			printf( '<option value="'.get_bloginfo('url').'/'.str_replace('_', '-', $taxonomy).'/%s">%s</option>', esc_attr( $term->slug ), esc_html( $term->name ) );
 		}
