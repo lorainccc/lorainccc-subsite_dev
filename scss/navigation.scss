@@ -14,7 +14,7 @@ header ul#header-menu li a {
     font-weight: 700
 }
 
-header .menu:not(#header-menu):not(.vertical) li:hover,header .dropdown.menu .submenu {
+header .menu:not(#menu-header-shortcuts):not(.vertical) li:hover,header .dropdown.menu .submenu {
     background: #0c3b78;
     border: 0
 }
@@ -366,4 +366,20 @@ border-top: 1px solid #fff;
 
 .main-navigation ul > li.current-menu-ancestor > ul > li.current-menu-item > a {
 font-weight: bold;
+}
+
+li.current-menu-ancestor, li.current-menu-item {
+background: #dcdcdc ;
+}
+
+.main-navigation ul > li.current-menu-ancestor > ul > li {
+border-top: 1px solid #fff;
+}
+
+.main-navigation ul > li.current-menu-ancestor > ul > li.current-menu-item > a {
+font-weight: bold;
+}
+
+#menu-header-shortcuts a:hover{
+ text-decoration: underline;
 }
