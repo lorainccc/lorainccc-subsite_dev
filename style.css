@@ -1,8 +1,8 @@
 /*!
-Theme Name: lorainccc-subsite_dev
-  Theme URI:    http://www.lorainccc.edu 
- Description:  Lorain County Community College Child Theme 
- Author: LCCC Web Team 
+ Theme Name: lorainccc-subsite_dev
+ Theme URI:    http://www.lorainccc.edu 
+ Description:  Lorain County Community College Theme 
+ Author: LCCC Web Development Team 
  Author URI: http://www.lorainccc.edu 
  Template: lccc-framework 
  Version:1.0.0 
@@ -107,7 +107,7 @@ hr{border:0;height:20px;width:90%;height:50px;padding:2rem 0;box-shadow:0 15px 1
 .event-item-info{margin-bottom:1.5rem}.event-item-info span{display:block}.event-item-description{padding-top:2.15rem;margin-bottom:1.5rem}
 .event-divider{height:.25rem;background:#dcdcdc;width:100%;margin:1rem 0}.fw-lead{padding:2.625rem 0}
 .fw-lead p{font-size:1rem}.lead p{font-size:1rem}.news-feed .featured-image img{width:100%;height:auto;margin-bottom:1rem}
-.gateway-links{padding-top:2rem;margin-bottom:2rem;box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8);-moz-box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8);-webkit-box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8)}
+.gateway-links,.programpaths{padding-top:2rem;margin-bottom:2rem;box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8);-moz-box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8);-webkit-box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8)}
 .gateway-links h2{font-size:1.5rem;margin-bottom:0}.gateway-links .menu>li>a{font-size:.75rem;color:#5593db;text-decoration:underline;padding:.5rem 0}
 .gateway-links img{margin-top:.5rem;margin-bottom:.5rem;width:100%;height:auto}.gateway-links a{font-size:.8625rem;text-decoration:underline;font-weight:800}
 .programpathlinks{font-size:.8625rem;font-weight:800}.row .row.lccc-badge{padding-top:1.25rem;padding-bottom:1.25rem;font-size:.75rem;color:#fefefe;margin:1rem 0 0 0}
@@ -126,7 +126,7 @@ hr{border:0;height:20px;width:90%;height:50px;padding:2rem 0;box-shadow:0 15px 1
 .callout{margin-top:1rem;margin-bottom:2rem}.callout span{display:block}.callout h2{font-weight:600;font-size:1.25rem}
 .callout .name,.callout .hours-label{font-weight:700}.callout .callout-contact-method{margin-top:1.35rem}
 .callout .map-link{margin-top:4.45rem}ul{margin:2.5rem}blockquote{border:0}.content-area a:hover{text-decoration:underline}
-.tabs-title>a{background:#e6e6e6}/*!
+/*!
 Section 3: Body
 */body{font-size:.8625rem;font-family:"Open Sans",sans-serif;font-weight:500;line-height:1.5;color:#606060;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 h1,h2,h3,h4,h5,h6,h7{font-family:"Raleway",sans-serif}img.alignright{float:right;margin:0 0 1em 1em}
@@ -195,18 +195,18 @@ footer h2{font-size:.75rem;color:#ffc600;text-transform:uppercase;font-weight:70
 footer .menu>li>a{padding:0 .25rem 0 0}footer a,footer p{color:#fefefe;font-size:.75rem}
 footer .footer-logo{margin-bottom:2.5rem}footer ul{list-style:none;margin-left:0}
 footer ul li{margin-bottom:.75rem}footer .underline>li>a{text-decoration:underline}
-.footer-sm-links{margin-bottom:2rem}.mobile-app-link img{margin-right:.75rem}@media screen and (min-width:40em){.service-box-copy{padding-left:0}
-.service-box-image{padding-right:0}.service-box .button{position:absolute;bottom:1rem;left:63.5px}
-.service-box-container{height:100%}aside.columns{padding-right:0;padding-left:0}.gateway-main,.home-left{padding-right:5rem}
-.main-right{padding-left:5rem}header{padding-top:1.5rem}.mobile-app-link img,.mobile-app-link h2{float:left}
-}@media screen and (min-width:1074px){nav.menu-centered{height:36px}}@media screen and (max-width:39.9375em){h1{font-size:1.35rem;line-height:105%}
-.white-panel{margin-top:3rem}.cta-icons{margin-bottom:2rem}.footer-sm-links{width:210px;margin:0 auto 1rem auto}
-.footer-sm-links li a{padding:0}.footer-sm-links li a img{margin:0 .25rem}footer .row .columns{border-bottom:1px solid #5593db;padding:2rem 0 1rem 0}
-footer{padding-bottom:0}}/*! Ryan's Updated Menu Styling */@media screen and (min-width:40em){aside.columns{padding-right:.9375rem !important;padding-left:.9375rem !important}
-}.breadcrumb-container{padding:2rem .9375rem !important;font-size:.8125rem !important}
+.footer-sm-links{margin-bottom:2rem}.mobile-app-link img{margin-right:.75rem}/*! Ryan's Updated Menu Styling */.breadcrumb-container{padding:2rem .9375rem !important;font-size:.8125rem !important}
 .sidebar-widget{padding-top:0 !important;margin:1rem 0 3rem 0 !important}header.entry-header{padding-top:0 !important}
 .main-navigation ul:not(.sub-menu)>li{border:1px solid #dcdcdc !important;box-shadow:inset 0 0 10px #dcdcdc !important;padding:.75rem 2rem .75rem 1rem !important}
 .main-navigation ul:not(.sub-menu)>li>a{font-size:1rem !important;color:#0055a5 !important;font-weight:700 !important}
 .dropdown-toggle{top:10px !important;right:4px}.main-navigation ul ul{margin-left:0 !important;padding-left:1rem}
 .main-navigation ul ul li{border-top:1px solid #dcdcdc !important;padding-top:.5rem;padding-bottom:.5rem}
-.main-navigation ul ul li a{color:#0055a5 !important}ul{margin-top:0 !important}
+.main-navigation ul ul li a{color:#0055a5 !important}ul{margin-top:0 !important}@media screen and (min-width:40em){.service-box-copy{padding-left:0}
+.service-box-image{padding-right:0}.service-box .button{position:absolute;bottom:1rem;left:63.5px}
+.service-box-container{height:100%}aside.columns{padding-right:0;padding-left:0}.gateway-main,.home-left{padding-right:5rem}
+.main-right{padding-left:5rem}header{padding-top:1.5rem}.mobile-app-link img,.mobile-app-link h2{float:left}
+aside.columns{padding-right:.9375rem !important;padding-left:.9375rem !important}
+}@media screen and (min-width:1074px){nav.menu-centered{height:36px}}@media screen and (max-width:39.9375em){h1{font-size:1.35rem;line-height:105%}
+.white-panel{margin-top:3rem}.cta-icons{margin-bottom:2rem}.footer-sm-links{width:210px;margin:0 auto 1rem auto}
+.footer-sm-links li a{padding:0}.footer-sm-links li a img{margin:0 .25rem}footer .row .columns{border-bottom:1px solid #5593db;padding:2rem 0 1rem 0}
+footer{padding-bottom:0}}
