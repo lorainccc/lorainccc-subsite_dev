@@ -25,7 +25,7 @@ get_header(); ?>
   <div class="small-6 medium-4 large-4 columns">
 			<h4>Select Report Month:</h4>
 			<select name="report_month" class="postform" onchange="location = this.options[this.selectedIndex].value;">
-								<option value="/security/report-month/">Select</option>
+				<option value="/security/report-month/">Select</option>
 								<option value="/security/report-month/january">January</option>			
 								<option value="/security/report-month/february">February</option>
 								<option value="/security/report-month/march">March</option>				
