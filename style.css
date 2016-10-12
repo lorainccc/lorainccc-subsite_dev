@@ -110,7 +110,7 @@ hr{border:0;height:20px;width:90%;height:50px;padding:2rem 0;box-shadow:0 15px 1
 .gateway-links{padding-top:2rem;margin-bottom:2rem;box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8);-moz-box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8);-webkit-box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8)}
 .gateway-links h2{font-size:1.5rem;margin-bottom:0}.gateway-links .menu>li>a{font-size:.75rem;color:#5593db;text-decoration:underline;padding:.5rem 0}
 .gateway-links img{margin-top:.5rem;margin-bottom:.5rem;width:100%;height:auto}.gateway-links a{font-size:.8625rem;text-decoration:underline;font-weight:800}
-.row .row.lccc-badge{padding-top:1.25rem;padding-bottom:1.25rem;font-size:.75rem;color:#fefefe;margin:1rem 0 0 0}
+.programpathlinks{font-size:.8625rem;font-weight:800}.row .row.lccc-badge{padding-top:1.25rem;padding-bottom:1.25rem;font-size:.75rem;color:#fefefe;margin:1rem 0 0 0}
 .row .row.lccc-badge h3{font-weight:600;font-size:1.25rem;color:#fefefe;margin-bottom:.25rem}
 .row .row.lccc-badge .icon{margin-top:.5rem}.crumbs{padding-top:2rem;padding-bottom:2rem;font-size:.8625rem}
 .callout-link{color:#0055a5;text-transform:uppercase;font-size:1.25rem;font-weight:800;margin-bottom:2rem;margin-top:2rem;line-height:100%}
