@@ -7,7 +7,7 @@ $programargs = array(
   $programpaths = new WP_Query($programargs);
 					if ( $programpaths->have_posts() ) :
         while ( $programpaths->have_posts() ) : $programpaths->the_post();
-  
+
   $post_id = get_the_ID();
   $linkvalue = get_post_meta( $post_id, 'lc_program_path_link_field', true );
   $linklabel = get_post_meta( $post_id, 'lc_program_path_link_label_field', true );
@@ -15,7 +15,7 @@ $programargs = array(
 
     ?>
 
-        <section class="row">
+        <section class="row program-paths">
 											<div class="small-12 medium-3 large-3 columns">
             <a href="<?php echo $linkvalue; ?>"><?php the_post_thumbnail(); ?></a>
 											</div>
