@@ -20,7 +20,7 @@ $programargs = array(
             <a href="<?php echo $linkvalue; ?>"><?php the_post_thumbnail(); ?></a>
 											</div>
 											<div class="small-12 medium-9 large-9 columns gtwymenu-content">
-													<a href="<?php echo $linkvalue; ?>"><?php the_title('<h2>','</h2>' );?></a>
+													<?php the_title('<h2>','</h2>' );?>
 													<?php the_content('<p>','</p>'); ?>
              <a href="<?php echo $linkvalue; ?>" class="programpathlinks"><?php echo $linklabel; ?></a>
 									</div>
