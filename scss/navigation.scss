@@ -355,3 +355,15 @@ ul.sub-menu {
 nav#site-navigation {
     padding-bottom: 20px;
 }
+
+li.current-menu-ancestor, li.current-menu-item {
+background: #dcdcdc ;
+}
+
+.main-navigation ul > li.current-menu-ancestor > ul > li {
+border-top: 1px solid #fff;
+}
+
+.main-navigation ul > li.current-menu-ancestor > ul > li.current-menu-item > a {
+font-weight: bold;
+}
