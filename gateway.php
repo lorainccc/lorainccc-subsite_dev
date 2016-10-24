@@ -27,11 +27,6 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div>
-	<div class="small-12 medium-6 large-8 columns">		
-			<?php if ( is_active_sidebar( 'gateway-menu-sidebar' ) ) { ?>
-							<?php dynamic_sidebar( 'gateway-menu-sidebar' ); ?>
-				<?php } ?>
-	</div>
 	<div class="small-12 medium-6 large-4 columns">
 <div class="small-12 medium-12 large-12 columns">
 			<?php if ( is_active_sidebar( 'lccc-badges-sidebar' ) ) { ?>
@@ -49,5 +44,11 @@ get_header(); ?>
 				<?php } ?>
 	</div>
 	</div>
+ <div class="small-12 medium-6 large-8 columns">		
+			<?php if ( is_active_sidebar( 'gateway-menu-sidebar' ) ) { ?>
+							<?php dynamic_sidebar( 'gateway-menu-sidebar' ); ?>
+				<?php } ?>
+	</div>
+
 </div>
 <?php get_footer(); ?>

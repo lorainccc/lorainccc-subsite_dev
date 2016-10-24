@@ -114,7 +114,7 @@ hr{border:0;height:20px;width:90%;height:50px;padding:2rem 0;box-shadow:0 15px 1
 .blue-panel a.button{background:#5593db}.blue-panel img{width:100%;height:auto;margin-bottom:1rem}
 .callout{margin-top:1rem;margin-bottom:2rem}.callout span{display:block}.callout h2{font-weight:600;font-size:1.25rem}
 .callout .name,.callout .hours-label{font-weight:700}.callout .callout-contact-method{margin-top:1.35rem}
-.callout .map-link{margin-top:4.45rem}ul{margin:2.5rem}blockquote{border:0}.content-area a:hover{text-decoration:underline}
+.callout .map-link{margin-top:4.45rem}ul,ol{margin:2.5rem}blockquote{border:0}.content-area a:hover{text-decoration:underline}
 /*!
 Section 3: Body
 */body{font-size:.8625rem;font-family:"Open Sans",sans-serif;font-weight:500;line-height:1.5;color:#606060;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
@@ -129,8 +129,8 @@ a.skip-link.screen-reader-text{position:absolute;left:-10000px;top:auto;width:1p
 a.skip-link.screen-reader-text:focus{position:static;width:auto;height:auto}.ql-icon{background-position:left center;background-repeat:no-repeat;background-size:.78125rem .78125rem}
 .ql-1{background-image:url(/wp-content/themes/lorainccc/images/icons/icon-az_blue.svg)}
 .ql-2{background-image:url(/wp-content/themes/lorainccc/images/icons/icon-faculty_blue.svg)}
-.ql-3{background-image:url(/wp-content/themes/lorainccc/images/icons/icon-faculty_blue.svg)}
-.ql-4{background-image:url(/wp-content/themes/lorainccc/images/icons/icon-campuslife_blue.svg)}
+.ql-3{background-image:url(/wp-content/themes/lorainccc/images/icons/icon_canvas.svg)}
+.ql-4{background-image:url(/wp-content/themes/lorainccc/images/icons/icon_my-campus.svg)}
 ul{margin:2.5rem}/*!
 Section 5: Navigation
 */header nav a,header nav a:hover{color:#fefefe;font-size:.875rem;font-weight:600}
@@ -141,11 +141,6 @@ header .dropdown.menu .submenu li:hover a{color:#0c3b78}header li.is-submenu-ite
 header li.is-drilldown-submenu-item{padding:0}header .dropdown.menu .submenu.first-sub{left:-1rem}
 header .dropdown.menu>li.is-dropdown-submenu-parent>a{padding-right:1rem}header .dropdown.menu>li.is-dropdown-submenu-parent>a::after{display:none}
 .medium-blue-bg{width:100%;background:#0055a5;margin-top:1.5rem}li.divider:after{content:"|";color:#5593db}
-.ql-icon{background-position:left center;background-repeat:no-repeat;background-size:.78125rem .78125rem}
-.ql-1{background-image:url(/wp-content/themes/lorainccc/images/icons/icon-az_blue.svg)}
-.ql-2{background-image:url(/wp-content/themes/lorainccc/images/icons/icon-faculty_blue.svg)}
-.ql-3{background-image:url(/wp-content/themes/lorainccc/images/icons/icon-faculty_blue.svg)}
-.ql-4{background-image:url(/wp-content/themes/lorainccc/images/icons/icon-campuslife_blue.svg)}
 .top-bar{background:#0c3b78;box-shadow:0 2px 1px -1px #fefefe;-webkit-box-shadow:0 2px 1px -1px #fefefe;position:relative;-moz-box-shadow:0 2px 1px -1px #fefefe;z-index:1000}
 .top-bar img{margin-left:20px}.top-bar .top-bar-title{padding:5px 0}.top-bar .toggle-topbar.menu-icon a:after{box-shadow:0 10px 0 1px #fff,0 16px 0 1px #fff,0 22px 0 1px #fff;content:"";display:block;height:0;position:absolute;right:0;top:0;width:16px}
 .top-bar .toggle-topbar.menu-icon a{color:#fff;height:34px;line-height:33px;padding:0 25px 0 0;position:relative}
