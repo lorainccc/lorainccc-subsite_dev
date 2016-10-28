@@ -9,7 +9,7 @@
 ?>
 	</div><!-- #content -->
 
-	<footer id="colophon" class="small-12 medium-12 large-12 columns site-footer" role="contentinfo">
+	<footer id="colophon" class="small-12 medium-12 large-12 columns site-footer hide-for-print" role="contentinfo">
 		  <div class="row text-center medium-text-left">
     <div class="large-3 medium-3 columns"> <img class="footer-logo" src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/lccclogo_white.svg" alt="" width="220" height="42.5"/>
       <h2>Connect with LCCC</h2>

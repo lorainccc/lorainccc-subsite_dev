@@ -11,7 +11,7 @@ get_header(); ?>
 <div class="small-12 medium-12 large-12 columns breadcrumb-container">
    <?php get_template_part( 'template-parts/content', 'breadcrumb' ); ?>
 </div>
-<div class="medium-4 large-4 columns hide-for-small-only">
+<div class="medium-4 large-4 columns hide-for-small-only hide-for-print">
 	<div class="small-12 medium-12 large-12 columns sidebar-widget">
 	<?php	if ( has_nav_menu( 'left-nav' ) ) : ?>
 		<div class="small-12 medium-12 large-12 columns sidebar-menu-header">

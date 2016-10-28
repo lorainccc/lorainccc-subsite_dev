@@ -7,7 +7,7 @@
  * @since Lorainccc 1.0
  */
 get_header(); ?>
-<div class="small-12 medium-12 large-12 columns gateway-header">
+<div class="small-12 medium-12 large-12 columns gateway-header hide-for-print">
 	<?php the_post_thumbnail(); ?>
 	</div>
 <div class="row page-content">
@@ -17,10 +17,10 @@ get_header(); ?>
 <div class="medium-4 large-4 columns hide-for-small-only">
 	<div class="small-12 medium-12 large-12 columns sidebar-widget">
 	<?php	if ( has_nav_menu( 'left-nav' ) ) : ?>
-	 <div class="small-12 medium-12 large-12 columns sidebar-menu-header">
+	 <div class="small-12 medium-12 large-12 columns sidebar-menu-header hide-for-print">
    <h3><?php echo bloginfo('the-title'); ?></h3>
   </div>
- <div id="secondary" class="medium-12 columns secondary nopadding">
+ <div id="secondary" class="medium-12 columns secondary nopadding hide-for-print">
 		<?php if ( has_nav_menu( 'left-nav' ) ) : ?>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<?php
@@ -34,7 +34,7 @@ get_header(); ?>
 				<?php endif; ?>
 		<?php endif; ?>
   <?php if ( is_active_sidebar( 'lccc-badges-sidebar' ) ) { ?>
-			<div class="small-12 medium-12 large-12 columns">			
+			<div class="small-12 medium-12 large-12 columns hide-for-print">			
 			<?php dynamic_sidebar( 'lccc-badges-sidebar' ); ?>
 			</div>
 	<?php } ?>		

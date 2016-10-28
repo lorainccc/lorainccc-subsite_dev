@@ -17,7 +17,7 @@
 </head>
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'lccc-framework' ); ?></a>
+	<a class="skip-link screen-reader-text hide-for-print" href="#content"><?php esc_html_e( 'Skip to content', 'lccc-framework' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
 		  <div class="row show-for-medium">
@@ -33,17 +33,19 @@
           wp_nav_menu(array(
 											'container' => false,
 											'menu' => __( 'Header Shortcuts Menu', 'textdomain' ),
-											'menu_class' => 'menu align-right',
+											'menu_class' => 'menu align-right hide-for-print',
 											'theme_location' => 'header-shortcuts',
 											'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 												));
 											?>
       <!-- This should be similar to what is generated when using Wordpress searchform.php -->
+      <div class="hide-for-print">
       <form role="search" method="get" class="search-form" action="">
         <label>
           <input type="search" placeholder="Search" name="s" class="float-right"/>
         </label>
       </form>
+      </div>
     </div>
   </div>
 <div class="medium-blue-bg show-for-medium">
@@ -54,7 +56,7 @@
           wp_nav_menu(array(
 											'container' => false,
 											'menu' => __( 'Primary', 'textdomain' ),
-											'menu_class' => 'dropdown menu',
+											'menu_class' => 'dropdown menu hide-for-print',
 											'theme_location' => 'primary',
 											'items_wrap'      => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>',
 											//Recommend setting this to false, but if you need a fallback...
@@ -66,14 +68,14 @@
       </div>
     </div>
   </div>
-  <div class="row show-for-small-only mobile-nav-bar">
+  <div class="row show-for-small-only mobile-nav-bar hide-for-print">
     <div class="small-8 columns"> <a href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/lccclogo_white.svg" alt="" width="165" height="31.875" /></a> </div>
     <div class="small-2 columns clearfix"> <span data-responsive-toggle="mobile-search" data-hide-for="medium"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/magnifying-glass.svg" height="25" width="25" alt="" class="float-right" data-toggle/></span> </div>
     <div class="small-2 columns"> <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
       <button class="menu-icon" type="button" data-toggle></button>
       </span> </div>
   </div>
-  <div id="mobile-search" class="show-for-small-only">
+  <div id="mobile-search" class="show-for-small-only hide-for-print">
     <div class="row">
       <div class="small-12 columns">
         <form role="search" method="get" class="search-form" action="">
@@ -84,7 +86,7 @@
       </div>
     </div>
   </div>
-  <div id="responsive-menu" class="show-for-small-only">
+  <div id="responsive-menu" class="show-for-small-only hide-for-print">
     <ul class="vertical menu" data-drilldown data-parent-link="true">
 
 					<?php 	wp_nav_menu(array(

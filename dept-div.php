@@ -7,22 +7,22 @@
  * @since Lorainccc 1.0
  */
 get_header(); ?>
-<div class="small-12 medium-12 large-12 columns gateway-header">
+<div class="small-12 medium-12 large-12 columns gateway-header hide-for-print">
 	<?php the_post_thumbnail(); ?>
 	</div>
 <div class="row page-content">
  <div class="small-12 medium-12 large-12 columns breadcrumb-container">
    <?php get_template_part( 'template-parts/content', 'breadcrumb' ); ?>
 </div>
-<div class="medium-4 large-4 columns hide-for-small-only">
+<div class="medium-4 large-4 columns hide-for-small-only hide-for-print">
 	<div class="small-12 medium-12 large-12 columns sidebar-widget">
 	<?php	if ( has_nav_menu( 'left-nav' ) ) : ?>
-	 <div class="small-12 medium-12 large-12 columns sidebar-menu-header">
+	 <div class="small-12 medium-12 large-12 columns sidebar-menu-header hide-for-print">
    <h3><?php echo bloginfo('the-title'); ?></h3>
   </div>
  <div id="secondary" class="medium-12 columns secondary nopadding">
 		<?php if ( has_nav_menu( 'left-nav' ) ) : ?>
-			<nav id="site-navigation" class="main-navigation" role="navigation">
+			<nav id="site-navigation" class="main-navigation hide-for-print" role="navigation">
 				<?php
 					// Primary navigation menu.
 					wp_nav_menu( array(
