@@ -99,8 +99,20 @@
 													'fallback_cb' => 'lc_drill_menu_fallback',
 													'walker' => new lc_drill_menu_walker(),
 												));
+     ?>
+     <li>&nbsp;</li> 
+     <?php      
+            wp_nav_menu(array(
+													'container' => false,
+													'menu' => __( 'Drill Menu', 'textdomain' ),
+													'menu_class' => 'vertical menu',
+													'theme_location' => 'mobile-header-shortcuts',
+													'menu_id' => 'mobile-header-shortcuts',
+														//Recommend setting this to false, but if you need a fallback...
+													'fallback_cb' => 'lc_drill_menu_fallback',
+													'walker' => new lc_drill_menu_walker(),
+												));
 					?>
-
     </ul>
   </div>
 

@@ -50,6 +50,7 @@ function lorainccc_subsite_setup() {
 		'footer-campus-location-nav' => esc_html__( 'Footer Campus Locations', 'lorainccc' ),
 		'mobile-primary' => esc_html__( 'Mobile Primary Menu', 'lorainccc_subsite' ),
   'header-shortcuts' => esc_html__( 'Header Shortcuts Menu', 'lorainccc' ),
+  'mobile-header-shortcuts' => esc_html__( 'Mobile Header Shortcuts Menu', 'lorainccc' ),
 	) );
 	/*
 	 * Switch default core markup for search form, comment form, and comments
