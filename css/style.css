@@ -33,7 +33,7 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}.wp-caption{b
 Text Section
 */h1{font-size:2.1875rem;margin-top:.25rem}h1,h2{color:#0055a5;font-weight:700}
 h2{line-height:110%;margin-top:.25rem;font-size:1.625rem}h2.cta-h2{text-transform:uppercase}
-p{font-size:.8625rem}div.entry-content h3{line-height:110%;margin-top:.25rem;font-size:1.425rem;color:#6d6d6d}
+p{font-size:1rem}div.entry-content h3{line-height:110%;margin-top:.25rem;font-size:1.425rem;color:#6d6d6d}
 /*!
 Section 1: Foundation
 *//*!
@@ -118,7 +118,7 @@ hr{border:0;height:20px;width:90%;height:50px;padding:2rem 0;box-shadow:0 15px 1
 .callout .map-link{margin-top:4.45rem}ul,ol{margin:2.5rem}blockquote{border:0}.content-area a:hover{text-decoration:underline}
 /*!
 Section 3: Body
-*/body{font-size:.8625rem;font-family:"Open Sans",sans-serif;font-weight:300;line-height:1.5;color:#404040;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+*/body{font-size:1rem;font-family:"Open Sans",sans-serif;font-weight:300;line-height:1.5;color:#404040;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 h1,h2,h3,h4,h5,h6,h7{font-family:"Raleway",sans-serif}img.alignright{float:right;margin:0 0 1em 1em}
 img.alignleft{float:left;margin:0 1em 1em 0}img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 .alignright{float:right}.alignleft{float:left}.aligncenter{display:block;margin-left:auto;margin-right:auto}
