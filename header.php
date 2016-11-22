@@ -39,13 +39,9 @@
 												));
 											?>
       <!-- This should be similar to what is generated when using Wordpress searchform.php -->
-      <div class="hide-for-print">
-      <form role="search" method="get" class="search-form" action="">
-        <label>
-          <input type="search" placeholder="Search" name="s" class="float-right"/>
-        </label>
-      </form>
-      </div>
+					   <div class="large-9 medium-6 columns searchbox hide-for-print">
+      <?php get_sidebar(); ?>
+     </div>
     </div>
   </div>
 <div class="medium-blue-bg show-for-medium">
