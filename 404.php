@@ -15,16 +15,16 @@ get_header(); ?>
 	<div class="small-12 medium-8 large-8 columns">		
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		<?php //while ( have_posts() ) : the_post(); ?>
-
-				<?php //get_template_part( 'template-parts/content', 'page' ); ?>
-
-			<?php //endwhile; // end of the loop. ?>
-
+			<?php
+			$domain = 'http://' . $_SERVER['SERVER_NAME'];
+			$404pagefeed = new Endpoint( $domain.'/wp-json/wp/v2/pages?filter[pagename]=404-content' );
+			$pages = $404pagefeed->get_posts();
+		
+			?>
+			testing
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div>	
-	
-</div>
+
 <?php get_footer(); ?>
 
