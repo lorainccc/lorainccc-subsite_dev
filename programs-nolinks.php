@@ -86,6 +86,13 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div>
+	<div class="small-12 columns hide-for-medium hide-for-print">
 
+	<?php if ( is_active_sidebar( 'lccc-badges-sidebar' ) ) { ?>
+			<div class="small-12 medium-12 large-12 columns">			
+			<?php dynamic_sidebar( 'lccc-badges-sidebar' ); ?>
+			</div>
+	<?php } ?>
+	</div>
 </div>
 <?php get_footer(); ?>
