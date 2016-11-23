@@ -70,14 +70,21 @@ get_header(); ?>
 				<?php //} ?>
 	</div>-->
 	</div>
-				<div class="small-12 medium-8 large-8 columns" style="padding-top: 0.8rem;">		
+				<div class="small-12 medium-8 large-8 columns error-content" style="padding-top: 0.8rem;">		
 						<div id="primary" class="content-area">
 										<main id="main" class="site-main" role="main">
-													<?php if ( is_active_sidebar( 'lccc-four-o-four-sidebar' ) ) : ?>
-														<ul id="sidebar">
+													<?php if ( is_active_sidebar( 'lccc-four-o-four-sidebar' ) ) { ?>
 															<?php dynamic_sidebar( 'lccc-four-o-four-sidebar' ); ?>
-														</ul>
-													<?php endif; ?>
+													<?php }else{
+															the_widget('LCCC_four_O_four_Widget');
+															// check for plugin using plugin name
+															if ( is_plugin_active( 'custom-google-search/custom-google-search.php' ) ) {
+																	//plugin is activated
+																the_widget('CGS_Widget');
+															}else{
+																echo 'no widgets found';
+															} 
+														} ?>
 										</main><!-- #main -->
 						</div><!-- #primary -->
 			</div>	

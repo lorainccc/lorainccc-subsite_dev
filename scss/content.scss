@@ -775,3 +775,7 @@ blockquote {
 .content-area a:hover{
  text-decoration: underline;
 }
+
+.error-content input[name=search], input[name=search]:focus{ 
+		    max-width: 100%;
+}

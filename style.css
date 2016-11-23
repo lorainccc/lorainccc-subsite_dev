@@ -1,8 +1,8 @@
 /*!
- Theme Name: lorainccc-subsite_dev
- Theme URI:    http://www.lorainccc.edu 
- Description:  Lorain County Community College Theme 
- Author: LCCC Web Development Team 
+Theme Name: lorainccc-subsite_dev
+  Theme URI:    http://www.lorainccc.edu 
+ Description:  Lorain County Community College Child Theme 
+ Author: LCCC Web Team 
  Author URI: http://www.lorainccc.edu 
  Template: lccc-framework 
  Version:1.0.0 
@@ -127,7 +127,7 @@ hr{border:0;height:20px;width:90%;height:50px;padding:2rem 0;box-shadow:0 15px 1
 .callout{margin-top:1rem;margin-bottom:2rem}.callout span{display:block}.callout h2{font-weight:600;font-size:1.25rem}
 .callout .name,.callout .hours-label{font-weight:700}.callout .callout-contact-method{margin-top:1.35rem}
 .callout .map-link{margin-top:4.45rem}ul,ol{margin:2.5rem}blockquote{border:0}.content-area a:hover{text-decoration:underline}
-/*!
+.error-content input[name=search],input[name=search]:focus{max-width:100%}/*!
 Section 3: Body
 */body{font-size:1rem;font-family:"Open Sans",sans-serif;font-weight:300;line-height:1.5;color:#404040;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 h1,h2,h3,h4,h5,h6,h7{font-family:"Raleway",sans-serif}img.alignright{float:right;margin:0 0 1em 1em}
@@ -140,7 +140,7 @@ ul.bullet-arrow{list-style-type:none;margin:0}ul.bullet-arrow link{text-indent:-
 ul.bullet-arrow li{margin:5px 0 0 0;padding:0 0 15px 0}ul.bullet-arrow li:before{font-family:"Genericons";font-size:38px;content:"\f429";margin:-18px 0 0 0;color:#606060;float:left;width:1.4em}
 /*!
 Section 4: Header
-*/input[type=search],input[type=search]:focus{max-width:260px;width:100%;height:2rem;margin:.5rem 0 0 0;border-radius:20px;padding:.25rem .25rem .25rem 2.2rem;font-size:.75rem;font-weight:700;background-image:url(/wp-content/themes/lorainccc/images/icons/icon-search.png);background-repeat:no-repeat;background-position:.75rem .45rem}
+*/input[name=search],input[name=search]:focus{max-width:260px;width:100%;height:2rem;margin:.5rem 0 0 0;border-radius:20px;padding:.25rem .25rem .25rem 2.2rem;font-size:.75rem;font-weight:700;background-image:url(/wp-content/themes/lorainccc/images/icons/icon-search.png);background-repeat:no-repeat;background-position:.75rem .45rem}
 a.skip-link.screen-reader-text{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
 a.skip-link.screen-reader-text:focus{position:static;width:auto;height:auto}.ql-icon{background-position:left center;background-repeat:no-repeat;background-size:.78125rem .78125rem}
 .ql-1{background-image:url(/wp-content/themes/lorainccc/images/icons/icon-az_blue.svg)}
@@ -153,7 +153,8 @@ ul{margin:2.5rem}/*! Ryan's Updated Menu Styling */.breadcrumb-container{padding
 .main-navigation ul:not(.sub-menu)>li>a{font-size:1rem !important;color:#0055a5 !important;font-weight:700 !important}
 .dropdown-toggle{top:10px !important;right:4px}.main-navigation ul ul{margin-left:0 !important;padding-left:1rem}
 .main-navigation ul ul li{border-top:1px solid #dcdcdc !important;padding-top:.5rem;padding-bottom:.5rem}
-.main-navigation ul ul li a{color:#0055a5 !important}ul{margin-top:0 !important}/*!
+.main-navigation ul ul li a{color:#0055a5 !important}ul{margin-top:0 !important}td.gsc-clear-button{display:none}
+table.gsc-search-box tbody{background:transparent;border:0}/*!
 Section 5: Navigation
 */header nav a,header nav a:hover{color:#fefefe;font-size:.875rem;font-weight:600}
 header ul#header-menu li a{font-size:.78125rem;color:#0055a5;font-weight:700}header .menu:not(#menu-header-shortcuts):not(.vertical) li:hover,header .dropdown.menu .submenu{background:#0c3b78;border:0}
