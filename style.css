@@ -163,7 +163,7 @@ header .submenu li{text-align:left}header .dropdown.menu .submenu li:hover{backg
 header .dropdown.menu .submenu li:hover a{color:#0c3b78}header li.is-submenu-item:not(.is-drilldown-submenu-item) a{color:#fefefe;font-size:.85rem}
 header li.is-drilldown-submenu-item{padding:0}header .dropdown.menu .submenu.first-sub{left:-1rem}
 header .dropdown.menu>li.is-dropdown-submenu-parent>a{padding-right:1rem}header .dropdown.menu>li.is-dropdown-submenu-parent>a::after{display:none}
-.medium-blue-bg{width:100%;background:#0055a5;margin-top:1.5rem}li.divider:after{content:"|";color:#5593db}
+.medium-blue-bg{width:100%;background:#0055a5}li.divider:after{content:"|";color:#5593db}
 .top-bar{background:#0c3b78;box-shadow:0 2px 1px -1px #fefefe;-webkit-box-shadow:0 2px 1px -1px #fefefe;position:relative;-moz-box-shadow:0 2px 1px -1px #fefefe;z-index:1000}
 .top-bar img{margin-left:20px}.top-bar .top-bar-title{padding:5px 0}.top-bar .toggle-topbar.menu-icon a:after{box-shadow:0 10px 0 1px #fff,0 16px 0 1px #fff,0 22px 0 1px #fff;content:"";display:block;height:0;position:absolute;right:0;top:0;width:16px}
 .top-bar .toggle-topbar.menu-icon a{color:#fff;height:34px;line-height:33px;padding:0 25px 0 0;position:relative}
