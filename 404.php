@@ -77,14 +77,15 @@ get_header(); ?>
 															<?php dynamic_sidebar( 'lccc-four-o-four-sidebar' ); ?>
 													<?php }else{
 															the_widget('LCCC_four_O_four_Widget');
-															// check for plugin using plugin name
-															if ( is_plugin_active( 'custom-google-search/custom-google-search.php' ) ) {
-																	//plugin is activated
-																the_widget('CGS_Widget');
+														}
+											if ( class_exists( 'CustomGoogleSearch' ) ) {
+																// check for plugin using plugin name
+																// Plugin is activated
+																		the_widget('CGS_Widget');	
 															}else{
 																echo 'no widgets found';
-															} 
-														} ?>
+															}
+														?>
 										</main><!-- #main -->
 						</div><!-- #primary -->
 			</div>	
