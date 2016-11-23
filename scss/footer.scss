@@ -51,10 +51,11 @@ footer .underline>li>a:hover, a:hover {
     margin-bottom: 2rem
 }
 
-.mobile-app-link img {
-    margin-right: .75rem
-}
-
+@media screen and (min-width: 40em) {
+		.mobile-app-link img {
+						margin-right: .75rem
+		}
+} 
 .website-feedback{
  margin:10px 0;
  float:left;
