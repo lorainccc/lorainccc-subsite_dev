@@ -81,7 +81,11 @@ get_header(); ?>
 											if ( class_exists( 'CustomGoogleSearch' ) ) {
 																// check for plugin using plugin name
 																// Plugin is activated
-																		the_widget('CGS_Widget');	
+																		if ( is_active_sidebar( 'lccc-four-o-four-sidebar' ) ) {
+																			echo 'sidebar active and plugin active';
+																		}else{
+																		the_widget('CGS_Widget');
+																			}
 															}else{
 																echo 'no widgets found';
 															}
