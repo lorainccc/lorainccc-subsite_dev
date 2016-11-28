@@ -23,3 +23,23 @@ Section 6: Footer
 @import 'navigation.scss';
 @import 'footer.scss';
 
+table.outerformtablerows {
+   border: 0;
+   background: #fff;
+}
+
+table.outerformtablerows tbody{
+border: 0;
+}
+
+.fieldtr, .fieldtitle {
+   background: #fff;
+}
+
+.eformstext{
+display: none;
+}
+
+div.afnavbuttons input[type=submit] {
+   margin: 0 10px 0 0;
+}

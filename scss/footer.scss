@@ -29,6 +29,12 @@ footer .footer-logo {
     margin-bottom: 2.5rem
 }
 
+@media only screen and (max-width: 40em) {
+					footer ul {
+								margin:0;
+					} 
+}
+
 footer ul {
     list-style: none;
     margin-left: 0
@@ -45,8 +51,6 @@ footer .underline>li>a {
 footer .underline>li>a:hover, a:hover {
     text-decoration: underline
 }
-
-
 .footer-sm-links {
     margin-bottom: 2rem
 }
