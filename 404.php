@@ -42,9 +42,9 @@ get_header(); ?>
 	<div class="small-12 medium-12 large-12 columns breadcrumb-container">
    <?php get_template_part( 'template-parts/content', 'breadcrumb' ); ?>
 </div>
+ 	<?php	if ( has_nav_menu( 'left-nav' ) ) : ?>
 <div class="medium-4 large-4 columns hide-for-small-only hide-for-print">
 	<div class="small-12 medium-12 large-12 columns sidebar-widget">
-	<?php	if ( has_nav_menu( 'left-nav' ) ) : ?>
 	 <div class="small-12 medium-12 large-12 columns sidebar-menu-header">
    <h3><?php echo bloginfo('the-title'); ?></h3>
   </div>
@@ -70,7 +70,11 @@ get_header(); ?>
 				<?php //} ?>
 	</div>-->
 	</div>
+  	<?php	if ( has_nav_menu( 'left-nav' ) ) { ?>
 				<div class="small-12 medium-8 large-8 columns error-content" style="padding-top: 0.8rem;">		
+    <?php } else { ?>
+     <div class="small-12 medium-12 large-12 columns error-content" style="padding-top: 0.8rem;">
+    <?php } ?> 
 						<div id="primary" class="content-area">
 										<main id="main" class="site-main" role="main">
 													<?php if ( is_active_sidebar( 'lccc-four-o-four-sidebar' ) ) { ?>
@@ -85,9 +89,11 @@ get_header(); ?>
 																			
 																		}else{
 																			$instance = array(
-																			'display_results' => '3',
-																		);                                               the_widget('CGS_Widget', $instance);
-																			}
+																			'display_results' => '3',); 
+                   echo '<div style="width:373px; margin: 0 auto;">';
+                   the_widget('CGS_Widget', $instance);
+                   echo '</div>';
+                  }
 															}else{
 																echo 'no widgets found';
 															}
