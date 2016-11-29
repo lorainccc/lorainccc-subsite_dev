@@ -73,7 +73,7 @@ get_header(); ?>
   	<?php	if ( has_nav_menu( 'left-nav' ) ) { ?>
 				<div class="small-12 medium-8 large-8 columns error-content" style="padding-top: 0.8rem;">		
     <?php } else { ?>
-     <div class="small-12 medium-12 large-12 columns error-content" style="padding-top: 0.8rem;">
+         <div class="small-12 medium-10 large-8 medium-centered columns error-content" style="padding-top: 0.8rem;">
     <?php } ?> 
 						<div id="primary" class="content-area">
 										<main id="main" class="site-main" role="main">
