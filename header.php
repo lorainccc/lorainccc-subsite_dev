@@ -40,8 +40,8 @@
 											?>
       <!-- This should be similar to what is generated when using Wordpress searchform.php -->
 					   <div class="large-9 medium-6 columns searchbox hide-for-print">
-     			<?php if ( is_active_sidebar() ) { ?>
-															<?php get_sidebar(); ?>
+          <?php if ( is_active_sidebar( 'lccc-search-sidebar' ) ) { ?>
+																<?php dynamic_sidebar( 'lccc-search-sidebar' ); ?>
 								<?php }else{
 															if ( class_exists( 'CustomGoogleSearch' ) ) {
 																// check for plugin using plugin name
@@ -88,8 +88,8 @@
       </span> </div>
   </div>
   <div id="mobile-search" class="show-for-small-only hide-for-print">
-         			<?php if ( is_active_sidebar() ) { ?>
-															<?php get_sidebar(); ?>
+         			<?php if ( is_active_sidebar( 'lccc-search-sidebar' ) ) { ?>
+																<?php dynamic_sidebar( 'lccc-search-sidebar' ); ?>
 								<?php }else{
 															if ( class_exists( 'CustomGoogleSearch' ) ) {
 																// check for plugin using plugin name
