@@ -115,8 +115,9 @@ hr{border:0;height:20px;width:90%;height:50px;padding:2rem 0;box-shadow:0 15px 1
 .blue-panel a.button{background:#5593db}.blue-panel img{width:100%;height:auto;margin-bottom:1rem}
 .callout{margin-top:1rem;margin-bottom:2rem}.callout span{display:block}.callout h2{font-weight:600;font-size:1.25rem}
 .callout .name,.callout .hours-label{font-weight:700}.callout .callout-contact-method{margin-top:1.35rem}
-.callout .map-link{margin-top:4.45rem}ul,ol{margin:2.5rem}blockquote{border:0}.content-area a:hover{text-decoration:underline}
-.error-content input[name=search],input[name=search]:focus{max-width:100%}/*!
+.callout .map-link{margin-top:4.45rem}ul,ol{margin:2.5rem 0 1rem 2.5rem}blockquote{border:0}
+.content-area a:hover{text-decoration:underline}.error-content input[name=search],input[name=search]:focus{max-width:100%}
+/*!
 Section 3: Body
 */body{font-size:1rem;font-family:"Open Sans",sans-serif;font-weight:300;line-height:1.5;color:#404040;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 h1,h2,h3,h4,h5,h6,h7{font-family:"Raleway",sans-serif}img.alignright{float:right;margin:0 0 1em 1em}
@@ -136,7 +137,7 @@ a.skip-link.screen-reader-text:focus{position:static;width:auto;height:auto}.ql-
 .ql-2{background-image:url(/wp-content/themes/lorainccc/images/icons/icon-faculty_blue.svg)}
 .ql-3{background-image:url(/wp-content/themes/lorainccc/images/icons/icon_canvas.svg)}
 .ql-4{background-image:url(/wp-content/themes/lorainccc/images/icons/icon_my-campus.svg)}
-ul{margin:2.5rem}/*! Ryan's Updated Menu Styling */.breadcrumb-container{padding:2rem .9375rem !important}
+/*! Ryan's Updated Menu Styling */.breadcrumb-container{padding:2rem .9375rem !important}
 .sidebar-widget{padding-top:0 !important;margin:1rem 0 3rem 0 !important}header.entry-header{padding-top:0 !important}
 .main-navigation ul:not(.sub-menu)>li{border:1px solid #dcdcdc !important;box-shadow:inset 0 0 10px #dcdcdc !important;padding:.75rem 2rem .75rem 1rem !important}
 .main-navigation ul:not(.sub-menu)>li>a{font-size:1rem !important;color:#0055a5 !important;font-weight:700 !important}

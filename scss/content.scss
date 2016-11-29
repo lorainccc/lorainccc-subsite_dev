@@ -769,7 +769,7 @@ hr {
 }
 
 ul, ol{
-    margin: 2.5rem
+    margin: 2.5rem 0 1rem 2.5rem
 }
 
 blockquote {
@@ -780,6 +780,6 @@ blockquote {
  text-decoration: underline;
 }
 
-.error-content input[name=search], input[name=search]:focus{ 
+.error-content input[name=search], input[name=search]:focus{
 		    max-width: 100%;
 }
