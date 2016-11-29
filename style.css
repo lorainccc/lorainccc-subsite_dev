@@ -207,7 +207,8 @@ li.current-menu-ancestor,li.current-menu-item{background:#dcdcdc}.main-navigatio
 .main-navigation ul>li.current-menu-ancestor>ul>li.current-menu-item>a{font-weight:bold}
 table.outerformtablerows{border:0;background:#fff}table.outerformtablerows tbody{border:0}
 .fieldtr,.fieldtitle{background:#fff}.eformstext{display:none}div.afnavbuttons input[type=submit]{margin:0 10px 0 0}
-@media screen and (min-width:40em){.mobile-app-link img{margin-right:.75rem}.service-box-copy{padding-left:0}
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){div.row hr{margin:-80px auto 40px;height:10px;padding:1rem 0;width:100%}
+}@media screen and (min-width:40em){.mobile-app-link img{margin-right:.75rem}.service-box-copy{padding-left:0}
 .service-box-image{padding-right:0}.service-box .button{position:absolute;bottom:1rem;left:63.5px}
 .service-box-container{height:100%}aside.columns{padding-right:0;padding-left:0}.gateway-main,.home-left{padding-right:5rem}
 .main-right{padding-left:5rem}header{padding-top:1.5rem}.mobile-app-link img,.mobile-app-link h2{float:left}
