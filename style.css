@@ -42,9 +42,9 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}.wp-caption{b
 .screen-reader-text:focus{background-color:#f1f1f1;border-radius:3px;box-shadow:0 0 2px 2px rgba(0,0,0,0.6);clip:auto !important;color:#21759b;display:block;font-size:14px;font-size:.875rem;font-weight:bold;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
 /*!
 Text Section
-*/h1{font-size:2.1875rem;margin-top:.25rem}h1,h2{color:#0055a5;font-weight:700}
-h2{line-height:110%;margin-top:.25rem;font-size:1.625rem}h2.cta-h2{text-transform:uppercase}
-p{font-size:1rem}div.entry-content h3{line-height:110%;margin-top:.25rem;font-size:1.425rem;color:#6d6d6d}
+*/a{color:#007bbf}h1{font-size:2.1875rem;margin-top:.25rem}
+h1,h2{color:#0055a5;font-weight:700}h2{line-height:110%;margin-top:.25rem;font-size:1.625rem}
+h2.cta-h2{text-transform:uppercase}p{font-size:1rem}div.entry-content h3{line-height:110%;margin-top:.25rem;font-size:1.425rem;color:#6d6d6d;font-weight:600}
 /*!
 Section 1: Foundation
 *//*!
@@ -130,7 +130,7 @@ hr{border:0;height:20px;width:90%;height:50px;padding:2rem 0;box-shadow:0 15px 1
 .content-area a:hover{text-decoration:underline}.error-content input[name=search],input[name=search]:focus{max-width:100%}
 /*!
 Section 3: Body
-*/body{font-size:1rem;font-family:"Open Sans",sans-serif;font-weight:300;line-height:1.5;color:#404040;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+*/body{font-size:1rem;font-family:"Open Sans",sans-serif;font-weight:500;line-height:1.5;color:#404040;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 h1,h2,h3,h4,h5,h6,h7{font-family:"Raleway",sans-serif}img.alignright{float:right;margin:0 0 1em 1em}
 img.alignleft{float:left;margin:0 1em 1em 0}img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 .alignright{float:right}.alignleft{float:left}.aligncenter{display:block;margin-left:auto;margin-right:auto}
@@ -199,7 +199,7 @@ Section 6: Footer
 */footer{margin-top:5rem;background:#0c3b78;padding:2rem 0 4rem 0;font-size:.75rem}
 footer h2{font-size:.75rem;color:#ffc600;text-transform:uppercase;font-weight:700}
 footer .menu>li>a{padding:0 .25rem 0 0}footer a,footer p{color:#fefefe;font-size:.75rem}
-footer .footer-logo{margin-bottom:2.5rem}footer ul{list-style:none;margin-left:0}
+footer a:hover{color:#fff}footer .footer-logo{margin-bottom:2.5rem}footer ul{list-style:none;margin-left:0}
 footer ul li{margin-bottom:.75rem}footer .underline>li>a{text-decoration:none}footer .underline>li>a:hover,a:hover{text-decoration:underline}
 .footer-sm-links{margin-bottom:2rem}.website-feedback{margin:10px 0;float:left;width:100%}
 .website-feedback a{text-decoration:none}.website-feedback a:hover{text-decoration:underline}
