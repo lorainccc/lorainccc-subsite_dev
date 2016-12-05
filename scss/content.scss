@@ -783,3 +783,49 @@ blockquote {
 .error-content input[name=search], input[name=search]:focus{
 		    max-width: 100%;
 }
+
+ table {
+    margin: 0 0 1em 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-top: none;
+		display: table;
+}
+
+table th {
+    padding: .5em .75em;
+    vertical-align: top;
+    font-weight: bold;
+    text-align: left;
+    background: $lcccblue;  
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+table td {
+    border-top: 1px solid #ccc;
+    padding: .3em .75em;
+    vertical-align: top;
+}
+table.outerformtablerows {
+   border: 0;
+   background: #fff;
+}
+	table tr.odd {
+    background: #f7f7f7;
+}
+table.outerformtablerows tbody{
+border: 0;
+}
+.fieldtr, .fieldtitle {
+   background: #fff;
+}
+
+.eformstext{
+display: none;
+}
+
+div.afnavbuttons input[type=submit] {
+   margin: 0 10px 0 0;
+}

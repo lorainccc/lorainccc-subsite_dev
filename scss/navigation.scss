@@ -64,8 +64,8 @@ header .dropdown.menu>li.is-dropdown-submenu-parent>a::after {
 
 .medium-blue-bg {
     width: 100%;
-    background: #0055a5;
-} 
+    background: $lcccblue;
+}  
 li.divider:after {
     content: "|";
     color: #5593db
