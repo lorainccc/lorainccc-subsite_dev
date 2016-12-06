@@ -128,10 +128,11 @@ hr{border:0;height:20px;width:90%;height:50px;padding:2rem 0;box-shadow:0 15px 1
 .callout .name,.callout .hours-label{font-weight:700}.callout .callout-contact-method{margin-top:1.35rem}
 .callout .map-link{margin-top:4.45rem}ul,ol{margin:2.5rem 0 1rem 2.5rem}blockquote{border:0}
 .content-area a:hover{text-decoration:underline}.error-content input[name=search],input[name=search]:focus{max-width:100%}
-table{margin:0 0 1em 0;width:100%;border:1px solid #ccc;border-top:0;display:table}
-table th{padding:.5em .75em;vertical-align:top;font-weight:bold;text-align:left;background:#0055a5;color:#fff;text-transform:uppercase;font-size:1.1em}
-table td{border-top:1px solid #ccc;padding:.3em .75em;vertical-align:top}table.outerformtablerows{border:0;background:#fff}
-table tr.odd{background:#f7f7f7}table.outerformtablerows tbody{border:0}.fieldtr,.fieldtitle{background:#fff}
+.entry-content table{margin:0 0 1em 0;width:100%;border:1px solid #ccc;border-top:0;display:table}
+.entry-content table th{padding:.5em .75em;vertical-align:top;font-weight:bold;text-align:left;background:#0055a5;color:#fff;text-transform:uppercase;font-size:1.1em}
+.entry-content table td{border-top:1px solid #ccc;padding:.3em .75em;vertical-align:top}
+.entry-content table.outerformtablerows{border:0;background:#fff}.entry-content table tr.odd{background:#f7f7f7}
+.entry-content table.outerformtablerows tbody{border:0}.fieldtr,.fieldtitle{background:#fff}
 .eformstext{display:none}div.afnavbuttons input[type=submit]{margin:0 10px 0 0}/*!
 Section 3: Body
 */body{font-size:1.1rem;font-family:"Open Sans",sans-serif;font-weight:500;line-height:1.5;color:#404040;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}

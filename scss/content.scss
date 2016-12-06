@@ -784,7 +784,7 @@ blockquote {
 		    max-width: 100%;
 }
 
- table {
+.entry-content table {
     margin: 0 0 1em 0;
     width: 100%;
     border: 1px solid #ccc;
@@ -792,7 +792,7 @@ blockquote {
 		display: table;
 }
 
-table th {
+.entry-content table th {
     padding: .5em .75em;
     vertical-align: top;
     font-weight: bold;
@@ -803,25 +803,24 @@ table th {
     font-size: 1.1em;
 }
 
-table td {
+.entry-content table td {
     border-top: 1px solid #ccc;
     padding: .3em .75em;
     vertical-align: top;
 }
-table.outerformtablerows {
+.entry-content table.outerformtablerows {
    border: 0;
    background: #fff;
 }
-	table tr.odd {
+.entry-content table tr.odd {
     background: #f7f7f7;
 }
-table.outerformtablerows tbody{
+.entry-content table.outerformtablerows tbody{
 border: 0;
 }
 .fieldtr, .fieldtitle {
    background: #fff;
 }
-
 .eformstext{
 display: none;
 }
