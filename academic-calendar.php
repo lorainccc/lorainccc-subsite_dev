@@ -63,6 +63,9 @@ get_header(); ?>
 				?>
 				<?php
 				$today = date("Y-m-d");
+				$today_var = strtotime($today);
+				$today_year = date("Y",$today_var);
+				
 				if ($today >= $spring_start && $today < $summer_start){
 				$activesemster = 'spring';
 				}elseif($today >= $summer_start && $today < $fall_start){
@@ -96,11 +99,46 @@ get_header(); ?>
 					}
 							?>
 								<ul class="tabs" data-tabs id="academic-calendar-tabs">
-					<li class="button tabs-title <?php echo $springactive; ?>"><a href="#spring-semester-calendar" aria-selected="true"><?php echo 'Spring Semester '.$spring_start_year.' - '.$spring_end_year; ?></a>				
-					</li>
-						<li class="button tabs-title <?php echo $summeractive; ?>"><a href="#summer-semester-calendar"><?php echo 'Summer Semester '.$summer_start_year.' - '.$summer_end_year; ?></a></li>
-						<li class="button tabs-title <?php echo $fallactive; ?>"><a href="#fall-semester-calendar"><?php echo 'Fall Semester '.$fall_start_year.' - '.$fall_end_year; ?></a></li>
-						<div class="tabs-content" data-tabs-content="academic-calendar-tabs">
+								
+									<?php if($fallactive == 'is-active'){ 
+													?>
+													<li class="button tabs-title <?php echo $fallactive; ?>"><a href="#fall-semester-calendar"><?php echo 'Fall Semester '.$fall_start_year.' - '.$fall_end_year; ?></a></li>
+									
+													<li class="button tabs-title <?php echo $springactive; ?>"><a href="#spring-semester-calendar" aria-selected="true"><?php echo 'Spring Semester '.$spring_start_year.' - '.$spring_end_year; ?></a>				
+													</li>
+													<?php if( $today_year != $summer_end_year && $today_year < $summer_end_year){?>
+													<li class="button tabs-title <?php echo $summeractive; ?>"><a href="#summer-semester-calendar"><?php echo 'Summer Semester '.$summer_start_year.' - '.$summer_end_year; ?></a></li>
+													<?php } ?>
+								<?php
+									}elseif( $springactive == 'is-active' ){ ?>
+												<li class="button tabs-title <?php echo $springactive; ?>"><a href="#spring-semester-calendar" aria-selected="true"><?php echo 'Spring Semester '.$spring_start_year.' - '.$spring_end_year; ?></a>				
+												</li>
+												<li class="button tabs-title <?php echo $summeractive; ?>"><a href="#summer-semester-calendar"><?php echo 'Summer Semester '.$summer_start_year.' - '.$summer_end_year; ?></a></li>	
+												<?php if( $today_year != $fall_end_year && $today_year < $fall_end_year){?>
+												<li class="button tabs-title <?php echo $fallactive; ?>"><a href="#fall-semester-calendar"><?php echo 'Fall Semester '.$fall_start_year.' - '.$fall_end_year; ?></a></li>
+												<?php } ?>
+									<?php }elseif( $summeractive = 'is-active' ){ ?>					
+									<li class="button tabs-title <?php echo $summeractive; ?>"><a href="#summer-semester-calendar"><?php echo 'Summer Semester '.$summer_start_year.' - '.$summer_end_year; ?></a></li>
+						
+									<li class="button tabs-title <?php echo $fallactive; ?>"><a href="#fall-semester-calendar"><?php echo 'Fall Semester '.$fall_start_year.' - '.$fall_end_year; ?></a></li>
+									<?php if( $today_year != $spring_end_year && $today_year < $spring_end_year){?>
+									<li class="button tabs-title <?php echo $springactive; ?>"><a href="#spring-semester-calendar" aria-selected="true"><?php echo 'Spring Semester '.$spring_start_year.' - '.$spring_end_year; ?></a>				
+										<?php } ?>
+								</li>
+								<?php }else{ ?>
+								<li class="button tabs-title <?php echo $springactive; ?>"><a href="#spring-semester-calendar" aria-selected="true"><?php echo 'Spring Semester '.$spring_start_year.' - '.$spring_end_year; ?></a>				
+								</li>
+						
+									<li class="button tabs-title <?php echo $summeractive; ?>"><a href="#summer-semester-calendar"><?php echo 'Summer Semester '.$summer_start_year.' - '.$summer_end_year; ?></a></li>
+						
+									<li class="button tabs-title <?php echo $fallactive; ?>"><a href="#fall-semester-calendar"><?php echo 'Fall Semester '.$fall_start_year.' - '.$fall_end_year; ?></a></li>
+
+								<?php } ?>
+									
+							
+						
+									
+							<div class="tabs-content" data-tabs-content="academic-calendar-tabs">
 						 <div class="tabs-panel <?php echo $springactive; ?>" id="spring-semester-calendar">
 									<div class="small-12 medium-12 columns nopadding">
 										<?php echo '<h2>'.'Spring Semester '.$spring_start_year.' - '.$spring_end_year.'</h2>'; ?>
