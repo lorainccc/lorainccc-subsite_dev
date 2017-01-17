@@ -140,8 +140,9 @@ h1,h2,h3,h4,h5,h6,h7{font-family:"Raleway",sans-serif}img.alignright{float:right
 img.alignleft{float:left;margin:0 1em 1em 0}img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 .alignright{float:right}.alignleft{float:left}.aligncenter{display:block;margin-left:auto;margin-right:auto}
 .columns.gateway-header img{width:100%;max-width:100%;height:auto}img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{width:100%;max-width:100%;height:auto}
-ul.bullet-clipboard{list-style-type:none;margin:0}ul.bullet-clipboard link{text-indent:-1.4em}
-ul.bullet-clipboard li{margin:5px 0 0 0;padding:0 0 15px 0}ul.bullet-clipboard li:before{font-family:"Genericons";font-size:38px;content:"\f425";margin:-18px 0 0 0;color:#606060;float:left;width:1.4em}
+div#ui-datepicker-div{box-shadow:none;border:0}ul.bullet-clipboard{list-style-type:none;margin:0}
+ul.bullet-clipboard link{text-indent:-1.4em}ul.bullet-clipboard li{margin:5px 0 0 0;padding:0 0 15px 0}
+ul.bullet-clipboard li:before{font-family:"Genericons";font-size:38px;content:"\f425";margin:-18px 0 0 0;color:#606060;float:left;width:1.4em}
 ul.bullet-arrow{list-style-type:none;margin:0}ul.bullet-arrow link{text-indent:-1.4em}
 ul.bullet-arrow li{margin:5px 0 0 0;padding:0 0 15px 0}ul.bullet-arrow li:before{font-family:"Genericons";font-size:38px;content:"\f429";margin:-18px 0 0 0;color:#606060;float:left;width:1.4em}
 /*!
