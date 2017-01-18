@@ -133,7 +133,8 @@ hr{border:0;height:20px;width:90%;height:50px;padding:2rem 0;box-shadow:0 15px 1
 .entry-content table td{border-top:1px solid #ccc;padding:.3em .75em;vertical-align:top}
 .entry-content table.outerformtablerows{border:0;background:#fff}.entry-content table tr.odd{background:#f7f7f7}
 .entry-content table.outerformtablerows tbody{border:0}.fieldtr,.fieldtitle{background:#fff}
-.eformstext{display:none}div.afnavbuttons input[type=submit]{margin:0 10px 0 0}/*!
+.eformstext{display:none}div.afnavbuttons input[type=submit]{margin:0 10px 0 0}.ui-widget-content a{color:#007bbf}
+/*!
 Section 3: Body
 */body{font-size:1.1rem;font-family:"Open Sans",sans-serif;font-weight:500;line-height:1.5;color:#404040;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 h1,h2,h3,h4,h5,h6,h7{font-family:"Raleway",sans-serif}img.alignright{float:right;margin:0 0 1em 1em}
