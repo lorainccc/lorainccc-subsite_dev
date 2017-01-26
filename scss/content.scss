@@ -6,6 +6,13 @@ Section 2: Content
 			background: #0055A5;
    color: #ffffff;
 }
+div.columns.calender{
+				width: 90px;
+    height: 90px;
+    background-image: url(../images/calendaricon_blue.svg);
+    padding: 2rem 1rem;
+    text-align: center; 
+}
 div.columns.nopadding div.entry-content a.button {
 		margin-top: 2rem;  
 }

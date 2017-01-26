@@ -51,6 +51,7 @@ Section 1: Foundation
 *//*!
 Section 2: Content
 */.site-main table thead{background:#0055a5;color:#fff}
+div.columns.calender{width:90px;height:90px;background-image:url(../images/calendaricon_blue.svg);padding:2rem 1rem;text-align:center}
 div.columns.nopadding div.entry-content a.button{margin-top:2rem}main.site-main.mylccc-event-archive div.row hr{margin:-80px auto 0;height:10px;padding:1rem 0;width:100%}
 div.columns.nopadding.mylccc-event header.entry-header a h1.entry-title{margin-top:1.5rem}
 div.row hr{margin:-80px auto 0;height:10px;padding:3rem 0;width:100%}main.site-main table thead{background:#0055a5;color:#fff}
