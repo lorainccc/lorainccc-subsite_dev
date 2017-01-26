@@ -87,7 +87,7 @@ $location = event_meta_box_get_meta('announcement_meta_box_event_location');
 $cost = event_meta_box_get_meta('announcement_meta_box_ticket_price_s_');
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	
+<?php	if ( has_post_thumbnail() ) { ?>
 	<div class="small-12 medium-3 large-4 columns">
 	<?php the_post_thumbnail();?>
  </div>
@@ -130,6 +130,49 @@ $cost = event_meta_box_get_meta('announcement_meta_box_ticket_price_s_');
       </div>
 	</div>
 	</div>
+	<?php }else{ ?>
+		<div class="small-12 medium-12 large-12 columns nopadding">
+		<div class="small-12 medium-12 large-12 columns">
+		<header class="entry-header">
+        <a href="<?php the_permalink();?>"><?php the_title( '<h1 class="entry-title">', '</h1>' ); ?></a>
+					<?php if ( get_edit_post_link() ) : ?>
 
+			<?php
+				edit_post_link(
+					sprintf(
+						/* translators: %s: Name of current post */
+						esc_html__( 'Edit This Announcement', 'lorainccc' ),
+						the_title( '<span class="screen-reader-text">"', '"</span>', false )
+					),
+					'<span class="edit-link">',
+					'</span>'
+				);
+			?>
+	<?php endif; ?>
+        <?php the_category( ', ' ); ?>
+	</header><!-- .entry-header -->
+		</div>
+	<div class="small-12 medium-12 large-12 columns">
+	<div class="entry-content">
+		<?php
+			the_excerpt();
+		?>
+ <a href="<?php the_permalink();?>">Read More...</a>
+		<?php
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'lorainccc' ),
+				'after'  => '</div>',
+			) );
+		?>
+	</div><!-- .entry-content -->
+		<div class="column row">
+        <hr>
+      </div>
+	</div>
+	</div>
+	
+	<?php
+}
+	?>
 </article><!-- #post-## -->
 

@@ -6,6 +6,18 @@ Section 2: Content
 			background: #0055A5;
    color: #ffffff;
 }
+div.columns.nopadding div.entry-content a.button {
+		margin-top: 2rem;  
+}
+main.site-main.mylccc-event-archive div.row hr {
+    margin: -80px auto 0;
+    height: 10px;
+    padding: 1rem 0;
+    width: 100%;
+} 
+div.columns.nopadding.mylccc-event header.entry-header a h1.entry-title{
+	margin-top: 1.5rem;
+}
 div.row hr{
 	  //margin: -80px auto 40px;
    //height: 25px;

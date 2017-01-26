@@ -9,63 +9,17 @@
 
 get_header(); ?>
 <div class="row page-content">
-    <div class="small-12 medium-12 large-12 columns nopadding show-for-small-only">
-  <div class="row show-for-small-only sub-mobile-menu-row" style="background:#000;">
- <div class="small-2 columns" style="padding-top: 0.5rem;padding-left: 1.625rem;"> <span data-responsive-toggle="sub-responsive-menu" data-hide-for="medium">
-      <button class="menu-icon" type="button" data-toggle></button>
-      </span> </div>
-    <div class="small-10 columns nopadding"><h3 class="sub-mobile-menu-header" style="color:#ffffff;">Events Menu</h3></div>
-  </div>
-  <div id="sub-responsive-menu" class="show-for-small-only">
-    <ul class="vertical menu" data-drilldown data-parent-link="true">
 
-					<?php 	wp_nav_menu(array(
-													'container' => false,
-													'menu' => __( 'Drill Menu', 'textdomain' ),
-													'menu_class' => 'vertical menu',
-										'theme_location' => 'left-nav',
-													'menu_id' => 'sub-mobile-primary-menu',
-														//Recommend setting this to false, but if you need a fallback...
-													'fallback_cb' => 'lc_drill_menu_fallback',
-													'walker' => new lc_drill_menu_walker(),
-												));
-					?>
-
-    </ul>
-  </div>
-</div>
 <div class="small-12 medium-12 large-12 columns breadcrumb-container">
    <?php get_template_part( 'template-parts/content', 'breadcrumb' ); ?> All Events
 </div>
-<div class="medium-4 large-4 columns hide-for-small-only">
-	<div class="small-12 medium-12 large-12 columns sidebar-widget">
-		<div class="small-12 medium-12 large-12 columns sidebar-menu-header">
-<h3><?php echo bloginfo('the-title'); ?></h3>
-		</div>
-	<?php	if ( has_nav_menu( 'left-nav' ) ) : ?>
-<div id="secondary" class="medium-12 columns secondary nopadding">
-		<?php if ( has_nav_menu( 'left-nav' ) ) : ?>
-			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<?php
-					// Primary navigation menu.
-					wp_nav_menu( array(
-						'menu_class'     => 'nav-menu',
-						'theme_location' => 'left-nav',
-					) );
-				?>
-			</nav><!-- .main-navigation -->
-				<?php endif; ?>
-		</div>
-		<?php endif; ?>
 
-	</div>
-	</div>
-	<div class="small-12 medium-8 large-8 columns nopadding">		
+	<div class="small-12 medium-12 large-12 columns nopadding">		
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main mylccc-event-archive" role="main">
             <div class="small-12 medium-12 large-12 columns">
 				<header class="page-header">
-				<h1 class="page-title"> Events</h1>
+				<h1 class="page-title"> LCCC Events</h1>
 			</header><!-- .page-header -->
 			<?php
 			$eventlistargs=array(
@@ -74,15 +28,22 @@ get_header(); ?>
 				'name' => 'events-list',
 			);
 			$eventsdescrip = new WP_Query($eventlistargs);
-					if ( $eventsdescrip->have_posts() ) :
+					if ( $eventsdescrip->have_posts() ){
 							while ( $eventsdescrip->have_posts() ) : $eventsdescrip->the_post();
+													
 								the_content('<p>','</p>');
-							endwhile;
-					endif;
-			?>
-           <div class="column row event-list-row">
+						?>
+						     <div class="column row event-list-row">
             <hr>
-            </div> 
+            </div> 							
+						<?php
+							endwhile;
+					}else{
+						
+
+					}
+			?>
+      
 		</div>
              <div class="small-12 medium-12 large-12 columns archive-events-container">
                 <?php 
@@ -123,17 +84,11 @@ get_header(); ?>
 		$key_1_value = get_post_meta( get_the_ID(), 'event_start_date', true );
 			?>
 <div id="post-<?php the_ID(); ?>" class="small-12 medium-12 large-12 columns nopadding">
-			<div class="small-12 medium-12 large-2 columns nopadding">
-			<?php
-				echo '<div class="small-12 medium-12 large-12 columns event-date">';
-         			echo '<div class="small-12 medium-12 large-12 columns calender">';                
-				echo '<p class="stocker-month">'.$eventstartmonth.'</p>';
-				echo '<p class="stocker-day">'.$eventstartday.'</p>';
-				echo '</div>';
-				echo '</div>';	
-			?>
- 			</div>
-			<div class="small-12 medium-12 large-10 columns nopadding">
+	<?php	if ( has_post_thumbnail() ) { ?>
+			<div class="small-12 medium-3 large-3 columns nopadding">
+						<?php the_post_thumbnail();?>
+			</div>
+			<div class="small-12 medium-9 large-9 columns nopadding">
                         <header class="entry-header">
         <a href="<?php the_permalink();?>"><?php the_title( '<h1 class="entry-title">', '</h1>' ); ?></a>
 			<div class="taxonomies">
@@ -142,7 +97,9 @@ get_header(); ?>
 			<p><?php echo 'Date: '.$eventstartmonthfull.' '.$eventstartday.' , '.$eventstartyear; ?></p>
         		<p><?php echo 'Time: '.$starttime; ?></p>
           		<p><?php echo 'Location: '.$location; ?></p>
+										<?php if($cost != ''){ ?>															
         		<p><?php echo 'Cost: '.$cost; ?></p>
+											<?php } ?>														
         		<p>&nbsp;</p>
 			</header>
 			<div class="small-12 medium-12 large-12 columns nopadding">
@@ -152,6 +109,32 @@ get_header(); ?>
 				</div><!-- .entry-content -->
 			</div>
 			</div>
+	<?php }else{ ?>
+	<div class="small-12 medium-12 large-12 columns nopadding mylccc-event">
+   <header class="entry-header">
+        <a href="<?php the_permalink();?>"><?php the_title( '<h1 class="entry-title">', '</h1>' ); ?></a>
+			<div class="taxonomies">
+				<?php echo get_the_term_list( $post->ID, 'event_categories','', ' , ' , ''); ?>
+			</div>
+			<p><?php echo 'Date: '.$eventstartmonthfull.' '.$eventstartday.' , '.$eventstartyear; ?></p>
+        		<p><?php echo 'Time: '.$starttime; ?></p>
+          		<p><?php echo 'Location: '.$location; ?></p>
+        			<?php if($cost != ''){ ?>															
+        		<p><?php echo 'Cost: '.$cost; ?></p>
+											<?php } ?>				
+        		<p>&nbsp;</p>
+			</header>
+			<div class="small-12 medium-12 large-12 columns nopadding">
+				<div class="entry-content">
+					<?php the_excerpt();?>
+					<a class="button" href="<?php the_permalink();?>">More Information</a>
+				</div><!-- .entry-content -->
+			</div>
+			</div>
+	<?php } ?>
+	
+	
+	
 </div>
 
 			 <div class="column row event-list-row">
@@ -161,8 +144,8 @@ get_header(); ?>
 			endwhile;
 ?> 	
 <div id="pagination" class="clearfix">
-  <div style="float:left;"><?php previous_posts_link( 'Previous Events' ); ?></div>
-  <div style="float:right;"><?php next_posts_link( 'More Events', $wp_query->max_num_pages ); ?></div>
+  <div style="float:left;padding-top:2rem;"><?php previous_posts_link( 'Previous Events' ); ?></div>
+  <div style="float:right;padding-top:2rem;"><?php next_posts_link( 'More Events', $wp_query->max_num_pages ); ?></div>
 </div>
 <?php
 		      wp_reset_postdata();
