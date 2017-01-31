@@ -257,6 +257,7 @@ return strtotime( $a->event_start_date ) - strtotime( $b->event_start_date );
                                 }
 							echo '</div>';
 				?>
+				
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
