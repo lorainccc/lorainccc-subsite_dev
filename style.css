@@ -43,6 +43,7 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}.wp-caption{b
 /*!
 Text Section
 */div.columns.nopadding.mylccc-event p{margin-bottom:0}
+header.entry-header a h1.entry-title{margin-top:-.40rem}div.columns.event-details p{margin-bottom:0}
 a{color:#007bbf}h1{font-size:2.2875rem;margin-top:.25rem}h1,h2{color:#0055a5;font-weight:700}
 h2{line-height:110%;margin-top:.25rem;font-size:1.725rem}h2.cta-h2{text-transform:uppercase}
 p{font-size:1rem}div.entry-content h3{line-height:110%;margin-top:.25rem;font-size:1.525rem;color:#6d6d6d;font-weight:600}
@@ -50,7 +51,8 @@ p{font-size:1rem}div.entry-content h3{line-height:110%;margin-top:.25rem;font-si
 Section 1: Foundation
 *//*!
 Section 2: Content
-*/.site-main table thead{background:#0055a5;color:#fff}
+*/span.event_entries article{box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8);-moz-box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8);-webkit-box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8);padding-top:2.5rem;padding-bottom:2.5rem}
+.site-main table thead{background:#0055a5;color:#fff}div.columns.archive-events-container{padding-top:4rem}
 div.site-content{padding-top:3rem}div.columns.calender{width:90px;height:90px;background-image:url(images/calendaricon_blue.svg);padding:2rem 1rem;text-align:center}
 div.columns.nopadding div.entry-content a.button{margin-top:2rem}main.site-main.mylccc-event-archive div.row hr{margin:-80px auto 0;height:10px;padding:1rem 0;width:100%}
 div.columns.nopadding.mylccc-event header.entry-header a h1.entry-title{margin-top:1.5rem}
@@ -138,6 +140,24 @@ hr{border:0;height:20px;width:90%;height:50px;padding:2rem 0;box-shadow:0 15px 1
 .entry-content table.outerformtablerows{border:0;background:#fff}.entry-content table tr.odd{background:#f7f7f7}
 .entry-content table.outerformtablerows tbody{border:0}.fieldtr,.fieldtitle{background:#fff}
 .eformstext{display:none}div.afnavbuttons input[type=submit]{margin:0 10px 0 0}.ui-widget-content a{color:#007bbf}
+.hbheader_date h6{font-size:1rem;text-align:center;font-weight:bold}.homeblock_header{padding:0 0 10px 0;border-bottom:1px inset #CCC}
+.homeblock_content{padding-top:10px}.hbheader_category{margin-top:-10px;padding:0}
+div.day-listings{height:30px}.hbheader_category a{float:left;text-align:center;color:#fff}
+.hbimage{padding:0}.main{padding:0}.hbimage{padding-top:10px}ul.calendarlist li{list-style:none;background:#fff;margin-bottom:5px;min-height:60px;padding:3px;border:2px solid #a6c7c7}
+div.daycontainer span ul.calendardayseventslist li{min-height:35px;border-bottom:1px solid #dcdcdc;border-top:0;border-left:0;border-right:0}
+div.daycontainer span ul.calendardayseventslist li:last-child{min-height:35px;border-bottom:0;border-top:0;border-left:0;border-right:0}
+span.today-date a{color:#000;font-weight:bold;font-size:1.4rem;font-style:italic}
+span.calendar-today a{color:#000;font-weight:bold;font-size:1.4rem;font-style:italic}
+span.day-date a{color:#000;font-size:1.2rem}span.today-date,span.day-date{background:transparent}
+.daycontainer{background:#fff;padding:2px 7px 10px 7px}ul.todayseventslist li{border-bottom:2px solid #eee;background:#fff;min-height:60px;display:inline-block}
+ul.todayseventslist li:last-child{border-bottom:0}div.todays-event{border-bottom:2px solid #eee}
+div.todays-event:last-child{border-bottom:0}header.page-header{border-bottom:1px inset #333;margin-bottom:2rem}
+div.archive-eventcontainer{border-bottom:1px solid #ccc;margin:5px 0}div.archive-eventcontainer:last-child{border-bottom:0}
+p.month{margin-bottom:0;margin-top:12px;margin-left:4px;width:100%;font-weight:bold;color:#003b76;line-height:1.7;font-size:.97rem}
+p.day{margin-bottom:0;margin-top:-10px;margin-left:9px;font-weight:bold;color:#003b76}
+@media only screen and (max-width:45.813em){.sidebarcontainer{width:100%}.content-container{width:98%}
+}div.columns.event-details{margin-top:-0.4rem}div.columns.entry-content{margin-top:.25rem}
+div.columns.nopadding.event-pagination a.button{margin-right:1rem}div.columns.nopadding.event-pagination a.button:last-child{margin-right:0}
 /*!
 Section 3: Body
 */body{font-size:1.1rem;font-family:"Open Sans",sans-serif;font-weight:500;line-height:1.5;color:#404040;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
@@ -145,9 +165,14 @@ h1,h2,h3,h4,h5,h6,h7{font-family:"Raleway",sans-serif}img.alignright{float:right
 img.alignleft{float:left;margin:0 1em 1em 0}img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 .alignright{float:right}.alignleft{float:left}.aligncenter{display:block;margin-left:auto;margin-right:auto}
 .columns.gateway-header img{width:100%;max-width:100%;height:auto}img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{width:100%;max-width:100%;height:auto}
-div#ui-datepicker-div{box-shadow:none;border:0}ul.bullet-clipboard{list-style-type:none;margin:0}
-ul.bullet-clipboard link{text-indent:-1.4em}ul.bullet-clipboard li{margin:5px 0 0 0;padding:0 0 15px 0}
-ul.bullet-clipboard li:before{font-family:"Genericons";font-size:38px;content:"\f425";margin:-18px 0 0 0;color:#606060;float:left;width:1.4em}
+div#ui-datepicker-div{box-shadow:none;border:0}table caption{font-size:22pt;margin:10px 0 20px 0;font-weight:700}
+table.calendar{width:100%;border:1px solid #000}td.day{width:14%;height:140px;border:1px solid #000;vertical-align:top;padding:.5625rem .325rem}
+td.day a{text-decoration:underline}td.day span.day-date{font-size:14pt;font-weight:700}
+th.header{background-color:#003972;color:#fff;font-size:14pt;padding:5px}.not-month{background-color:#a6c3df}
+td.today{background-color:#0062c5;color:#fff}td.today a{color:#fff;text-decoration:underline}
+td.day span.today-date{font-size:16pt}.todayseventslist{padding:0;list-style:none;margin-bottom:0;margin-left:0}
+ul.bullet-clipboard{list-style-type:none;margin:0}ul.bullet-clipboard link{text-indent:-1.4em}
+ul.bullet-clipboard li{margin:5px 0 0 0;padding:0 0 15px 0}ul.bullet-clipboard li:before{font-family:"Genericons";font-size:38px;content:"\f425";margin:-18px 0 0 0;color:#606060;float:left;width:1.4em}
 ul.bullet-arrow{list-style-type:none;margin:0}ul.bullet-arrow link{text-indent:-1.4em}
 ul.bullet-arrow li{margin:5px 0 0 0;padding:0 0 15px 0}ul.bullet-arrow li:before{font-family:"Genericons";font-size:38px;content:"\f429";margin:-18px 0 0 0;color:#606060;float:left;width:1.4em}
 /*!

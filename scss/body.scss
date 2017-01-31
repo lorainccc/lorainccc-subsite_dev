@@ -38,3 +38,14 @@ div#ui-datepicker-div {
     box-shadow: none;
     border: none;
 }
+  table caption{font-size: 22pt; margin: 10px 0 20px 0; font-weight: 700;}
+  table.calendar{width:100%; border:1px solid #000;}
+  td.day{width: 14%; height: 140px; border: 1px solid #000; vertical-align: top;padding: 0.5625rem 0.325rem;}
+		td.day a{text-decoration: underline;}
+  td.day span.day-date{font-size: 14pt; font-weight: 700;}
+  th.header{background-color: #003972; color: #fff; font-size: 14pt; padding: 5px;}
+  .not-month{background-color: #a6c3df;}
+  td.today {background-color:#0062C5; color: #ffffff;}
+		td.today a{color: #ffffff;text-decoration: underline;}
+		td.day span.today-date{font-size: 16pt;}
+		.todayseventslist{padding: 0;list-style: none;margin-bottom: 0;margin-left: 0;} 
