@@ -175,7 +175,7 @@ return strtotime( $a->event_start_date ) - strtotime( $b->event_start_date );
 							foreach ( $posts as $post ){
                                 if(	$icounter<$posts_per_page){
 								?>
-								<article class="small-12 medium-12 large-12 columns" id="post-<?php echo $post->id->rendered; ?>" >
+								<div class="small-12 medium-12 large-12 columns" id="post-<?php echo $post->id->rendered; ?>" >
 						
 										<header class="entry-header">
 												<a href="<?php echo $post->link; ?>">
@@ -242,7 +242,7 @@ return strtotime( $a->event_start_date ) - strtotime( $b->event_start_date );
 										<div class="column row">
 												<hr>
 										</div>
-									</article>
+									</div>
 									<?php
 											$icounter ++;			
 										}
