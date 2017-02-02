@@ -49,7 +49,7 @@ $dateArray = array();
 
 ?>
 <?php 	$lastdate =  $year.'-'.$month.'-'.$day; ?>
-	<div class="small-12 medium-12 large-12 columns nopadding">
+	<div class="small-12 medium-12 large-12 columns nopadding ">
 				<?php
 				// What is the first day of the month in question?
 					$firstDayOfMonth = mktime(0,0,0,$month,1,$year);
@@ -65,8 +65,8 @@ $dateArray = array();
 				
 				
 				
-			<a href='calendar/?d=<?php echo $lastdate;?>'><-- Back To The Calendar</a><br />	
-<div class="small-up-1 medium-up-3 large-up-3">		
+			<a class="hide-for-print" href='calendar/?d=<?php echo $lastdate;?>'><-- Back To The Calendar</a><br />	
+<div class="small-up-1 medium-up-3 large-up-3 hide-for-print">		
 					<div class="column column-block">
 							<?php
 							 do_action( 'lccc_prev_week',$year, $month, $day);

@@ -377,8 +377,11 @@ function add_my_day_var($public_query_vars) {
     $public_query_vars[] = 'd';
     return $public_query_vars;
 }
-
-add_filter('query_vars', 'add_my_day_var');
+function add_paged_var($public_query_vars) {
+    $public_query_vars[] = 'page';
+    return $public_query_vars;
+}
+add_filter('query_vars', 'add_paged_var');
 
 function do_rewrite() {
     add_rewrite_rule('day/([^/]+)/?$', 'index.php?pagename=day&d=$matches[1]','top');
@@ -386,6 +389,18 @@ function do_rewrite() {
 
 add_action('init', 'do_rewrite');
 
+function get_url_var($name)
+{
+    $strURL = $_SERVER['REQUEST_URI'];
+    $arrVals = split("/",$strURL);
+    $found = 0;
+    foreach ($arrVals as $index => $value) 
+    {
+        if($value == $name) $found = $index;
+    }
+    $place = $found + 1;
+   return $arrVals[$place];
+}
 
 function wpbeginner_numeric_posts_nav() {
 

@@ -48,7 +48,7 @@ $myvar = get_query_var('d');
 $monthString = array();
 $dateArray = array();
 ?>
-						<div class="row small-up-1 medium-up-3 large-up-3">
+						<div class="row small-up-1 medium-up-3 large-up-3 hide-for-print">
 <div class="column column-block"><?php do_action( 'lccc_previous_month',$month, $year, $monthString); ?></div>
 <?php 	$lastdate =  $year.'-'.$month.'-'.$day; ?>							
 <div class="column column-block" style="text-align: center;"><a href="week/?d=<?php echo $lastdate;?>">Weekly View</a></div>

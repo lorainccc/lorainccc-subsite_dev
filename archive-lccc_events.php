@@ -175,7 +175,7 @@ return strtotime( $a->event_start_date ) - strtotime( $b->event_start_date );
 							foreach ( $posts as $post ){
                                 if(	$icounter<$posts_per_page){
 								?>
-								<div class="small-12 medium-12 large-12 columns" id="post-<?php echo $post->id->rendered; ?>" >
+								<div class="small-12 medium-12 large-12 columns mylccc-news-container" id="post-<?php echo $post->id->rendered; ?>" >
 						
 										<header class="entry-header">
 												<a href="<?php echo $post->link; ?>">
@@ -250,12 +250,57 @@ return strtotime( $a->event_start_date ) - strtotime( $b->event_start_date );
 							}
                             //$count = $count - $firstactive;
 							$pagecount = ceil($count/$posts_per_page);
-							
-							echo '<div class="small-12 medium-12 large-12 columns nopadding event-pagination">';
-								for($pagecounter=1;$pagecounter < $pagecount;$pagecounter++){
-                                        echo '<a href="/mylccc/lccc_events/?page='.$pagecounter.'" class="button">'.$pagecounter.'</a>';
-                                }
-							echo '</div>';
+							$pages =  get_query_var('page');
+	
+							if( $pages == '' ){
+										$pages = 1;
+
+							}
+
+							if( $pages != '' ){
+									echo '<div class="small-up-1 medium-up-3 large-up-3 hide-for-print">';
+													if( $pages == 1 ){
+														echo '<div class="column column-block">'.str_repeat('&nbsp;', 1).'</div>';
+														echo '<div class="column column-block">'.str_repeat('&nbsp;', 1).'</div>';
+														$pages++;
+														echo '<div class="column column-block">';
+																	echo '<a href="/mylccc/lccc_events/?page='.$pages.'">More Events</a>';
+														echo '</div>';	
+													}elseif( $pages == 2 ){
+														$next= $pages+1;
+														$prev= $pages-1;
+														echo '<div class="column column-block">';
+																	echo '<a href="/mylccc/lccc_events/">Previous Events</a>';
+														echo '</div>';
+														echo '<div class="column column-block">'.str_repeat('&nbsp;', 1).'</div>';
+														echo '<div class="column column-block">';
+																	echo '<a href="/mylccc/lccc_events/?page='.$next.'">More Events</a>';
+														echo '</div>';
+														$pages++;
+													}elseif( $pages > 2 and $pages < $pagecount){
+														$next= $pages+1;
+														$prev= $pages-1;
+														echo '<div class="column column-block">';
+																	echo '<a href="/mylccc/lccc_events/?page='.$prev.'">Previous Events</a>';
+														echo '</div>';
+														echo '<div class="column column-block">'.str_repeat('&nbsp;', 1).'</div>';
+														echo '<div class="column column-block">';
+																	echo '<a href="/mylccc/lccc_events/?page='.$next.'">More Events</a>';
+														echo '</div>';
+														$pages++;
+													}elseif( $pages == $pagecount ){
+														$pages--;
+														echo '<div class="column column-block">';
+																	echo '<a href="/mylccc/lccc_events/?page='.$pages.'">Previous Events</a>';
+														echo '</div>';	
+														echo '<div class="column column-block">'.str_repeat('&nbsp;', 1).'</div>';
+														echo '<div class="column column-block">'.str_repeat('&nbsp;', 1).'</div>';
+												
+													}
+				
+								echo '</div>';
+							}
+		
 				?>
 				
 			</div>

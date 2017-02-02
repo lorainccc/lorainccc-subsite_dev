@@ -112,3 +112,8 @@ table.gsc-search-box tbody{
 	background: transparent; 
 	border: none;
 } 
+@media print {
+		header.site-header{
+			padding-top: 1rem;
+		}
+}

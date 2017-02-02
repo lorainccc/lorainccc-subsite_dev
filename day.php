@@ -39,10 +39,10 @@ get_header(); ?>
 			
 			?>	
 						<div class="small-12 medium-12 large-12 columns">
-							<div class="small-up-1 medium-up-2 large-up-3">
+							<div class="small-up-1 medium-up-2 large-up-3 hide-for-print">
 				<div class="column column-block"><a href="calendar/?d=<?php echo $myvar;?>"><--- Back to Calendar</a></div>
 				<div class="column column-block show-for-large-up"> &nbsp;</div>
-				<div class="column column-block" style="text-align:right;">	
+				<div class="column column-block " style="text-align:right;">	
 				<a href="week/?d=<?php echo $myvar; ?>">Back To Weekly View</a></div>	
 				</div>
 				<h1><?php echo $event_month.' '.$event_day.', '.$event_year.' Events'; ?></h1>
@@ -172,7 +172,7 @@ return strtotime( $a->event_start_date ) - strtotime( $b->event_start_date );
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div>
-		<div class="small-12 medium-4 large-4 columns">
+		<div class="small-12 medium-4 large-4 columns hide-for-print">
 	<?php if ( is_active_sidebar( 'lccc-badges-sidebar' ) ) { ?>
 			<div class="small-12 medium-12 large-12 columns hide-for-print">
 			<?php dynamic_sidebar( 'lccc-badges-sidebar' ); ?>
