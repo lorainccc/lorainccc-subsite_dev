@@ -101,7 +101,7 @@ $cost = event_meta_box_get_meta('event_meta_box_ticket_price_s_');
 					}
 					?>
     </div>
-	<div class="small-12 medium-2 large-2 columns">
+	<div class="small-12 medium-3 large-2 columns">
 	<?php
 			echo '<div class="small-12 medium-12 large-12 columns event-date">';
         echo '<div class="small-12 medium-12 large-12 columns calender">';                
@@ -111,7 +111,7 @@ $cost = event_meta_box_get_meta('event_meta_box_ticket_price_s_');
 			echo '</div>';	
 		?>
  </div>
-	<div class="small-12 medium-10 large-10 columns nopadding">
+	<div class="small-12 medium-9 large-10 columns nopadding">
 	<header class="entry-header">
 <div class="taxonomies">
 	<?php echo get_the_term_list( $post->ID, 'event_categories','', ' , ' , ''); ?>

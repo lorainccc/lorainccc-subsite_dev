@@ -32,11 +32,12 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}.wp-caption{b
 /*!
 Text Section
 */div.columns.nopadding.mylccc-event p{margin-bottom:0}
-header.entry-header a h1.entry-title{margin-top:-.40rem}div.columns.event-details p{margin-bottom:0}
-a{color:#007bbf}h1{font-size:2.2875rem;margin-top:.25rem}@media print{h1{font-size:2.0875rem}
-}@media print{h1.entry-title{font-size:1.9rem}}h1,h2{color:#0055a5;font-weight:700}
-h2{line-height:110%;margin-top:.25rem;font-size:1.725rem}@media print{h2{font-size:1.525rem}
-}h2.cta-h2{text-transform:uppercase}p{font-size:1rem}div.entry-content h3{line-height:110%;margin-top:.25rem;font-size:1.525rem;color:#6d6d6d;font-weight:600}
+header.entry-header a h1.entry-title{margin-top:-.40rem}header.entry-header p{margin-bottom:.1rem;padding-left:.2rem}
+div.columns.event-details p{margin-bottom:0}a{color:#007bbf}h1{font-size:2.2875rem;margin-top:.25rem}
+@media print{h1{font-size:2.0875rem}}@media print{h1.entry-title{font-size:1.9rem}
+}h1,h2{color:#0055a5;font-weight:700}h2{line-height:110%;margin-top:.25rem;font-size:1.725rem}
+@media print{h2{font-size:1.525rem}}h2.cta-h2{text-transform:uppercase}p{font-size:1rem}
+div.entry-content h3{line-height:110%;margin-top:.25rem;font-size:1.525rem;color:#6d6d6d;font-weight:600}
 /*!
 Section 1: Foundation
 */@media print{.small-1{width:8.33333%}.small-2{width:16.66667%}
