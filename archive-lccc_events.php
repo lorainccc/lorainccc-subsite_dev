@@ -258,6 +258,7 @@ return strtotime( $a->event_start_date ) - strtotime( $b->event_start_date );
 							}
 
 							if( $pages != '' ){
+								echo '<div class="small-12 medium-12 large-12 columns nopadding event-pagination">';
 									echo '<div class="small-up-1 medium-up-3 large-up-3 hide-for-print">';
 													if( $pages == 1 ){
 														echo '<div class="column column-block">'.str_repeat('&nbsp;', 1).'</div>';
@@ -297,7 +298,7 @@ return strtotime( $a->event_start_date ) - strtotime( $b->event_start_date );
 														echo '<div class="column column-block">'.str_repeat('&nbsp;', 1).'</div>';
 												
 													}
-				
+										echo '</div>';
 								echo '</div>';
 							}
 		
