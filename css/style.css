@@ -9,6 +9,8 @@ Section 3: Body
 Section 4: Header
 Section 5: Navigation
 Section 6: Footer
+Section 7: IE
+Section 8: Calendar
 *//*!
 Variables Section
 *//*!*********************
@@ -256,6 +258,17 @@ aside.columns{padding-right:0;padding-left:0}.gateway-main,.home-left{padding-ri
 }@media screen and (min-width:1074px){nav.menu-centered{height:36px}}@media screen and (max-width:39.9375em){h1{font-size:1.35rem;line-height:105%}
 .white-panel{margin-top:3rem}.cta-icons{margin-bottom:2rem}.footer-sm-links{width:210px;margin:0 auto 1rem auto}
 .footer-sm-links li a{padding:0}.footer-sm-links li a img{margin:0 .25rem}footer .row .columns{border-bottom:1px solid #5593db;padding:2rem 0 1rem 0}
-footer{padding-bottom:0}}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){div.row hr{margin:-80px auto 40px;height:10px;padding:1rem 0;width:100%}
-}table.outerformtablerows{border:0;background:#fff}table.outerformtablerows tbody{border:0}
-.fieldtr,.fieldtitle{background:#fff}.eformstext{display:none}div.afnavbuttons input[type=submit]{margin:0 10px 0 0}
+footer{padding-bottom:0}}/*! Section 7: Calendar */@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){div.row hr{margin:-80px auto 40px;height:10px;padding:1rem 0;width:100%}
+}/*! Section 8: Calendar */calendar{float:left;display:block;box-sizing:border-box;-moz-box-sizing:border-box;background:white;width:300px;border:solid 1px #CCC;margin-bottom:10px;border-radius:2px}
+calendar div.header{float:left;width:100%;background:#2875c7;height:40px;color:white}
+calendar div.header *{height:40px;line-height:40px !important;display:inline-block;vertical-align:middle}
+calendar div.header i{float:left;width:40px;font-size:1.125em;font-weight:bold;position:relative;box-sizing:border-box;-moz-box-sizing:border-box;padding:0 10px;cursor:pointer}
+calendar div.header i.fa-angle-left{text-align:left}calendar div.header i.fa-angle-right{text-align:right;margin-left:-40px}
+calendar div.header span{float:left;width:100%;font-weight:bold;text-transform:uppercase;box-sizing:border-box;-moz-box-sizing:border-box;padding-left:50px;margin-left:-40px;text-align:center;padding-right:40px;color:inherit}
+calendar div.week{float:left;width:100%;border-top:solid 1px #CCC}calendar div.week:first-child{border-top:0}
+calendar div.week span.day{float:left;width:14%;box-sizing:border-box;-moz-box-sizing:border-box;border-left:solid 1px #CCC;font-size:.75em;text-align:center;height:30px;line-height:30px !important;display:inline-block;vertical-align:middle;background:white;cursor:pointer;color:black}
+calendar div.week span.day:first-child{border-left:0}calendar div.week span.day.today{background:#e3f2ff}
+calendar div.week span.day.different-month{color:silver}calendar div.week span.day.selected{background:#2875c7;color:white}
+calendar div.week.names>span{color:#2875c7;font-weight:bold}table.outerformtablerows{border:0;background:#fff}
+table.outerformtablerows tbody{border:0}.fieldtr,.fieldtitle{background:#fff}.eformstext{display:none}
+div.afnavbuttons input[type=submit]{margin:0 10px 0 0}
