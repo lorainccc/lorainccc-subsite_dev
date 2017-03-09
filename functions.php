@@ -373,10 +373,7 @@ function jptweak_remove_share() {
  
 add_action( 'loop_start', 'jptweak_remove_share' );
 
-function add_my_day_var($public_query_vars) {
-    $public_query_vars[] = 'd';
-    return $public_query_vars;
-}
+
 function add_paged_var($public_query_vars) {
     $public_query_vars[] = 'page';
     return $public_query_vars;

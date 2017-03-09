@@ -277,6 +277,9 @@ calendar div.header i{float:left;width:40px;font-size:1.125em;font-weight:bold;p
 calendar div.header i.fa-angle-left{text-align:left}calendar div.header i.fa-angle-right{text-align:right;margin-left:-40px}
 calendar div.header span{float:left;width:100%;font-weight:bold;text-transform:uppercase;box-sizing:border-box;-moz-box-sizing:border-box;padding-left:50px;margin-left:-40px;text-align:center;padding-right:40px;color:inherit}
 calendar div.week{float:left;width:100%;border-top:solid 1px #CCC}calendar div.week:first-child{border-top:0}
+calendar div.week div.day{float:left;width:14%;box-sizing:border-box;-moz-box-sizing:border-box;border-left:solid 1px #CCC;font-size:.75em;text-align:center;min-height:30px;background:white;cursor:pointer;color:black}
+calendar div.week div.day:first-child{border-left:0}calendar div.week div.day.today{background:#e3f2ff}
+calendar div.week div.day.different-month{color:silver}calendar div.week div.day.selected{background:#2875c7;color:white}
 calendar div.week span.day{float:left;width:14%;box-sizing:border-box;-moz-box-sizing:border-box;border-left:solid 1px #CCC;font-size:.75em;text-align:center;height:30px;line-height:30px !important;display:inline-block;vertical-align:middle;background:white;cursor:pointer;color:black}
 calendar div.week span.day:first-child{border-left:0}calendar div.week span.day.today{background:#e3f2ff}
 calendar div.week span.day.different-month{color:silver}calendar div.week span.day.selected{background:#2875c7;color:white}

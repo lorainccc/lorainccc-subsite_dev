@@ -86,14 +86,43 @@ calendar {
         &:first-child {
             border-top:none;
         }
-        span.day {
+        div.day {
             float:left;
             width: floor(100%/7);
             @include border-box;
             border-left:solid 1px $border-colour;
             font-size:0.75em;
             text-align:center;
-            @include vertical-centre(30px);
+												min-height: 30px;
+            background:white;
+            cursor:pointer;
+            color:black;
+            
+            &:first-child {
+                border-left:none;
+            }
+            
+            &.today {
+                background:#E3F2FF;
+            }
+            
+            &.different-month {
+                color:#C0C0C0;
+            }
+            
+            &.selected {
+                background:$secondary-colour;
+                color:white;
+            }
+        }
+					 span.day {
+            float:left;
+            width: floor(100%/7);
+            @include border-box;
+            border-left:solid 1px $border-colour;
+            font-size:0.75em;
+            text-align:center;
+												@include vertical-centre(30px);
             background:white;
             cursor:pointer;
             color:black;

@@ -7,9 +7,12 @@
  * @since Twenty Fourteen 1.0
  */
 
-get_header(); ?>
-<div class="row page-content" ng-app="demo">
+get_header();
 
+?>
+
+<div class="row page-content" ng-app="demo">
+	
 <div class="small-12 medium-12 large-12 columns breadcrumb-container">
    <?php get_template_part( 'template-parts/content', 'breadcrumb' ); ?>
 </div>
@@ -26,9 +29,7 @@ if ( function_exists( 'sharing_display' ) ) {
 					endwhile; // End of the loop.
 						?>
 	<div class="small-12 columns show-for-small-only">
-	<div ng-controller="calendarDemo">
-	<calendar selected="day"></calendar>
-</div>
+			<?php get_sidebar(); ?>
 	</div>
 	<div class="small-12 medium-8 large-8 columns">
 <?php $myvar = get_query_var('d');
@@ -53,11 +54,16 @@ if ( function_exists( 'sharing_display' ) ) {
 			
 			?>	
 					<div class="small-12 medium-12 large-12 columns events-list">	
+									<div ng-controller="calendarDemo">										
+											<?php
+														$selected_date = "{{day.format('MMMM Do, YYYY')}}";
+											?>
+								</div>	
 						<?php 
 				$lcccevents = '';
 				$stockerevents = '';
 				$athleticevents = '';
-	
+				$lcccacademicevents = '';
 			//Grab posts (endpoints)
   	$domain = 'http://' . $_SERVER['SERVER_NAME'];
 
@@ -92,10 +98,13 @@ if ( function_exists( 'sharing_display' ) ) {
 usort( $posts, function ( $a, $b) {
 return strtotime( $a->event_start_date ) - strtotime( $b->event_start_date );
 });
-						if($posts !=''){	
+						$currentdate = date("Y-m-d");
+						$dayswithevents = array();
+					if($posts !=''){	
 					foreach ( $posts as $post ){
 												$featured = $post->featured_media;
-									if(strtotime($post->event_start_date) == strtotime($myvar)){
+									if(strtotime($post->event_start_date) > strtotime($currentdate)){
+										$dayswithevents[] = $post->event_start_date;
 										$eventcounter++;
 											if($featured != 0){			
 												echo '<div class="small-12 medium-12 large-12 columns">';
@@ -166,12 +175,12 @@ return strtotime( $a->event_start_date ) - strtotime( $b->event_start_date );
 						?>
 			</div>
 	</div>
-	<div class="medium-4 large-4 columns show-for-medium">
-					<div class="medium-12 large-12 columns">
-								<div ng-controller="calendarDemo">
-											<calendar selected="day"></calendar>
-								</div>	
-					</div>
+	<div class="medium-4 large-4 columns show-for-medium nopadding">
+		<div class="medium-12 large-12 columns">		
+			<?php get_sidebar(); ?>
+		</div>
+
+
 									  <?php if ( is_active_sidebar( 'lccc-badges-sidebar' ) ) { ?>
 			<div class="medium-12 large-12 columns hide-for-print">
 			<?php dynamic_sidebar( 'lccc-badges-sidebar' ); ?>
