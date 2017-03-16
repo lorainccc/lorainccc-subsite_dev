@@ -49,7 +49,7 @@ div.columns.mylccc-news-container div.row hr{
 
 .site-main table thead
 {
-			background: #0055A5;
+			background: #DCDCDC;
    color: #ffffff;
 }
 div.columns.archive-events-container{
@@ -174,7 +174,8 @@ a img.aligncenter {
     border: 1px solid #f0f0f0;
     max-width: 96%;
     padding: 5px 3px 10px;
-    text-align: center
+    text-align: center;
+    font-size: 1rem;
 }
 
 .wp-caption.alignnone {
@@ -876,7 +877,7 @@ blockquote {
     vertical-align: top;
     font-weight: bold;
     text-align: left;
-    background: $lcccblue;  
+    background: #5a5a5a;  
     color: #fff;
     text-transform: uppercase;
     font-size: 1.1em;
@@ -891,12 +892,17 @@ blockquote {
    border: 0;
    background: #fff;
 }
-.entry-content table tr.odd {
+/*.entry-content table tr.odd {
     background: #f7f7f7;
-}
+}*/
 .entry-content table.outerformtablerows tbody{
 border: 0;
 }
+
+table tbody tr:nth-child(even) {
+    background: none;
+}
+
 .fieldtr, .fieldtitle {
    background: #fff;
 }
@@ -970,6 +976,17 @@ p.day {
     font-weight: bold;
     color: #003B76;
 }
+
+/* Gravity Forms Tweaks */
+.gform_wrapper .gfield_radio li label, .gform_wrapper .gfield_checkbox li label {
+   margin: 2px 0 10px 4px;
+}
+
+.gform_wrapper table.gfield_list td, .gform_wrapper table.gfield_list th {
+    padding: 4px;
+}
+ 
+/* End Gravity Forms */ 
 
 @media only screen and (max-width: 45.813em){
 	.sidebarcontainer{width: 100%;}
