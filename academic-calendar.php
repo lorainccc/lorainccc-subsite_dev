@@ -28,7 +28,7 @@ get_header(); ?>
 				$spring_end_year = date("Y",$spring_end_var);
 
 				if($spring_start_year == $spring_end_year){
-					$spring_end_year = $spring_end_year + 1; 
+					$spring_start_year = $spring_start_year - 1; 
 				}
 				?>
 				<?php $summer_start = get_option( 'lccc_summer_semester_startdate', '' ); 
@@ -148,7 +148,9 @@ get_header(); ?>
 																						<table>
 							<tbody>
 								<?php
+
 								$springcat = 'spring-semester-'.$spring_start_year.'-'.$spring_end_year;
+
 								$summercat = 'summer-semester-'.$summer_start_year.'-'.$summer_end_year;
 								$fallcat = 'fall-semester-'.$fall_start_year.'-'.$fall_end_year;
 							

@@ -308,7 +308,7 @@ return strtotime( $a->event_start_date ) - strtotime( $b->event_start_date );
 		</main><!-- #main -->
 	</div><!-- #primary -->
 	</div>
-	<div class="small-12 medium-4 large-4 columns">	
+	<div class="small-12 medium-4 large-4 columns" style="padding-top:0.5rem;">	
 <?php
 get_sidebar();
 ?>

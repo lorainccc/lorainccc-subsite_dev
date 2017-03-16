@@ -57,24 +57,24 @@ Section 2: Content
 }@media print{.column .lccc_events,.columns .lccc_events{border:1px solid #999}.widget h2.headertext{text-decoration:underline}
 .columns.lccc_events.headerlogo{border:0}}span.event_entries article{box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8);-moz-box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8);-webkit-box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8);padding-top:2.5rem;padding-bottom:2.5rem}
 @media print{span.event_entries article{padding-top:1.5rem;padding-bottom:2.5rem;border-bottom:1px solid #333}
-}div.columns.mylccc-news-container{padding-top:2.5rem}div.columns.nopadding.event-pagination{padding-top:2.5rem}
-div.columns.mylccc-news-container div.row hr{margin:-80px auto 0;height:10px;padding:1rem 0;width:100%}
-.site-main table thead{background:#0055a5;color:#fff}div.columns.archive-events-container{padding-top:4rem}
-@media print{div.columns.archive-events-container{padding-top:0}}div.site-content{padding-top:3rem}
-@media print{div.site-content{padding-top:1rem}}div.columns.calender{width:90px;height:90px;background-image:url(images/calendaricon_blue.svg);padding:2rem 1rem;text-align:center}
+}div.columns.mylccc-news-container:first-child{padding-top:0}div.columns.mylccc-news-container{padding-top:2.5rem}
+div.columns.nopadding.event-pagination{padding-top:2.5rem}div.columns.mylccc-news-container div.row hr{margin:-80px auto 0;height:10px;padding:1rem 0;width:100%}
+.site-main table thead{background:#dcdcdc;color:#fff}div.columns.archive-events-container{padding-top:4rem}
+@media print{div.columns.archive-events-container{padding-top:0}}@media print{div.site-content{padding-top:1rem}
+}div.columns.calender{width:90px;height:90px;background-image:url(images/calendaricon_blue.svg);padding:2rem 1rem;text-align:center}
 div.columns.nopadding div.entry-content a.button{margin-top:2rem}main.site-main.mylccc-event-archive div.row hr{margin:-80px auto 0;height:10px;padding:1rem 0;width:100%}
 div.columns.nopadding.mylccc-event header.entry-header a h1.entry-title{margin-top:1.5rem}
-div.row hr{margin:-80px auto 0;height:10px;padding:3rem 0;width:100%}main.site-main table thead{background:#0055a5;color:#fff}
-.tabs{border:0}.tabs-panel{padding:0}.tabs-title{margin:.5rem .5rem .5rem 0}.tabs-content{border:0}
-table{border:2px solid #ddd}li.button.tabs-title,li.button.tabs-title.is-active{padding:0}
-li.button.tabs-title.is-active{background:#0055a5}li.button.tabs-title,li.button.tabs-title.is-active a{color:#fff}
-.academic-calender-content .tabs-title>a{color:#fff}.academic-calender-content .tabs-title>a:hover{background:#555}
-.academic-calender-content .tabs-title>a:focus,.tabs-title>a[aria-selected='true']{background:0}
+div.row hr{margin:-80px auto 0;height:10px;padding:1rem 0;width:100%}div.mylccc-event-listing{padding-top:2.5rem}
+main.site-main table thead{background:#0055a5;color:#fff}.tabs{border:0}.tabs-panel{padding:0}
+.tabs-title{margin:.5rem .5rem .5rem 0}.tabs-content{border:0}table{border:2px solid #ddd}
+li.button.tabs-title,li.button.tabs-title.is-active{padding:0}li.button.tabs-title.is-active{background:#0055a5}
+li.button.tabs-title,li.button.tabs-title.is-active a{color:#fff}.academic-calender-content .tabs-title>a{color:#fff}
+.academic-calender-content .tabs-title>a:hover{background:#555}.academic-calender-content .tabs-title>a:focus,.tabs-title>a[aria-selected='true']{background:0}
 .alignnone{margin:5px 20px 20px 0}.aligncenter,div.aligncenter{display:block;margin:5px auto 5px auto}
 .alignright{float:right;margin:5px 0 20px 20px}.alignleft{float:left;margin:5px 20px 20px 0}
 a img.alignright{float:right;margin:5px 0 20px 20px}a img.alignnone{margin:5px 20px 20px 0}
 a img.alignleft{float:left;margin:5px 20px 20px 0}a img.aligncenter{display:block;margin-left:auto;margin-right:auto}
-.wp-caption{background:#fff;border:1px solid #f0f0f0;max-width:96%;padding:5px 3px 10px;text-align:center}
+.wp-caption{background:#fff;border:1px solid #f0f0f0;max-width:96%;padding:5px 3px 10px;text-align:center;font-size:1rem}
 .wp-caption.alignnone{margin:5px 20px 20px 0}.wp-caption.alignleft{margin:5px 20px 20px 0}
 .wp-caption.alignright{margin:5px 0 20px 20px}.wp-caption img{border:0 none;height:auto;margin:0;max-width:98.5%;padding:0;width:auto}
 .wp-caption p.wp-caption-text{font-size:11px;line-height:17px;margin:0;padding:0 4px 5px}
@@ -143,10 +143,10 @@ hr{border:0;height:20px;width:90%;height:50px;padding:2rem 0;box-shadow:0 15px 1
 .callout .map-link{margin-top:4.45rem}ul,ol{margin:2.5rem 0 1rem 2.5rem}blockquote{border:0}
 .content-area a:hover{text-decoration:underline}.error-content input[name=search],input[name=search]:focus{max-width:100%}
 .entry-content table{margin:0 0 1em 0;width:100%;border:1px solid #ccc;border-top:0;display:table}
-.entry-content table th{padding:.5em .75em;vertical-align:top;font-weight:bold;text-align:left;background:#0055a5;color:#fff;text-transform:uppercase;font-size:1.1em}
+.entry-content table th{padding:.5em .75em;vertical-align:top;font-weight:bold;text-align:left;background:#5a5a5a;color:#fff;text-transform:uppercase;font-size:1.1em}
 .entry-content table td{border-top:1px solid #ccc;padding:.3em .75em;vertical-align:top}
-.entry-content table.outerformtablerows{border:0;background:#fff}.entry-content table tr.odd{background:#f7f7f7}
-.entry-content table.outerformtablerows tbody{border:0}.fieldtr,.fieldtitle{background:#fff}
+.entry-content table.outerformtablerows{border:0;background:#fff}.entry-content table.outerformtablerows tbody{border:0}
+table tbody tr:nth-child(even){background:0}.fieldtr,.fieldtitle{background:#fff}
 .eformstext{display:none}div.afnavbuttons input[type=submit]{margin:0 10px 0 0}.ui-widget-content a{color:#007bbf}
 .hbheader_date h6{font-size:1rem;text-align:center;font-weight:bold}.homeblock_header{padding:0 0 10px 0;border-bottom:1px inset #CCC}
 .homeblock_content{padding-top:10px}.hbheader_category{margin-top:-10px;padding:0}
@@ -163,6 +163,8 @@ div.todays-event:last-child{border-bottom:0}header.page-header{border-bottom:1px
 div.archive-eventcontainer{border-bottom:1px solid #ccc;margin:5px 0}div.archive-eventcontainer:last-child{border-bottom:0}
 p.month{margin-bottom:0;margin-top:12px;margin-left:4px;width:100%;font-weight:bold;color:#003b76;line-height:1.7;font-size:.97rem}
 p.day{margin-bottom:0;margin-top:-10px;margin-left:9px;font-weight:bold;color:#003b76}
+.gform_wrapper .gfield_radio li label,.gform_wrapper .gfield_checkbox li label{margin:2px 0 10px 4px}
+.gform_wrapper table.gfield_list td,.gform_wrapper table.gfield_list th{padding:4px}
 @media only screen and (max-width:45.813em){.sidebarcontainer{width:100%}.content-container{width:98%}
 }div.columns.event-details{margin-top:-0.4rem}div.columns.entry-content{margin-top:.25rem}
 div.columns.nopadding.event-pagination a.button{margin-right:1rem}div.columns.nopadding.event-pagination a.button:last-child{margin-right:0}
