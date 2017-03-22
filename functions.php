@@ -109,6 +109,15 @@ function lorainccc_subsite_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+			register_sidebar( array(
+		'name'          => esc_html__( 'Calendar Sidebar', 'lorainccc_subsite' ),
+		'id'            => 'calendar-sidebar',
+		'description'   => esc_html__( 'Add widgets here.', 'lorainccc_subsite' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 
 		register_sidebar( array(
 		'name'          => esc_html__( 'Sub Site Announcement Sidebar', 'lorainccc_subsite' ),

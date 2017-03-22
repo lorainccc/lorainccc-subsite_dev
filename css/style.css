@@ -163,12 +163,12 @@ div.todays-event:last-child{border-bottom:0}header.page-header{border-bottom:1px
 div.archive-eventcontainer{border-bottom:1px solid #ccc;margin:5px 0}div.archive-eventcontainer:last-child{border-bottom:0}
 p.month{margin-bottom:0;margin-top:12px;margin-left:4px;width:100%;font-weight:bold;color:#003b76;line-height:1.7;font-size:.97rem}
 p.day{margin-bottom:0;margin-top:-10px;margin-left:9px;font-weight:bold;color:#003b76}
-.gform_wrapper .gfield_radio li label,.gform_wrapper .gfield_checkbox li label{margin:2px 0 10px 4px}
+div.mylccc-news-container img{margin-bottom:1rem}.gform_wrapper .gfield_radio li label,.gform_wrapper .gfield_checkbox li label{margin:2px 0 10px 4px}
 .gform_wrapper table.gfield_list td,.gform_wrapper table.gfield_list th{padding:4px}
 @media only screen and (max-width:45.813em){.sidebarcontainer{width:100%}.content-container{width:98%}
 }div.columns.event-details{margin-top:-0.4rem}div.columns.entry-content{margin-top:.25rem}
 div.columns.nopadding.event-pagination a.button{margin-right:1rem}div.columns.nopadding.event-pagination a.button:last-child{margin-right:0}
-/*!
+section.LCCC_Calendar_Event_Widget{margin-bottom:2rem}/*!
 Section 3: Body
 */body{font-size:1.1rem;font-family:"Open Sans",sans-serif;font-weight:500;line-height:1.5;color:#404040;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 h1,h2,h3,h4,h5,h6,h7{font-family:"Raleway",sans-serif}img.alignright{float:right;margin:0 0 1em 1em}

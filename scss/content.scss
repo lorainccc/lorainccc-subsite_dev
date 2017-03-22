@@ -982,6 +982,9 @@ p.day {
     font-weight: bold;
     color: #003B76;
 }
+div.mylccc-news-container img{
+	    margin-bottom: 1rem;
+}
 
 /* Gravity Forms Tweaks */
 .gform_wrapper .gfield_radio li label, .gform_wrapper .gfield_checkbox li label {
@@ -1014,4 +1017,7 @@ div.columns.nopadding.event-pagination a.button
 }
 div.columns.nopadding.event-pagination a.button:last-child{
 				margin-right: 0; 
+}
+section.LCCC_Calendar_Event_Widget{
+				margin-bottom: 2rem;
 }
