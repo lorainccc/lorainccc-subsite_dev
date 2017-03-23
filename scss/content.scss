@@ -34,8 +34,11 @@ span.event_entries article{
     border-bottom: 1px solid #333;
 	}
 }
+div.columns.mylccc-news-container:first-child{
+    padding-top: 0; 
+}
 div.columns.mylccc-news-container{
-    padding-top: 2.5rem;
+    padding-top: 2.5rem; 
 }
 div.columns.nopadding.event-pagination{
 			padding-top: 2.5rem;
@@ -92,8 +95,11 @@ div.row hr{
    //width: 100%;
     margin: -80px auto 0px;
     height: 10px;
-    padding: 3rem 0;
+    padding: 1rem 0;
     width: 100%;
+}
+div.mylccc-event-listing{
+	padding-top: 2.5rem;
 }
 main.site-main table thead{
 	  background: #0055A5;
@@ -976,6 +982,9 @@ p.day {
     font-weight: bold;
     color: #003B76;
 }
+div.mylccc-news-container img{
+	    margin-bottom: 1rem;
+}
 
 /* Gravity Forms Tweaks */
 .gform_wrapper .gfield_radio li label, .gform_wrapper .gfield_checkbox li label {
@@ -1008,4 +1017,7 @@ div.columns.nopadding.event-pagination a.button
 }
 div.columns.nopadding.event-pagination a.button:last-child{
 				margin-right: 0; 
+}
+section.LCCC_Calendar_Event_Widget{
+				margin-bottom: 2rem;
 }

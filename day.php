@@ -38,12 +38,14 @@ get_header(); ?>
    }
 			
 			?>	
+				<div class="small-12 columns show-for-small-only">	
+
+	</div>
 						<div class="small-12 medium-12 large-12 columns">
 							<div class="small-up-1 medium-up-2 large-up-3 hide-for-print">
-				<div class="column column-block"><a href="calendar/?d=<?php echo $myvar;?>"><--- Back to Calendar</a></div>
+				<div class="column column-block"><a href="/mylccc/lccc-events/"><--- Back to All Events</a></div>
 				<div class="column column-block show-for-large-up"> &nbsp;</div>
-				<div class="column column-block " style="text-align:right;">	
-				<a href="week/?d=<?php echo $myvar; ?>">Back To Weekly View</a></div>	
+					<div class="column column-block show-for-large-up"> &nbsp;</div>
 				</div>
 				<h1><?php echo $event_month.' '.$event_day.', '.$event_year.' Events'; ?></h1>
 				
@@ -66,12 +68,12 @@ get_header(); ?>
 				$athleticevents = '';
 	
 			//Grab posts (endpoints)
-  	$domain = 'http://' . $_SERVER['SERVER_NAME'];
-
+  	//$domain = 'http://' . $_SERVER['SERVER_NAME'];
+   $domain = 'https://www.lorainccc.edu';
 	   //?filter[posts_per_page]='.$displaynumber.'
-			$lcccevents = new Endpoint( $domain . '/mylccc/wp-json/wp/v2/lccc_events?filter[posts_per_page]=-1' );
+			$lcccevents = new Endpoint( $domain . '/mylccc/wp-json/wp/v2/lccc_events?per_page=100' );
 			$athleticevents = new Endpoint( $domain . '/athletics/wp-json/wp/v2/lccc_events?per_page=100' );
-			$stockerevents = new Endpoint( 'http://sites.lorainccc.edu/stocker/wp-json/wp/v2/lccc_events?filter[posts_per_page]=-1' );
+			$stockerevents = new Endpoint( 'http://sites.lorainccc.edu/stocker/wp-json/wp/v2/lccc_events?per_page=100' );
 	
 		//Create instance
 	$multi = new MultiBlog( 1 );
@@ -104,7 +106,7 @@ return strtotime( $a->event_start_date ) - strtotime( $b->event_start_date );
 												$featured = $post->featured_media;
 									if(strtotime($post->event_start_date) == strtotime($myvar)){
 											if($featured != 0){			
-												echo '<div class="small-12 medium-12 large-12 columns">';
+												echo '<div class="small-12 medium-12 large-12 columns mylccc-event-listing">';
 											echo '<div class="small-12 medium-3 large-3 columns nopadding">';
 											echo '<img src="'.$post->better_featured_image->media_details->sizes->medium->source_url.'" alt="'.$post->better_featured_image->alt_text.'">';	
 												echo '</div>';
@@ -137,7 +139,7 @@ return strtotime( $a->event_start_date ) - strtotime( $b->event_start_date );
 												
 												
 											}else{
-											echo '<div class="small-12 medium-12 large-12 columns">';
+											echo '<div class="small-12 medium-12 large-12 columns mylccc-event-listing">';
 											echo '<a href="'.$post->link.'"><h2 class="event-title">'.$post->title->rendered.'</h2></a>';
 										 $eventdate = $post->event_start_date;
 											if($eventdate !=''){
@@ -172,16 +174,20 @@ return strtotime( $a->event_start_date ) - strtotime( $b->event_start_date );
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div>
-		<div class="small-12 medium-4 large-4 columns hide-for-print">
-	<?php if ( is_active_sidebar( 'lccc-badges-sidebar' ) ) { ?>
+		<div class="small-12 medium-4 large-4 columns hide-for-print" style="padding-top: 2.35rem;">
+			<?php
+						get_sidebar();
+			?>
+			<?php if ( is_active_sidebar( 'lccc-badges-sidebar' ) ) { ?>
 			<div class="small-12 medium-12 large-12 columns hide-for-print">
 			<?php dynamic_sidebar( 'lccc-badges-sidebar' ); ?>
 			</div>
 	<?php } ?>
-			<?php if ( is_active_sidebar( 'lccc-events-sidebar' ) ) { ?>
-																							<?php dynamic_sidebar( 'lccc-events-sidebar' ); ?>
-																		<?php } ?>				
 	</div>
+		
+		<div class="small-12 columns show-for-small-only">
+		
+		</div>
 <?php
  //Jetpack Sharing Buttons
 if ( function_exists( 'sharing_display' ) ) {
