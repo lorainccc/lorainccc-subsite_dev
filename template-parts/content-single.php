@@ -8,7 +8,7 @@
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-		<div class="entry-meta">
+		<div class="entry-meta" style="margin: 5px 0 10px 0;">
 			<?php lorainccc_posted_on(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->

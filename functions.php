@@ -209,6 +209,24 @@ function lorainccc_subsite_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+  	register_sidebar( array(
+		'name'          => esc_html__( 'Presidents Twitter Feed', 'lorainccc' ),
+		'id'            => 'lccc-president-twitter-sidebar',
+		'description'   => esc_html__( 'Add widgets here.', 'lorainccc' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+  	register_sidebar( array(
+		'name'          => esc_html__( 'Presidents in the News Section', 'lorainccc' ),
+		'id'            => 'lccc-president-in-news',
+		'description'   => esc_html__( 'Add widgets here.', 'lorainccc' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'lorainccc_subsite_widgets_init' );
 
@@ -476,7 +494,6 @@ function wpbeginner_numeric_posts_nav() {
 	echo '</ul></div>' . "\n";
 
 }
-
 
 
 ?>

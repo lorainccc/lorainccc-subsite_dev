@@ -12,15 +12,16 @@ $programargs = array(
   $linkvalue = get_post_meta( $post_id, 'lc_program_path_link_field', true );
   $linklabel = get_post_meta( $post_id, 'lc_program_path_link_label_field', true );
 
+  $titleId = get_the_title();
+  $titleId = strtolower( str_replace( ' ', '_', $titleId ) );
 
     ?>
-
-        <section class="row programpaths">
+        <section class="row programpaths" aria-labeledby="<?php echo $titleId; ?>">
 											<div class="small-12 medium-3 large-3 columns">
             <a href="<?php echo $linkvalue; ?>"><?php the_post_thumbnail(); ?></a>
 											</div>
 											<div class="small-12 medium-9 large-9 columns gtwymenu-content">
-													<a href="<?php echo $linkvalue; ?>"><?php the_title('<h2>','</h2>' );?></a>
+													<a href="<?php echo $linkvalue; ?>"><h2 id="<?php echo $titleId; ?>"><?php the_title();?></h2></a>
 													<?php the_content('<p>','</p>'); ?>
              <a href="<?php echo $linkvalue; ?>" class="programpathlinks"><?php echo $linklabel; ?></a>
 									</div>

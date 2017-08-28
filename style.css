@@ -135,6 +135,8 @@ hr{border:0;height:20px;width:90%;height:50px;padding:2rem 0;box-shadow:0 15px 1
 .event-divider{height:.25rem;background:#dcdcdc;width:100%;margin:1rem 0}.fw-lead{padding:2.625rem 0}
 .fw-lead p{font-size:1rem}.lead p{font-size:1rem}.news-feed .featured-image img{width:100%;height:auto;margin-bottom:1rem}
 .gateway-links,.programpaths{padding-top:2rem;margin-bottom:2rem;box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8);-moz-box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8);-webkit-box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8)}
+.section-divider{padding-top:2rem;margin-bottom:2rem;box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8);-moz-box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8);-webkit-box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8);display:inline-block;width:100%}
+.section-divider-btm{padding-top:2rem;margin-bottom:2rem;box-shadow:0 20px 20px -10px rgba(216,216,216,0.8);-moz-box-shadow:0 20px 20px -10px rgba(216,216,216,0.8);-webkit-box-shadow:0 20px 20px -10px rgba(216,216,216,0.8);display:inline-block;width:100%}
 .gateway-links h2{font-size:1.5rem;margin-bottom:0}.gateway-links .menu>li>a{font-size:.75rem;color:#5593db;text-decoration:underline;padding:.5rem 0}
 .gateway-links img{margin-top:.5rem;margin-bottom:.5rem;width:100%;height:auto}.gateway-links a{font-size:1.1rem;text-decoration:underline;font-weight:800}
 .programpathlinks{font-size:1.1rem;font-weight:800}.row .row.lccc-badge{padding-top:1.25rem;padding-bottom:1.25rem;font-size:.75rem;color:#fefefe;margin:1rem 0 0 0}
@@ -177,10 +179,21 @@ p.month{margin-bottom:0;margin-top:12px;margin-left:4px;width:100%;font-weight:b
 p.day{margin-bottom:0;margin-top:-10px;margin-left:9px;font-weight:bold;color:#003b76}
 div.mylccc-news-container img{margin-bottom:1rem}.gform_wrapper .gfield_radio li label,.gform_wrapper .gfield_checkbox li label{margin:2px 0 10px 4px}
 .gform_wrapper table.gfield_list td,.gform_wrapper table.gfield_list th{padding:4px}
-@media only screen and (max-width:45.813em){.sidebarcontainer{width:100%}.content-container{width:98%}
-}div.columns.event-details{margin-top:-0.4rem}div.columns.entry-content{margin-top:.25rem}
+.gform_wrapper legend.gfield_label{font-weight:700}@media only screen and (max-width:45.813em){.sidebarcontainer{width:100%}
+.content-container{width:98%}}div.columns.event-details{margin-top:-0.4rem}div.columns.entry-content{margin-top:.25rem}
 div.columns.nopadding.event-pagination a.button{margin-right:1rem}div.columns.nopadding.event-pagination a.button:last-child{margin-right:0}
-section.LCCC_Calendar_Event_Widget{margin-bottom:2rem}/*!
+section.LCCC_Calendar_Event_Widget{margin-bottom:2rem}figure{margin:0;padding:0}.gallery{margin:0 auto 18px;display:inline-block;width:100%}
+.gallery .gallery-item{float:left;margin-top:0;text-align:center;width:33%}.gallery-columns-2 .gallery-item{width:50%}
+.gallery-columns-3 .gallery-item{width:33%}.gallery-columns-4 .gallery-item{width:25%}
+.gallery img{padding:8px}.gallery img:hover{background:white}.gallery-columns-2 .attachment-medium{max-width:92%;height:auto}
+.gallery-columns-3 .attachment-thumbnail{max-width:90%;height:auto}.gallery-columns-4 .attachment-thumbnail{max-width:84%;height:auto}
+.gallery .gallery-caption{display:none}.gallery dl,.gallery dt{margin:0}.gallery br+br{display:none}
+.latest-tweets>ul{list-style-image:url("/wp-content/themes/lorainccc-subsite/images/icons/classic_twitter_bird.png")}.latest-tweets li a{word-break:break-all}
+.latest-tweets li{display:block;width:100%;border-bottom:1px solid #999;margin:0 5px;padding:7px}
+p.tweet-details{font-size:.9rem;font-weight:bold}.clink-links-shortcode{background-color:transparent;border:0}
+.clink-links-shortcode-header{background:transparent;border:0}.clink-links-list>ul>li{border:0}
+.clink-links-list>ul>li a{color:#007bbf}.clink-links-list>ul>li>a:hover{background:transparent;color:#007bbf}
+/*!
 Section 3: Body
 */body{font-size:1.1rem;font-family:"Open Sans",sans-serif;font-weight:500;line-height:1.5;color:#404040;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 h1,h2,h3,h4,h5,h6,h7{font-family:"Raleway",sans-serif}img.alignright{float:right;margin:0 0 1em 1em}

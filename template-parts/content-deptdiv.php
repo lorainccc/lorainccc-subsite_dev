@@ -104,6 +104,29 @@ endif;
 		<?php
 			the_content();
 
+   // Display the Shared Content Feed
+  
+   $sharedcontentsiteurl = get_post_meta( $post->ID, 'lc_shared_content_site_url_field', true );
+   $sharedcontentpostslug = get_post_meta( $post->ID, 'lc_shared_content_post_slug_field', true );
+    
+     if ($sharedcontentsiteurl != ''){
+        
+    $contenturl = trailingslashit( 'http://' . $_SERVER['SERVER_NAME'] . '/' . $sharedcontentsiteurl ) . 'wp-json/wp/v2/posts?slug=' . $sharedcontentpostslug;
+    
+    $sharedcontenturl = new lcEndPoints( $contenturl );
+    
+    $sharedcontent = new lcContent( 1 );
+    $sharedcontent->lc_add_endpoint ( $sharedcontenturl );
+    $sharedposts = $sharedcontent->lc_get_posts();
+        if(empty($sharedposts)){
+		   echo 'No Posts Found!';
+	   }
+    
+    foreach ( $sharedposts as $post ){
+     echo $post->content->rendered;
+    }
+   }
+  
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'lorainccc' ),
 				'after'  => '</div>',

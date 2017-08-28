@@ -108,11 +108,11 @@ $cost = event_meta_box_get_meta('event_meta_box_ticket_price_s_');
 	<?php } ?>
 			<div class="small-12 medium-12 large-12 columns hide-for-print">
 			<h4>Select Event Type:</h4>
-			<select id="event_type" name="event_type" class="postform">
-				<option value="All">Select</option>
-								<option value="All">All</option>			
-								<option value="Athletics">Athletics</option>
-								<option value="Stocker">Stocker</option>				
+			<select id="event_type" name="event_type" class="postform" role="listbox">
+				<option value="All" role="listitem">Select</option>
+								<option value="All" role="listitem">All</option>			
+								<option value="Athletics" role="listitem">Athletics</option>
+								<option value="Stocker" role="listitem">Stocker</option>				
 			</select>
 		</div>
 		<?php if ( is_active_sidebar( 'lccc-badges-sidebar' ) ) { ?>
@@ -203,7 +203,7 @@ return strtotime( $a->event_start_date ) - strtotime( $b->event_start_date );
 							foreach ( $posts as $post ){
                                 if(	$icounter<$posts_per_page){
 								?>
-								<div class="small-12 medium-12 large-12 columns mylccc-news-container" id="post-<?php echo $post->id->rendered; ?>" >
+								<div class="small-12 medium-12 large-12 columns mylccc-news-container" id="post-<?php echo $post->id; ?>" >
 						
 										<header class="entry-header">
 												<a href="<?php echo $post->link; ?>">
@@ -242,7 +242,7 @@ return strtotime( $a->event_start_date ) - strtotime( $b->event_start_date );
 													echo '</div>';
 													echo '<div class="small-12 medium-12 large-12 columns">';
 														echo '<p>' . $post->excerpt->rendered . '</p>' ;
-														echo '<a class="button" href="'.$post->link.'">More Information</a>';
+														echo '<a class="button" href="'.$post->link.'" title="Click for more information about' . $post->title->rendered . '">More Information</a>';
 													echo '</div>';
 															echo '</div>';
 														}else{
@@ -262,7 +262,7 @@ return strtotime( $a->event_start_date ) - strtotime( $b->event_start_date );
 													echo '</div>';
 															echo '<div class="small-12 medium-12 large-12 columns nopadding">';
 															echo ' <p>' . $post->excerpt->rendered . '</p>' ; 	
-																echo '<a class="button" href="'.$post->link.'">More Information</a>';
+																echo '<a class="button" href="'.$post->link.'" title="Click for more information about' . $post->title->rendered . '">More Information</a>';
 															echo '</div>';	
 														}
 												?>
@@ -293,7 +293,7 @@ return strtotime( $a->event_start_date ) - strtotime( $b->event_start_date );
 														echo '<div class="column column-block">'.str_repeat('&nbsp;', 1).'</div>';
 														$pages++;
 														echo '<div class="column column-block">';
-																	echo '<a href="/mylccc/lccc_events/?page='.$pages.'">More Events</a>';
+																	echo '<a href="/mylccc/lccc_events/?page='.$pages.'" title="Click for more events">More Events</a>';
 														echo '</div>';	
 													}elseif( $pages == 2 ){
 														$next= $pages+1;
@@ -303,24 +303,24 @@ return strtotime( $a->event_start_date ) - strtotime( $b->event_start_date );
 														echo '</div>';
 														echo '<div class="column column-block">'.str_repeat('&nbsp;', 1).'</div>';
 														echo '<div class="column column-block">';
-																	echo '<a href="/mylccc/lccc_events/?page='.$next.'">More Events</a>';
+																	echo '<a href="/mylccc/lccc_events/?page='.$next.'" title="Click for more events">More Events</a>';
 														echo '</div>';
 														$pages++;
 													}elseif( $pages > 2 and $pages < $pagecount){
 														$next= $pages+1;
 														$prev= $pages-1;
 														echo '<div class="column column-block">';
-																	echo '<a href="/mylccc/lccc_events/?page='.$prev.'">Previous Events</a>';
+																	echo '<a href="/mylccc/lccc_events/?page='.$prev.'" title="Click to view the previous page of events">Previous Events</a>';
 														echo '</div>';
 														echo '<div class="column column-block">'.str_repeat('&nbsp;', 1).'</div>';
 														echo '<div class="column column-block">';
-																	echo '<a href="/mylccc/lccc_events/?page='.$next.'">More Events</a>';
+																	echo '<a href="/mylccc/lccc_events/?page='.$next.'" title="Click to view the next page of events">More Events</a>';
 														echo '</div>';
 														$pages++;
 													}elseif( $pages == $pagecount ){
 														$pages--;
 														echo '<div class="column column-block">';
-																	echo '<a href="/mylccc/lccc_events/?page='.$pages.'">Previous Events</a>';
+																	echo '<a href="/mylccc/lccc_events/?page='.$pages.'" title="Click to view the previous page of events">Previous Events</a>';
 														echo '</div>';	
 														echo '<div class="column column-block">'.str_repeat('&nbsp;', 1).'</div>';
 														echo '<div class="column column-block">'.str_repeat('&nbsp;', 1).'</div>';
@@ -453,7 +453,7 @@ return strtotime( $a->event_start_date ) - strtotime( $b->event_start_date );
 													echo '</div>';
 													echo '<div class="small-12 medium-12 large-12 columns">';
 														echo '<p>' . $post->excerpt->rendered . '</p>' ;
-														echo '<a class="button" href="'.$post->link.'">More Information</a>';
+														echo '<a class="button" href="'.$post->link.'" title="Click for more information about' . $post->title->rendered . '">More Information</a>';
 													echo '</div>';
 															echo '</div>';
 														}else{
@@ -473,7 +473,7 @@ return strtotime( $a->event_start_date ) - strtotime( $b->event_start_date );
 													echo '</div>';
 															echo '<div class="small-12 medium-12 large-12 columns nopadding">';
 															echo ' <p>' . $post->excerpt->rendered . '</p>' ; 	
-																echo '<a class="button" href="'.$post->link.'">More Information</a>';
+																echo '<a class="button" href="'.$post->link.'" title="Click for more information about' . $post->title->rendered . '">More Information</a>';
 															echo '</div>';	
 														}
 												?>
@@ -504,34 +504,34 @@ return strtotime( $a->event_start_date ) - strtotime( $b->event_start_date );
 														echo '<div class="column column-block">'.str_repeat('&nbsp;', 1).'</div>';
 														$pages++;
 														echo '<div class="column column-block">';
-																	echo '<a href="/mylccc/lccc_events/?page='.$pages.'">More Events</a>';
+																	echo '<a href="/mylccc/lccc_events/?page='.$pages.'" title="Click to view more events">More Events</a>';
 														echo '</div>';	
 													}elseif( $pages == 2 ){
 														$next= $pages+1;
 														$prev= $pages-1;
 														echo '<div class="column column-block">';
-																	echo '<a href="/mylccc/lccc_events/">Previous Events</a>';
+																	echo '<a href="/mylccc/lccc_events/" title="Click to view the previous page of events">Previous Events</a>';
 														echo '</div>';
 														echo '<div class="column column-block">'.str_repeat('&nbsp;', 1).'</div>';
 														echo '<div class="column column-block">';
-																	echo '<a href="/mylccc/lccc_events/?page='.$next.'">More Events</a>';
+																	echo '<a href="/mylccc/lccc_events/?page='.$next.'" title="Click to view more events">More Events</a>';
 														echo '</div>';
 														$pages++;
 													}elseif( $pages > 2 and $pages < $pagecount){
 														$next= $pages+1;
 														$prev= $pages-1;
 														echo '<div class="column column-block">';
-																	echo '<a href="/mylccc/lccc_events/?page='.$prev.'">Previous Events</a>';
+																	echo '<a href="/mylccc/lccc_events/?page='.$prev.'" title="Click to view the previous page of events">Previous Events</a>';
 														echo '</div>';
 														echo '<div class="column column-block">'.str_repeat('&nbsp;', 1).'</div>';
 														echo '<div class="column column-block">';
-																	echo '<a href="/mylccc/lccc_events/?page='.$next.'">More Events</a>';
+																	echo '<a href="/mylccc/lccc_events/?page='.$next.'" title="Click to view more events">More Events</a>';
 														echo '</div>';
 														$pages++;
 													}elseif( $pages == $pagecount ){
 														$pages--;
 														echo '<div class="column column-block">';
-																	echo '<a href="/mylccc/lccc_events/?page='.$pages.'">Previous Events</a>';
+																	echo '<a href="/mylccc/lccc_events/?page='.$pages.'" title="Click to view the previous page of events">Previous Events</a>';
 														echo '</div>';	
 														echo '<div class="column column-block">'.str_repeat('&nbsp;', 1).'</div>';
 														echo '<div class="column column-block">'.str_repeat('&nbsp;', 1).'</div>';
