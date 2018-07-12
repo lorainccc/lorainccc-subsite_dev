@@ -62,6 +62,11 @@ header .dropdown.menu>li.is-dropdown-submenu-parent>a::after {
     display: none
 }
 
+header li.top-item > a{
+	text-decoration: none;
+	cursor:default;
+} 
+
 .medium-blue-bg {
     width: 100%;
     background: $lcccblue;
@@ -329,7 +334,7 @@ ul.sub-menu {
 }
 
 nav#site-navigation {
-    padding-bottom: 20px;
+    /*padding-bottom: 20px;*/
 }
 
 li.current-menu-ancestor, li.current-menu-item {

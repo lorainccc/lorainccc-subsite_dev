@@ -14,6 +14,11 @@ get_header();
 
 //Checking to see if this is a home page like MyLCCC
 if ( is_front_page() && is_home() ){?>
+<!-- adding spacer -->
+<div class="row">
+	<div class="small-12 medium-12 large-12 columns">&nbsp;</div>
+</div>
+<!-- end spacer row -->
 <div class="row page-content">
 
 	<div class="small-12 medium-8 large-8 columns">

@@ -7,16 +7,17 @@
  * @since Lorainccc 1.0
  */
 get_header(); ?>
-<div class="small-12 medium-12 large-12 columns gateway-header hide-for-print">
+<div class="small-12 medium-12 large-12 cell gateway-header hide-for-print">
 	<?php the_post_thumbnail(); ?>
 	</div>
-<div class="small-12 columns nopadding show-for-small-only"><!--Begin Mobile Side Menu -->
- <div class="small-12 medium-12 large-12 columns nopadding">
-  <div class="row show-for-small-only sub-mobile-menu-row hide-for-print" style="background:#000;">
-   <div class="small-2 columns" style="padding-top: 0.5rem;padding-left: 1.625rem;"> <span data-responsive-toggle="sub-responsive-menu" data-hide-for="medium">
+<div class="grid-container">
+<div class="small-12 cell nopadding show-for-small-only"><!--Begin Mobile Side Menu -->
+ <div class="small-12 medium-12 large-12 cell nopadding">
+  <div class="grid-x grid-margin-x grid-margin-x show-for-small-only sub-mobile-menu-row hide-for-print" style="background:#000;">
+   <div class="small-2 cell" style="padding-top: 0.5rem;padding-left: 1.625rem;"> <span data-responsive-toggle="sub-responsive-menu" data-hide-for="medium">
      <button class="menu-icon" type="button" data-toggle></button>
      </span> </div>
-   <div class="small-10 columns nopadding hide-for-print">
+   <div class="small-10 cell nopadding hide-for-print">
     <h3 class="sub-mobile-menu-header" style="padding-top: 6px;
    padding-left: 8px;color:#ffffff ;"><?php echo bloginfo('the-title'); ?></h3></div>
   </div>
@@ -39,17 +40,17 @@ get_header(); ?>
   </div>
  </div>
 </div><!--End Mobile Side Menu -->
-<div class="row page-content">
- <div class="small-12 medium-12 large-12 columns breadcrumb-container">
+<div class="grid-x grid-margin-x page-content">
+ <div class="small-12 medium-12 large-12 cell breadcrumb-container">
    <?php get_template_part( 'template-parts/content', 'breadcrumb' ); ?>
 </div>
-<div class="medium-4 large-4 columns hide-for-small-only hide-for-print">
-	<div class="small-12 medium-12 large-12 columns sidebar-widget">
+<div class="medium-4 large-4 cell hide-for-small-only hide-for-print">
+	<div class="small-12 medium-12 large-12 cell sidebar-widget">
 	<?php	if ( has_nav_menu( 'left-nav' ) ) : ?>
-	 <div class="small-12 medium-12 large-12 columns sidebar-menu-header hide-for-print">
+	 <div class="small-12 medium-12 large-12 cell sidebar-menu-header hide-for-print">
    <h3><?php echo bloginfo('the-title'); ?></h3>
   </div>
- <div id="secondary" class="medium-12 columns secondary nopadding">
+ <div id="secondary" class="medium-12 cell secondary nopadding">
 		<?php if ( has_nav_menu( 'left-nav' ) ) : ?>
 			<nav id="site-navigation" class="main-navigation hide-for-print" role="navigation">
 				<?php
@@ -65,20 +66,20 @@ get_header(); ?>
 		
 	</div>
 	</div>
-	<div class="small-12 medium-12 large-12 columns">
+	<div class="small-12 medium-12 large-12 cell">
 			<?php if ( is_active_sidebar( 'lccc-events-sidebar' ) ) { ?>
-			<div class="small-12 medium-12 large-12 columns">
+			<div class="small-12 medium-12 large-12 cell">
 				<?php dynamic_sidebar( 'lccc-events-sidebar' ); ?>
 			</div>	
 			<?php } ?>
 	<?php if ( is_active_sidebar( 'lccc-badges-sidebar' ) ) { ?>
-			<div class="small-12 medium-12 large-12 columns">			
+			<div class="small-12 medium-12 large-12 cell">			
 			<?php dynamic_sidebar( 'lccc-badges-sidebar' ); ?>
 			</div>
 	<?php } ?>
 	</div>
 	</div>			
-	<div class="small-12 medium-8 large-8 columns">		
+	<div class="small-12 medium-8 large-8 cell">		
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -90,17 +91,18 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div>	
-	<div class="small-12 columns hide-for-medium hide-for-print">
+	<div class="small-12 cell hide-for-medium hide-for-print">
 					<?php if ( is_active_sidebar( 'lccc-events-sidebar' ) ) { ?>
-			<div class="small-12 medium-12 large-12 columns">
+			<div class="small-12 medium-12 large-12 cell">
 				<?php dynamic_sidebar( 'lccc-events-sidebar' ); ?>
 			</div>	
 			<?php } ?>
 	<?php if ( is_active_sidebar( 'lccc-badges-sidebar' ) ) { ?>
-			<div class="small-12 medium-12 large-12 columns">			
+			<div class="small-12 medium-12 large-12 cell">			
 			<?php dynamic_sidebar( 'lccc-badges-sidebar' ); ?>
 			</div>
 	<?php } ?>
 	</div>
+</div>
 </div>
 <?php get_footer(); ?>
