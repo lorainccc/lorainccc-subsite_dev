@@ -1024,6 +1024,10 @@ div.mylccc-news-container img{
  font-weight: 700;
 }
 
+.button, .button:hover, .button:focus{
+	background-color: $medium-blue;
+}
+
 /* End Gravity Forms */ 
 
 @media only screen and (max-width: 45.813em){
