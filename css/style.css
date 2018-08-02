@@ -159,6 +159,10 @@ div.mylccc-news-container img{margin-bottom:1rem}.gform_wrapper .gfield_radio li
 div.columns.event-details{margin-top:-0.4rem}div.columns.entry-content{margin-top:.25rem}
 div.columns.nopadding.event-pagination a.button{margin-right:1rem}div.columns.nopadding.event-pagination a.button:last-child{margin-right:0}
 section.LCCC_Calendar_Event_Widget{margin-bottom:2rem}figure{margin:0;padding:0}.gallery{margin:0 auto 18px;display:inline-block;width:100%}
+.gform_wrapper legend.gfield_label{font-weight:700}div.columns.event-details{margin-top:-0.4rem}
+div.columns.entry-content{margin-top:.25rem}div.columns.nopadding.event-pagination a.button{margin-right:1rem}
+div.columns.nopadding.event-pagination a.button:last-child{margin-right:0}section.LCCC_Calendar_Event_Widget{margin-bottom:2rem}
+figure{margin:0;padding:0}.gallery{margin:0 auto 18px;display:inline-block;width:100%}
 .gallery .gallery-item{float:left;margin-top:0;text-align:center;width:33%}.gallery-columns-2 .gallery-item{width:50%}
 .gallery-columns-3 .gallery-item{width:33%}.gallery-columns-4 .gallery-item{width:25%}
 .gallery img{padding:8px}.gallery img:hover{background:white}.gallery-columns-2 .attachment-medium{max-width:92%;height:auto}
@@ -188,8 +192,10 @@ ul.bullet-arrow{list-style-type:none;margin:0}ul.bullet-arrow link{text-indent:-
 ul.bullet-arrow li{margin:5px 0 0 0;padding:0 0 15px 0}ul.bullet-arrow li:before{font-family:"Genericons";font-size:38px;content:"\f429";margin:-18px 0 0 0;color:#606060;float:left;width:1.4em}
 /*!
 Section 4: Header
-*/input[name=search],input[name=search]:focus{max-width:260px;width:100%;height:2rem;margin:.5rem 0 0 0;border-radius:20px;padding:.25rem .25rem .25rem 2.2rem;font-size:.75rem;font-weight:700;background-image:url(/wp-content/themes/lorainccc/images/icons/icon-search.png);background-repeat:no-repeat;background-position:.75rem .45rem}
-a.skip-link.screen-reader-text{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
+*/.searchbox{height:70px;padding:15px 0 15px 0}input#s,input#s:focus{max-width:260px;width:100%;height:35px;margin:0 15px 0 0;border-radius:20px;padding:.25rem .25rem .25rem 2.2rem;font-size:.75rem;font-weight:700;background-image:url(/wp-content/themes/lorainccc/images/icons/icon-search.png);background-repeat:no-repeat;background-position:.75rem .45rem;float:left}
+#searchsubmit{-webkit-box-shadow:inset 0 1px 0 0 #f9eca0;box-shadow:inset 0 1px 0 0 #f9eca0;background:-moz-linear-gradient(center top,#ffeba8 5%,#ffc800 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeba8',endColorstr='#ffc800');background-color:#ffeba8;border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-right-radius:10px;border-bottom-left-radius:10px;text-indent:0;border:1px solid #e6b103;display:inline-block;color:#303030;font-family:Arial;font-size:15px;font-weight:bold;font-style:normal;text-decoration:none;text-align:center;text-shadow:1px 1px 0 #fff;padding:8px 18px;float:left}
+#searchsubmit:hover{background:-moz-linear-gradient(center top,#ffc800 5%,#ffeba8 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc800',endColorstr='#ffeba8');background-color:#ffc800}
+#searchsubmit:active{position:relative;top:1px}a.skip-link.screen-reader-text{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
 a.skip-link.screen-reader-text:focus{position:static;width:auto;height:auto}.ql-icon{background-position:left center;background-repeat:no-repeat;background-size:.78125rem .78125rem}
 .ql-1{background-image:url(/wp-content/themes/lorainccc/images/icons/icon-az_blue.svg)}.ql-2{background-image:url(/wp-content/themes/lorainccc/images/icons/icon-faculty_blue.svg)}
 .ql-3{background-image:url(/wp-content/themes/lorainccc/images/icons/icon_canvas.svg)}.ql-4{background-image:url(/wp-content/themes/lorainccc/images/icons/icon_my-campus.svg)}
@@ -209,8 +215,13 @@ header .submenu li{text-align:left}header .dropdown.menu .submenu li:hover{backg
 header .dropdown.menu .submenu li:hover a{color:#0c3b78}header li.is-submenu-item:not(.is-drilldown-submenu-item) a{color:#fefefe;font-size:.85rem}
 header li.is-drilldown-submenu-item{padding:0}header .dropdown.menu .submenu.first-sub{left:-1rem}
 header .dropdown.menu>li.is-dropdown-submenu-parent>a{padding-right:1rem}header .dropdown.menu>li.is-dropdown-submenu-parent>a::after{display:none}
+<<<<<<< HEAD
 header li.top-item>a{text-decoration:none;cursor:default}.medium-blue-bg{width:100%;background:#0055a5}
 li.divider:after{content:"|";color:#5593db}.top-bar{background:#0c3b78;box-shadow:0 2px 1px -1px #fefefe;-webkit-box-shadow:0 2px 1px -1px #fefefe;position:relative;-moz-box-shadow:0 2px 1px -1px #fefefe;z-index:1000}
+=======
+.medium-blue-bg{width:100%;background:#0055a5}li.divider:after{content:"|";color:#5593db}
+.top-bar{background:#0c3b78;box-shadow:0 2px 1px -1px #fefefe;-webkit-box-shadow:0 2px 1px -1px #fefefe;position:relative;-moz-box-shadow:0 2px 1px -1px #fefefe;z-index:1000}
+>>>>>>> master
 .top-bar img{margin-left:20px}.top-bar .top-bar-title{padding:5px 0}.top-bar .toggle-topbar.menu-icon a:after{-webkit-box-shadow:0 10px 0 1px #fff,0 16px 0 1px #fff,0 22px 0 1px #fff;box-shadow:0 10px 0 1px #fff,0 16px 0 1px #fff,0 22px 0 1px #fff;content:"";display:block;height:0;position:absolute;right:0;top:0;width:16px}
 .top-bar .toggle-topbar.menu-icon a{color:#fff;height:34px;line-height:33px;padding:0 25px 0 0;position:relative}
 .menu-icon{position:relative;display:inline-block;vertical-align:middle;cursor:pointer;width:20px;height:16px}
