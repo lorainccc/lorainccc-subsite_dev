@@ -495,5 +495,17 @@ function wpbeginner_numeric_posts_nav() {
 
 }
 
+ /** Custom posts per page limit for Student News */
+
+	function lc_student_news_query( $query ){
+    if( ! is_admin()
+        && $query->is_post_type_archive( 'student_news' )
+        && $query->is_main_query() ){
+            $query->set( 'posts_per_page', 5 );
+    }
+	}
+	add_action( 'pre_get_posts', 'lc_student_news_query' );
+
+ /** End Custom posts per page limit for Student News */
 
 ?>

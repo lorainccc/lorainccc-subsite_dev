@@ -121,6 +121,7 @@ hr{border:0;height:20px;width:90%;height:50px;padding:2rem 0;-webkit-box-shadow:
 .event-divider{height:.25rem;background:#dcdcdc;width:100%;margin:1rem 0}.fw-lead{padding:2.625rem 0}
 .fw-lead p{font-size:1rem}.lead p{font-size:1rem}.news-feed .featured-image img{width:100%;height:auto;margin-bottom:1rem}
 .gateway-links,.programpaths{padding-top:2rem;margin-bottom:2rem;box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8);-moz-box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8);-webkit-box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8)}
+.student-news-list{padding:2rem;margin-bottom:2rem;box-shadow:0 20px 20px -20px rgba(216,216,216,0.8);-moz-box-shadow:0 20px 20px -20px rgba(216,216,216,0.8);-webkit-box-shadow:0 20px 20px -20px rgba(216,216,216,0.8)}
 .section-divider{padding-top:2rem;margin-bottom:2rem;box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8);-moz-box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8);-webkit-box-shadow:0 -20px 20px -20px rgba(216,216,216,0.8);display:inline-block;width:100%}
 .section-divider-btm{padding-top:2rem;margin-bottom:2rem;box-shadow:0 20px 20px -10px rgba(216,216,216,0.8);-moz-box-shadow:0 20px 20px -10px rgba(216,216,216,0.8);-webkit-box-shadow:0 20px 20px -10px rgba(216,216,216,0.8);display:inline-block;width:100%}
 .gateway-links h2{font-size:1.5rem;margin-bottom:0}.gateway-links .menu>li>a{font-size:.75rem;color:#5593db;text-decoration:underline;padding:.5rem 0}
