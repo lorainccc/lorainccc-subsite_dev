@@ -118,8 +118,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </div>
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-  <div class="row show-for-small-only mobile-nav-bar hide-for-print">
+	 <div class="row show-for-small-only mobile-nav-bar hide-for-print">
     <div class="small-8 columns"> <a href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/lccclogo_white.svg" alt="" width="165" height="31.875" /></a> </div>
     <div class="small-2 columns clearfix"> <span data-responsive-toggle="mobile-search" data-hide-for="medium"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/magnifying-glass.svg" height="25" width="25" alt="" class="float-right" data-toggle/></span> </div>
     <div class="small-2 columns"> <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
@@ -166,7 +165,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     </ul>
   </div>
-		</nav>
 		</div>
 	</header><!-- #masthead -->
 
