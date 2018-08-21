@@ -60,7 +60,7 @@ get_header(); ?>
       				<th width="15%">Date/Time Reported</th>
       				<th width="21%">Date/Time Offense Occurred</th>
 										<th width="13%">General Location</th>
-      				<th width="13%">Dispositon</th>
+      				<th width="13%">Disposition</th>
     				</tr>
   				</thead>
 										<tbody>

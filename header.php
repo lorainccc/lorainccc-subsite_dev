@@ -27,6 +27,27 @@
 
 </script>
 
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PWJL5TQ');</script>
+<!-- End Google Tag Manager -->
+	
+<!-- Hotjar Tracking Code for www.lorainccc.edu 2-->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:868906,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
 <!-- Begin Eloqua tracking script -->
 <script type="text/javascript">
     var _elqQ = _elqQ || [];
@@ -47,6 +68,12 @@
 
 </head>
 <body <?php body_class(); ?>>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWJL5TQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text hide-for-print" href="#content"><?php esc_html_e( 'Skip to content', 'lccc-framework' ); ?></a>
 
@@ -65,23 +92,9 @@
 											?>
       <!-- This should be similar to what is generated when using Wordpress searchform.php -->
 					   <div class="large-9 medium-6 columns searchbox hide-for-print">
-          <?php if ( is_active_sidebar( 'lccc-search-sidebar' ) ) { ?>
-																<?php dynamic_sidebar( 'lccc-search-sidebar' ); ?>
-								<?php }else{
-															if ( class_exists( 'CustomGoogleSearch' ) ) {
-																// check for plugin using plugin name
-																// Plugin is activated
-																		if ( is_active_sidebar( 'lccc-four-o-four-sidebar' ) ) {
-
-																		}else{
-																			$instance = array(
-																			'display_results' => '3',
-																		);                                               the_widget('CGS_Widget', $instance);
-																			}
-															}else{
-																echo 'no widgets found';
-															}
-								}		?>
+        <?php 
+										the_widget('WP_Widget_Search');
+								?>
 					</div>
     </div>
   </div>
@@ -92,7 +105,7 @@
 									<?php
           wp_nav_menu(array(
 											'container' => false,
-											'menu' => __( 'Primary', 'textdomain' ),
+											'menu' => __( 'Primary', 'lorainccc' ),
 											'menu_class' => 'dropdown menu hide-for-print',
 											'theme_location' => 'primary',
 											'items_wrap'      => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>',
@@ -105,6 +118,7 @@
       </div>
     </div>
   </div>
+		<nav id="site-navigation" class="main-navigation" role="navigation">
   <div class="row show-for-small-only mobile-nav-bar hide-for-print">
     <div class="small-8 columns"> <a href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/lccclogo_white.svg" alt="" width="165" height="31.875" /></a> </div>
     <div class="small-2 columns clearfix"> <span data-responsive-toggle="mobile-search" data-hide-for="medium"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/magnifying-glass.svg" height="25" width="25" alt="" class="float-right" data-toggle/></span> </div>
@@ -113,27 +127,16 @@
       </span> </div>
   </div>
   <div id="mobile-search" class="show-for-small-only hide-for-print">
-         			<?php if ( is_active_sidebar( 'lccc-search-sidebar' ) ) { ?>
-																<?php dynamic_sidebar( 'lccc-search-sidebar' ); ?>
-								<?php }else{
-															if ( class_exists( 'CustomGoogleSearch' ) ) {
-																// check for plugin using plugin name
-																// Plugin is activated
-																		if ( is_active_sidebar( 'lccc-four-o-four-sidebar' ) ) {
-																			echo 'sidebar active and plugin active';
-																		}else{
-																			$instance = array(
-																			'display_results' => '3',
-																		);                                               the_widget('CGS_Widget', $instance);
-																			}
-															}else{
-																echo 'no widgets found';
-															}
-								}		?>
+        <?php 
+										the_widget('WP_Widget_Search');
+								?>
   </div>
+		<?php //The div below breaks a float that is happening, which without the tag causes the menu to squash into the remaining space. ?>
+		<div style="clear:both;"></div>
   <div id="responsive-menu" class="show-for-small-only hide-for-print">
     <ul class="vertical menu" data-drilldown data-parent-link="true">
      <li><a href="/" alt="Link back to LCCC Home Page">Home</a></li>
+
 					<?php 	wp_nav_menu(array(
 													'container' => false,
 													'menu' => __( 'Drill Menu', 'textdomain' ),
@@ -145,7 +148,9 @@
 													'walker' => new lc_drill_menu_walker(),
 												));
      ?>
+
      <li>&nbsp;</li>
+
      <?php
             wp_nav_menu(array(
 													'container' => false,
@@ -158,9 +163,10 @@
 													'walker' => new lc_drill_menu_walker(),
 												));
 					?>
+
     </ul>
   </div>
-
+		</nav>
 		</div>
 	</header><!-- #masthead -->
 

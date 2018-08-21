@@ -13,9 +13,11 @@ $programargs = array(
   $linklabel = get_post_meta( $post_id, 'lc_program_path_link_label_field', true );
 
 
-    ?>
+  $titleId = get_the_title();
+  $titleId = strtolower( str_replace( ' ', '_', $titleId ) );
 
-        <section class="row programpaths">
+    ?>
+        <section class="row programpaths" aria-label="<?php echo $titleId; ?>" role="region">
 											<div class="small-12 medium-3 large-3 columns">
             <?php the_post_thumbnail(); ?>
 											</div>

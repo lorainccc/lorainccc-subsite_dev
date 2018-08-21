@@ -10,6 +10,11 @@
 get_header(); 
 
 ?>
+<!-- adding spacer -->
+<div class="row">
+	<div class="small-12 medium-12 large-12 columns">&nbsp;</div>
+</div>
+<!-- end spacer row -->
 	<div class="row main">
 <div class="small-12 medium-12 large-12 columns contentdiv">
 		<div class="small-12 medium-8 large-8 columns nopadding content-container">

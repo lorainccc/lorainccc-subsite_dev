@@ -82,22 +82,8 @@ get_header(); ?>
 													<?php }else{
 															the_widget('LCCC_four_O_four_Widget');
 														}
-											if ( class_exists( 'CustomGoogleSearch' ) ) {
-																// check for plugin using plugin name
-																// Plugin is activated
-																		if ( is_active_sidebar( 'lccc-four-o-four-sidebar' ) ) {
-																			
-																		}else{
-																			$instance = array(
-																			'display_results' => '3',); 
-                   echo '<div style="width:373px; margin: 0 auto;">';
-                   the_widget('CGS_Widget', $instance);
-                   echo '</div>';
-                  }
-															}else{
-																echo 'no widgets found';
-															}
-														?>
+        						the_widget('WP_Widget_Search');
+					 							?>
 										</main><!-- #main -->
 						</div><!-- #primary -->
 			</div>	

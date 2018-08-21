@@ -18,15 +18,16 @@
 				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 			}
 
-		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php lorainccc_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php
-		endif; ?>
-	</header><!-- .entry-header -->
+?>
+		</header><!-- .entry-header -->
 
 	<div class="entry-content">
+  <div class="row">
+   <div class="small-12 medium-2 columns">
+    <a href="<?php echo get_the_permalink() ?>">
+    <?php the_post_thumbnail( 'thumbnail' ); ?> 
+   </div>
+   <div class="small-12 medium-10 columns">
 		<?php
 			the_excerpt( sprintf(
 				/* translators: %s: Name of current post. */
@@ -39,6 +40,9 @@
 				'after'  => '</div>',
 			) );
 		?>
+    <?php echo '  <p><a href="' . get_the_permalink() . '">Read more about ' . get_the_title() . '</a></p>'; ?>
+    </div>
+   </div>
 	</div><!-- .entry-content -->
 
 </article><!-- #post-## -->

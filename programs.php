@@ -86,6 +86,7 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div>
+	<div class="medium-12 large-12 columns hide-for-print">&nbsp;</div>
 	<div class="small-12 columns hide-for-medium hide-for-print">
 
 	<?php if ( is_active_sidebar( 'lccc-badges-sidebar' ) ) { ?>

@@ -16,9 +16,9 @@ $programargs = array(
   $titleId = strtolower( str_replace( ' ', '_', $titleId ) );
 
     ?>
-        <section class="row programpaths" aria-labeledby="<?php echo $titleId; ?>">
+        <section class="row programpaths">
 											<div class="small-12 medium-3 large-3 columns">
-            <a href="<?php echo $linkvalue; ?>"><?php the_post_thumbnail(); ?></a>
+            <a href="<?php echo $linkvalue; ?>"><?php the_post_thumbnail( 'thumbnail', array( 'alt' => get_the_title() ) ); ?></a>
 											</div>
 											<div class="small-12 medium-9 large-9 columns gtwymenu-content">
 													<a href="<?php echo $linkvalue; ?>"><h2 id="<?php echo $titleId; ?>"><?php the_title();?></h2></a>
