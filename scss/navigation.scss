@@ -343,3 +343,7 @@ border-top: 1px solid #fff;
 .main-navigation ul > li.current-menu-ancestor > ul > li.current-menu-item > a {
 font-weight: bold;
 }
+
+.dropdown .menu-item{
+	z-index: 50;
+}

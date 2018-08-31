@@ -254,7 +254,7 @@ ul.nav-menu li.current-menu-item ul.sub-menu{display:block}.main-navigation ul .
 .clear:after,.site:after,.entry-content:after,.comment-content:after,.site-content:after,.nav-links:after,.comment-navigation:after,.social-navigation ul:after,.textwidget:after{clear:both}
 ul.sub-menu{padding-top:15px}li.current-menu-ancestor,li.current-menu-item{background:#dcdcdc}
 .main-navigation ul>li.current-menu-ancestor>ul>li{border-top:1px solid #fff}.main-navigation ul>li.current-menu-ancestor>ul>li.current-menu-item>a{font-weight:bold}
-/*!
+.dropdown .menu-item{z-index:50}/*!
 Section 6: Footer
 */footer{margin-top:5rem;background:#0c3b78;padding:2rem 0 4rem 0;font-size:.75rem}
 footer h2{font-size:.75rem;color:#ffc600;text-transform:uppercase;font-weight:700}
