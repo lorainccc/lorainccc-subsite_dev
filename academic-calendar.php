@@ -142,7 +142,12 @@ get_header(); ?>
 								echo '<h3>'.$spring_start_display.' to '.$spring_end_display.'</h3>';?>
 								</div>
 																						<table>
-							<tbody>
+																						<tr class="show-for-sr">
+																						<th scope="col">Academic Event Title</th>
+																						<th scope="col">Day of the Week</th>
+																						<th scope="col">Date</th>
+																						</tr>
+								<tbody>
 								<?php
 							
 										$springeventargs=array(
@@ -207,6 +212,11 @@ get_header(); ?>
 								echo '<h3>'.$summer_start_display.' to '.$summer_end_display.'</h3>';?>
 									</div>
 																			<table>
+																			<tr class="show-for-sr">
+																						<th scope="col">Academic Event Title</th>
+																						<th scope="col">Day of the Week</th>
+																						<th scope="col">Date</th>
+																						</tr>
 							<tbody>
 								<?php
 										$summereventargs=array(
@@ -261,6 +271,11 @@ get_header(); ?>
 								echo '<h3>'.$fall_start_display.' to '.$fall_end_display.'</h3>';?>
   					</div>
 							<table>
+							<tr class="show-for-sr">
+																						<th scope="col">Academic Event Title</th>
+																						<th scope="col">Day of the Week</th>
+																						<th scope="col">Date</th>
+																						</tr>
 							<tbody>
 								<?php
 										$eventargs=array(
