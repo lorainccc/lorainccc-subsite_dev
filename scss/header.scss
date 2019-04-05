@@ -2,9 +2,9 @@
 Section 4: Header
 */
 
-.searchbox {
+.searchbox{
     height: 70px;
-    padding: 15px 0 15px 0
+    padding: 15px 0 15px 0;
 }
 
 input#s,input#s:focus {
@@ -19,7 +19,7 @@ input#s,input#s:focus {
     background-image: url(/wp-content/themes/lorainccc/images/icons/icon-search.png);
     background-repeat: no-repeat;
     background-position: .75rem .45rem;
-    float: left
+    float: left;
 }
 
 #searchsubmit {
@@ -44,7 +44,7 @@ input#s,input#s:focus {
     text-align: center;
     text-shadow: 1px 1px 0 #fff;
     padding: 8px 18px;
-    float: left
+    float: left;
 }
 
 #searchsubmit:hover {

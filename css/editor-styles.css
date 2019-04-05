@@ -1,3 +1,6 @@
+body{
+    font-family: 'Open Sans';
+}
 
 /* Clipboard Bullets */
 
@@ -33,4 +36,46 @@ ul.bullet-arrow li:before{
  color: #606060;
  float: left;
  width: 1.4em;
+}
+
+/* Link Buttons */
+
+a.blue-button{
+    background: linear-gradient(to bottom,#1790e0 0%, #1583cc 50%, #147cc2 51%, #1376b8 100%);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    border-radius: 0.25em;
+    padding: 10px;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+}
+
+a.blue-button-250{
+    background: linear-gradient(to bottom,#1790e0 0%, #1583cc 50%, #147cc2 51%, #1376b8 100%);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    border-radius: 0.25em;
+    padding: 10px;
+    color: #fff;
+    display: inline-block;
+    min-width: 250px;
+    max-width: 250px;
+    text-align: center;
+}
+
+a.blue-button-300{
+    background: linear-gradient(to bottom,#1790e0 0%, #1583cc 50%, #147cc2 51%, #1376b8 100%);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    border-radius: 0.25em;
+    padding: 10px;
+    color: #fff;
+    display: inline-block;
+    min-width: 300px;
+    max-width: 300px;
+    text-align: center;
 }

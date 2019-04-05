@@ -2,7 +2,7 @@
 Section 5: Navigation
 */
 
-header nav a,header nav a:hover {
+header nav a,header nav a:hover, header nav a:focus{
     color: #fefefe;
     font-size: .875rem;
     font-weight: 600
@@ -170,10 +170,6 @@ li.divider:after {
 .ql-link a#quick-link:link {
     color: #0c3b78 !important;
     cursor: pointer
-}
-
-#mobile-search {
-    box-shadow: inset 0 0 2px #000
 }
 
 #quick-links {

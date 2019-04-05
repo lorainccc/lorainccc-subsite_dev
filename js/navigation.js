@@ -25,7 +25,7 @@
 		return;
 	}
 
-	menu.setAttribute( 'aria-expanded', 'false' );
+	// menu.setAttribute( 'aria-expanded', 'false' );
 	if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
 		menu.className += ' nav-menu';
 	}
@@ -34,11 +34,11 @@
 		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
 			container.className = container.className.replace( ' toggled', '' );
 			button.setAttribute( 'aria-expanded', 'false' );
-			menu.setAttribute( 'aria-expanded', 'false' );
+			// menu.setAttribute( 'aria-expanded', 'false' );
 		} else {
 			container.className += ' toggled';
 			button.setAttribute( 'aria-expanded', 'true' );
-			menu.setAttribute( 'aria-expanded', 'true' );
+			// menu.setAttribute( 'aria-expanded', 'true' );
 		}
 	};
 
@@ -47,9 +47,9 @@
 	subMenus = menu.getElementsByTagName( 'ul' );
 
 	// Set menu items with submenus to aria-haspopup="true".
-	for ( i = 0, len = subMenus.length; i < len; i++ ) {
+/* 	for ( i = 0, len = subMenus.length; i < len; i++ ) {
 		subMenus[i].parentNode.setAttribute( 'aria-haspopup', 'true' );
-	}
+	} */
 
 	// Each time a menu link is focused or blurred, toggle focus.
 	for ( i = 0, len = links.length; i < len; i++ ) {

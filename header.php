@@ -26,92 +26,53 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<a class="show-on-focus hide-for-print" href="#content"><?php esc_html_e( 'Skip to content', 'lccc-framework' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		  <div class="row show-for-medium">
-    <div class="large-6 medium-6 columns"><a href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/LCCC-Logo.png" height="70" width="325" alt="Lorain County Community College Logo" /></a>  </div>
-    <div class="large-6 medium-6 columns">
-     									<?php
-          wp_nav_menu(array(
-											'container' => false,
-											'menu' => __( 'Header Shortcuts Menu', 'textdomain' ),
-											'menu_class' => 'menu align-right hide-for-print',
-											'theme_location' => 'header-shortcuts',
-											'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-												));
-											?>
-      <!-- This should be similar to what is generated when using Wordpress searchform.php -->
-					   <div class="large-9 medium-6 columns searchbox hide-for-print">
-        <?php 
-										the_widget('WP_Widget_Search');
-								?>
-					</div>
-    </div>
-  </div>
-<div class="medium-blue-bg show-for-medium">
-    <div class="row">
-      <div class="large-12 columns">
-        <nav class="menu-centered">
-									<?php
-          wp_nav_menu(array(
-											'container' => false,
-											'menu' => __( 'Primary', 'lorainccc' ),
-											'menu_class' => 'dropdown menu hide-for-print',
-											'theme_location' => 'primary',
-											'items_wrap'      => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>',
-											//Recommend setting this to false, but if you need a fallback...
-											'fallback_cb' => 'lc_topbar_menu_fallback',
-											'walker' => new lc_top_bar_menu_walker,
-												));
-											?>
-        </nav>
-      </div>
-    </div>
-  </div>
-	 <div class="row show-for-small-only mobile-nav-bar hide-for-print">
-    <div class="small-8 columns"> <a href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/lccclogo_white.svg" alt="" width="165" height="31.875" /></a> </div>
-    <div class="small-2 columns clearfix"> <span data-responsive-toggle="mobile-search" data-hide-for="medium"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/magnifying-glass.svg" height="25" width="25" alt="" class="float-right" data-toggle/></span> </div>
+	<div class="row show-for-small-only mobile-nav-bar">
+    <div class="small-8 columns"> <a href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/lccclogo_white.svg" alt="LCCC Logo" width="165" height="31.875" /></a> </div>
+    <div class="small-2 columns clearfix"> <span data-responsive-toggle="mobile-search" data-hide-for="medium"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/magnifying-glass.svg" height="25" width="25" alt="Search the LCCC Website" class="float-right" data-toggle/></span> </div>
     <div class="small-2 columns"> <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
       <button class="menu-icon" type="button" data-toggle></button>
       </span> </div>
   </div>
-  <div id="mobile-search" class="show-for-small-only hide-for-print">
-        <?php 
-										the_widget('WP_Widget_Search');
-								?>
-  </div>
-		<?php //The div below breaks a float that is happening, which without the tag causes the menu to squash into the remaining space. ?>
-		<div style="clear:both;"></div>
-  <div id="responsive-menu" class="show-for-small-only hide-for-print">
-    <ul class="vertical menu" data-drilldown data-parent-link="true">
-     <li><a href="/" alt="Link back to LCCC Home Page">Home</a></li>
-
-					<?php 	wp_nav_menu(array(
-													'container' => false,
-													'menu' => __( 'Drill Menu', 'textdomain' ),
-													'menu_class' => 'vertical menu',
-													'theme_location' => 'mobile-primary',
-													'menu_id' => 'mobile-primary-menu',
-														//Recommend setting this to false, but if you need a fallback...
-													'fallback_cb' => 'lc_drill_menu_fallback',
-													'walker' => new lc_drill_menu_walker(),
-												));
-     ?>
-
-     <li>&nbsp;</li>
-
-     <?php
-            wp_nav_menu(array(
-													'container' => false,
-													'menu' => __( 'Drill Menu', 'textdomain' ),
-													'menu_class' => 'vertical menu',
-													'theme_location' => 'mobile-header-shortcuts',
-													'menu_id' => 'mobile-header-shortcuts',
-														//Recommend setting this to false, but if you need a fallback...
-													'fallback_cb' => 'lc_drill_menu_fallback',
-													'walker' => new lc_drill_menu_walker(),
-												));
-					?>
-
-    </ul>
+		<div class="row">
+    <div class="hide-for-small-only large-6 medium-6 columns"><a href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/LCCC-Logo.png" height="70" width="325" alt="Lorain County Community College Logo" /></a>  </div>
+    <div id="responsive-shortcuts" class="hide-for-small large-6 medium-6 columns">
+			<div class="row">
+				<div class="hide-for-small-only medium-12 columns">
+     									<?php
+          wp_nav_menu(array(
+											'container' => false,
+											'menu' => __( 'Header Shortcuts Menu', 'textdomain' ),
+											'menu_class' => 'menu align-right',
+											'theme_location' => 'header-shortcuts',
+											//'items_wrap'      => '<ul id="%1$s header-menu" class="%2$s">%3$s</ul>',
+           						'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+           ));
+											?>
+				</div>
+				<div id="mobile-search" class="small-12 medium-9 medium-offset-3 columns searchbox hide-for-print">
+						<?php if ( is_active_sidebar( 'lccc-search-sidebar' ) ) { 
+																		dynamic_sidebar( 'lccc-search-sidebar' ); 
+										}		?>
+				</div><!-- End Search box -->
+		 	</div>
+    </div>
+	</div>
+<!-- <div class="medium-blue-bg show-for-medium"> -->
+<div id="responsive-menu" class="medium-blue-bg">
+			<nav class="menu-centered" role="navigation" aria-label="Main Menu">
+								<?php
+				wp_nav_menu(array(
+										'container' => false,
+										'menu' => __( 'Primary', 'textdomain' ),
+										'menu_class' => 'dropdown menu',
+										'theme_location' => 'primary',
+										'items_wrap'      => '<ul id="%1$s" class="%2$s" role="menubar" data-dropdown-menu>%3$s</ul>',
+										//Recommend setting this to false, but if you need a fallback...
+										'fallback_cb' => 'lc_topbar_menu_fallback',
+										'walker' => new lc_top_bar_menu_walker,
+											));
+										?>
+			</nav>
   </div>
 		</div>
 	</header><!-- #masthead -->
